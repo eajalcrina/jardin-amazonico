@@ -59,7 +59,7 @@ describe("calculateScore", () => {
 });
 
 describe("getRecommendations", () => {
-  it("returns between 3 and 5 recommendations", () => {
+  it("returns between 3 and 10 recommendations", () => {
     const answers: QuizAnswers = {
       purpose: "me",
       type: "indoor",
@@ -69,7 +69,7 @@ describe("getRecommendations", () => {
     };
     const recs = getRecommendations(PLANTS, answers);
     expect(recs.length).toBeGreaterThanOrEqual(3);
-    expect(recs.length).toBeLessThanOrEqual(5);
+    expect(recs.length).toBeLessThanOrEqual(10);
   });
 
   it("excludes pet-unsafe plants when user has pets", () => {

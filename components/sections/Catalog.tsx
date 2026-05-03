@@ -34,8 +34,8 @@ export function Catalog({ quizAnswers, onSelectPlant }: CatalogProps) {
   const showQuizResults = quizAnswers && !showAll;
 
   return (
-    <section id="catalogo" className="bg-ja-paper py-16 md:py-24">
-      <div className="container mx-auto px-6 max-w-6xl">
+    <section id="catalogo" className="bg-ja-paper py-14 md:py-20">
+      <div className="container mx-auto px-6 max-w-5xl">
         <p className="text-xs uppercase tracking-[0.2em] text-ja-mid">
           {showQuizResults ? "Tu selección personalizada" : "El catálogo"}
         </p>

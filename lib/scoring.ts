@@ -48,5 +48,5 @@ export function getRecommendations(
     return fallback;
   }
 
-  return scored.slice(0, Math.min(5, scored.length)).map((item) => item.plant);
+  return scored.slice(0, Math.min(10, scored.length)).map((item) => item.plant);
 }
