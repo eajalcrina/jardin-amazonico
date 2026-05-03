@@ -57,7 +57,7 @@ export function ProjectCarousel({ projects, eyebrow, headline, intro }: Props) {
       <div className="mt-10 md:mt-14">
         <div className="container mx-auto px-3 md:px-6 max-w-6xl">
           <div className="relative aspect-[16/10] md:aspect-[16/9] overflow-hidden rounded-3xl bg-ja-cream">
-            <AnimatePresence mode="wait">
+            <AnimatePresence mode="wait" initial={false}>
               <motion.div
                 key={current.image}
                 initial={{ opacity: 0, scale: 1.02 }}
@@ -77,7 +77,7 @@ export function ProjectCarousel({ projects, eyebrow, headline, intro }: Props) {
               </motion.div>
             </AnimatePresence>
 
-            <AnimatePresence mode="wait">
+            <AnimatePresence mode="wait" initial={false}>
               <motion.div
                 key={`card-${idx}`}
                 initial={{ opacity: 0, y: 16 }}
