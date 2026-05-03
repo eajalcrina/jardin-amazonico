@@ -12,7 +12,7 @@ export function Chip({ active, className = "", ...props }: ChipProps) {
       type="button"
       aria-pressed={active}
       className={[
-        "inline-flex items-center gap-2 rounded-full border px-4 h-10 text-sm transition-colors",
+        "inline-flex items-center gap-2 rounded-full border px-4 h-11 text-sm transition-colors",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ja-mid",
         active
           ? "bg-ja-dark text-ja-paper border-ja-dark"
