@@ -12,6 +12,7 @@ import { FAQ } from "@/components/sections/FAQ";
 import { B2BTeaser } from "@/components/sections/B2BTeaser";
 import { Footer } from "@/components/sections/Footer";
 import { PlantDetailModal } from "@/components/catalog/PlantDetailModal";
+import { KeneDivider } from "@/components/ui/KeneDivider";
 import type { QuizAnswers } from "@/lib/quiz-types";
 import type { Plant } from "@/lib/plants";
 
@@ -22,6 +23,9 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <div className="bg-ja-cream py-3 text-ja-mid">
+        <KeneDivider opacity={0.5} />
+      </div>
       <Pillars />
       <Quiz
         onComplete={(a) => setQuizAnswers(a)}
