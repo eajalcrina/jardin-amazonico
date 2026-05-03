@@ -1,11 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { Building2, Trees } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import {
-  buildLandscapingWhatsAppUrl,
-  buildCorporateWhatsAppUrl,
-} from "@/lib/whatsapp";
+import { buildCorporateWhatsAppUrl } from "@/lib/whatsapp";
 
 export function B2BTeaser() {
   const wa = process.env.NEXT_PUBLIC_WA_NUMBER ?? "51999999999";
@@ -32,14 +30,9 @@ export function B2BTeaser() {
               Diseñamos e instalamos vegetación interior y exterior para oficinas,
               lobbies y eventos en Lima.
             </p>
-            <a
-              href={buildLandscapingWhatsAppUrl(wa)}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-6 inline-block"
-            >
-              <Button variant="secondary">Hablar por WhatsApp →</Button>
-            </a>
+            <Link href="/paisajismo" className="mt-6 inline-block">
+              <Button variant="secondary">Ver portafolio y conversar →</Button>
+            </Link>
           </article>
 
           <article className="rounded-3xl bg-ja-cream p-8 md:p-10 border border-ja-dark/10">
