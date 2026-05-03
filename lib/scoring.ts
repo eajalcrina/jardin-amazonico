@@ -30,3 +30,23 @@ export function calculateScore(plant: Plant, answers: QuizAnswers): number {
 
   return score;
 }
+
+export function getRecommendations(
+  plants: Plant[],
+  answers: QuizAnswers,
+): Plant[] {
+  const scored = plants
+    .map((plant) => ({ plant, score: calculateScore(plant, answers) }))
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score);
+
+  if (scored.length < 3) {
+    const fallback = plants
+      .filter((p) => p.tier === "B")
+      .filter((p) => answers.pets === "no" || p.petSafe)
+      .slice(0, 3);
+    return fallback;
+  }
+
+  return scored.slice(0, Math.min(5, scored.length)).map((item) => item.plant);
+}
