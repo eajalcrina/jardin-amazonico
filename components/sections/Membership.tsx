@@ -65,32 +65,32 @@ export function Membership() {
             return (
               <article
                 key={plan}
-                className="rounded-3xl bg-ja-paper p-8 md:p-10 border border-ja-dark/10"
+                className="flex flex-col rounded-3xl bg-ja-paper p-8 md:p-10 border border-ja-dark/10"
               >
-                <span className="text-xs uppercase tracking-[0.2em] text-ja-mid font-medium">
-                  {plan}
-                </span>
-                <h3 className="mt-2 font-display text-2xl md:text-3xl text-ja-dark">
-                  {data.headline}
-                </h3>
-                <ul className="mt-6 space-y-3">
-                  {data.includes.map((item) => (
-                    <li key={item} className="flex items-start gap-3 text-ja-ink/85 text-sm">
-                      <Check size={18} className="mt-0.5 shrink-0 text-ja-mid" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-8 font-display text-2xl text-ja-terra">{data.price}</p>
-                <p className="text-xs text-ja-ink/55">{data.note}</p>
-                <Button
-                  fullWidth
-                  size="lg"
-                  className="mt-6"
-                  onClick={() => setOpenPlan(plan)}
-                >
-                  Suscribirme al {plan} →
-                </Button>
+                <div className="flex-grow">
+                  <span className="text-xs uppercase tracking-[0.2em] text-ja-mid font-medium">{plan}</span>
+                  <h3 className="mt-2 font-display text-2xl md:text-3xl text-ja-dark">{data.headline}</h3>
+                  <ul className="mt-6 space-y-3">
+                    {data.includes.map((item) => (
+                      <li key={item} className="flex items-start gap-3 text-ja-ink/85 text-sm">
+                        <Check size={18} className="mt-0.5 shrink-0 text-ja-mid" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="mt-8">
+                  <p className="font-display text-2xl text-ja-terra">{data.price}</p>
+                  <p className="text-xs text-ja-ink/55">{data.note}</p>
+                  <Button
+                    fullWidth
+                    size="lg"
+                    className="mt-6"
+                    onClick={() => setOpenPlan(plan)}
+                  >
+                    Suscribirme al {plan} →
+                  </Button>
+                </div>
               </article>
             );
           })}
