@@ -56,7 +56,7 @@ export function ProjectCarousel({ projects, eyebrow, headline, intro }: Props) {
 
       <div className="mt-10 md:mt-14">
         <div className="container mx-auto px-3 md:px-6 max-w-6xl">
-          <div className="relative aspect-[16/10] md:aspect-[16/9] overflow-hidden rounded-3xl bg-ja-cream">
+          <div className="relative aspect-[4/5] sm:aspect-[16/10] md:aspect-[16/9] overflow-hidden rounded-3xl bg-ja-cream">
             <AnimatePresence mode="wait" initial={false}>
               <motion.div
                 key={current.image}
@@ -73,26 +73,27 @@ export function ProjectCarousel({ projects, eyebrow, headline, intro }: Props) {
                   sizes="(max-width: 1280px) 100vw, 1280px"
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ja-ink/35 via-transparent to-transparent" />
+                <div className="hidden md:block absolute inset-0 bg-gradient-to-t from-ja-ink/35 via-transparent to-transparent" />
               </motion.div>
             </AnimatePresence>
 
+            {/* Card overlay — desktop only */}
             <AnimatePresence mode="wait" initial={false}>
               <motion.div
-                key={`card-${idx}`}
+                key={`card-d-${idx}`}
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -8 }}
                 transition={{ duration: 0.5, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute bottom-4 left-4 md:bottom-8 md:left-8 max-w-[18rem] md:max-w-sm"
+                className="hidden md:block absolute bottom-8 left-8 max-w-sm"
               >
-                <div className="rounded-2xl bg-ja-paper p-5 md:p-6 shadow-[0_20px_40px_-20px_rgba(15,42,28,0.45)]">
+                <div className="rounded-2xl bg-ja-paper p-6 shadow-[0_20px_40px_-20px_rgba(15,42,28,0.45)]">
                   <p className="font-display italic text-sm text-ja-mid">{current.n}</p>
-                  <h3 className="mt-1 font-display text-xl md:text-2xl text-ja-dark leading-tight">
+                  <h3 className="mt-1 font-display text-2xl text-ja-dark leading-tight">
                     {current.title}
                   </h3>
-                  <p className="mt-2 text-[11px] md:text-xs uppercase tracking-[0.15em] text-ja-ink/60">
-                    {current.type} · {current.location} · {current.year}
+                  <p className="mt-2 text-xs uppercase tracking-[0.15em] text-ja-ink/60">
+                    {current.type} · {current.year}
                   </p>
                 </div>
               </motion.div>
@@ -118,6 +119,27 @@ export function ProjectCarousel({ projects, eyebrow, headline, intro }: Props) {
             <div className="absolute top-4 right-4 md:top-6 md:right-6 rounded-full bg-ja-paper/85 backdrop-blur-sm px-3 py-1 text-[11px] tracking-[0.15em] uppercase text-ja-ink/70">
               {String(idx + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
             </div>
+          </div>
+
+          {/* Card caption — mobile only (below image, doesn't cover photo) */}
+          <div className="md:hidden mt-4 px-1">
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.div
+                key={`card-m-${idx}`}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -4 }}
+                transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+              >
+                <p className="font-display italic text-xs text-ja-mid">{current.n}</p>
+                <h3 className="mt-1 font-display text-xl text-ja-dark leading-tight">
+                  {current.title}
+                </h3>
+                <p className="mt-1 text-[11px] uppercase tracking-[0.15em] text-ja-ink/60">
+                  {current.type} · {current.year}
+                </p>
+              </motion.div>
+            </AnimatePresence>
           </div>
 
           <div className="mt-6 flex justify-center gap-2" role="tablist">
