@@ -20,6 +20,7 @@ const PLAN_DATA: Record<Plan, {
       "Una planta seleccionada del mes por nuestro equipo de curaduría",
       "Una maceta de la colección (Tierra, Piedra o Selva)",
       "Un labubu amazónico — el animal del mes, en fibra de chambira",
+      "Aplica para garantía del esqueje",
     ],
     price: "Desde S/ 170 / mes",
     note: "Incluye delivery en Lima.",
@@ -27,9 +28,10 @@ const PLAN_DATA: Record<Plan, {
   Suelo: {
     headline: "Para cuando ya tienes tu selva y quieres que prospere.",
     includes: [
-      "500g de sustrato especializado (interior, suculentas o tropical)",
-      "Kit mensual anti-plagas: producto preventivo o correctivo",
+      "1 Kg de sustrato especializado (interior, suculentas o tropical)",
+      "Kit mensual de cuidado: nutrientes, control de plagas preventivo y correctivo",
       "3 macetas pequeñas para propagar esquejes",
+      "Aplica para garantía del esqueje",
     ],
     price: "Desde S/ 55 / mes",
     note: "Incluye delivery en Lima.",
@@ -48,7 +50,7 @@ export function Membership() {
 
   return (
     <section id="membresia" className="bg-ja-cream py-20 md:py-28">
-      <div className="container mx-auto px-6 max-w-6xl">
+      <div className="container mx-auto px-6 max-w-5xl">
         <p className="text-xs uppercase tracking-[0.2em] text-ja-mid">Membresía</p>
         <h2 className="mt-3 font-display text-3xl md:text-5xl text-ja-dark max-w-3xl">
           Una membresía que respira contigo.
