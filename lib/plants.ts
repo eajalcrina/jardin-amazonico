@@ -36,7 +36,7 @@ export type Plant = {
   scientificName: string;
   tier: PlantTier;
   iconLucide: string;
-  imageUrl: string;
+  images: string[];
   imageAlt: string;
   tags: {
     type: PlantType[];
