@@ -54,3 +54,39 @@ export async function appendMembershipLead(
     },
   });
 }
+
+export type PlantLeadInput = {
+  fullName: string;
+  email: string;
+  phone: string;
+  plantId: string;
+  plantName: string;
+  priceRange: string;
+};
+
+export async function appendPlantPurchaseLead(
+  input: PlantLeadInput,
+): Promise<void> {
+  const { sheets, spreadsheetId } = getSheetsClient();
+  const timestamp = new Date().toISOString();
+
+  const row = [
+    timestamp,
+    input.fullName,
+    input.email,
+    input.phone,
+    input.plantId,
+    input.plantName,
+    input.priceRange,
+    "web-plant",
+  ];
+
+  await sheets.spreadsheets.values.append({
+    spreadsheetId,
+    range: "Plant Leads!A:H",
+    valueInputOption: "USER_ENTERED",
+    requestBody: {
+      values: [row],
+    },
+  });
+}

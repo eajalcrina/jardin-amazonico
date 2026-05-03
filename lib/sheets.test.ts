@@ -51,3 +51,25 @@ describe("appendMembershipLead", () => {
     ).rejects.toThrow(/Missing Google Sheets env/);
   });
 });
+
+describe("appendPlantPurchaseLead", () => {
+  it("calls sheets.values.append with correct shape and Plant Leads range", async () => {
+    const { appendPlantPurchaseLead } = await import("./sheets");
+    await appendPlantPurchaseLead({
+      fullName: "Eddie Test",
+      email: "eddie@test.com",
+      phone: "+51999111222",
+      plantId: "JA-S001",
+      plantName: "Alocasia Amazónica",
+      priceRange: "S/ 185–255",
+    });
+    expect(mockAppend).toHaveBeenCalled();
+    const lastCall = mockAppend.mock.calls.at(-1)?.[0];
+    expect(lastCall?.range).toBe("Plant Leads!A:H");
+    const row = lastCall?.requestBody?.values?.[0];
+    expect(row?.[1]).toBe("Eddie Test");
+    expect(row?.[3]).toBe("+51999111222");
+    expect(row?.[4]).toBe("JA-S001");
+    expect(row?.[7]).toBe("web-plant");
+  });
+});
