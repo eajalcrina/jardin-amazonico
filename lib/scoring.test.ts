@@ -11,7 +11,7 @@ const samplePetUnsafe: Plant = {
   scientificName: "Testus testus",
   tier: "P",
   iconLucide: "leaf",
-  imageUrl: "",
+  images: [],
   imageAlt: "",
   tags: { type: ["indoor"], size: ["medium"], care: ["amateur"] },
   petSafe: false,

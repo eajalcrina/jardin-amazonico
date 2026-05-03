@@ -9,7 +9,7 @@ const samplePlant: Plant = {
   scientificName: "Alocasia 'Amazonica'",
   tier: "S",
   iconLucide: "sparkles",
-  imageUrl: "",
+  images: [],
   imageAlt: "",
   tags: { type: ["exotic"], size: ["medium"], care: ["amateur"] },
   petSafe: false,
