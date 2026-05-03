@@ -1,6 +1,6 @@
 import { Accordion } from "@/components/ui/Accordion";
 
-const FAQ = [
+const FAQ_ITEMS = [
   {
     id: "origen",
     question: "¿De dónde vienen las plantas?",
@@ -52,7 +52,7 @@ export function FAQ() {
           Las preguntas que nos hacen siempre.
         </h2>
         <div className="mt-10">
-          <Accordion items={FAQ} />
+          <Accordion items={FAQ_ITEMS} />
         </div>
       </div>
     </section>
