@@ -141,17 +141,28 @@ function PlantDetailModalBody({ plant }: { plant: Plant }) {
         <div className="border-t border-ja-dark/10 pt-6">
           <p className="uppercase tracking-wider text-xs text-ja-mid font-medium">Opción Regenerativa</p>
           <ul className="mt-3 space-y-1 text-sm text-ja-ink/85">
-            {plant.regenerative.includes.map((item) => (
-              <li key={item} className="flex items-start gap-2">
-                <span className="mt-2 block h-1 w-1 rounded-full bg-ja-mid shrink-0" />
-                {item}
-              </li>
-            ))}
+            <li className="flex items-start gap-2">
+              <span className="mt-2 block h-1 w-1 rounded-full bg-ja-mid shrink-0" />
+              Planta {plant.name}
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-2 block h-1 w-1 rounded-full bg-ja-mid shrink-0" />
+              Maceta minimalista curada
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-2 block h-1 w-1 rounded-full bg-ja-mid shrink-0" />
+              Labubu amazónico de fibra de chambira (sorpresa — el animal del mes)
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-2 block h-1 w-1 rounded-full bg-ja-mid shrink-0" />
+              Tarjeta de agradecimiento de la artesana
+            </li>
           </ul>
-          <p className="mt-3 text-sm text-ja-ink/70">
-            Tejido por <span className="text-ja-dark font-medium">{plant.regenerative.labubu.artisan}</span>,
-            comunidad {plant.regenerative.labubu.community}, {plant.regenerative.labubu.region}.
+
+          <p className="mt-4 text-sm text-ja-ink/70">
+            El envío se realizará en un plazo de 24 a 48 horas en Lima Metropolitana.
           </p>
+
           <p className="mt-4 font-display text-2xl text-ja-terra">{plant.regenerative.priceRange}</p>
 
           <Button
@@ -160,7 +171,7 @@ function PlantDetailModalBody({ plant }: { plant: Plant }) {
             className="mt-6"
             onClick={() => window.open(waUrl, "_blank", "noopener,noreferrer")}
           >
-            <MessageCircle size={18} /> Quiero esta →
+            <MessageCircle size={18} /> ¡La quiero! →
           </Button>
         </div>
       </div>
