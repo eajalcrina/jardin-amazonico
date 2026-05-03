@@ -73,3 +73,22 @@ describe("appendPlantPurchaseLead", () => {
     expect(row?.[7]).toBe("web-plant");
   });
 });
+
+describe("appendLandscapingLead", () => {
+  it("calls sheets.values.append with Landscaping Leads range", async () => {
+    const { appendLandscapingLead } = await import("./sheets");
+    await appendLandscapingLead({
+      fullName: "María Test",
+      email: "maria@test.com",
+      phone: "+51999111333",
+      message: "Oficina pequeña en Miraflores",
+    });
+    expect(mockAppend).toHaveBeenCalled();
+    const lastCall = mockAppend.mock.calls.at(-1)?.[0];
+    expect(lastCall?.range).toBe("Landscaping Leads!A:F");
+    const row = lastCall?.requestBody?.values?.[0];
+    expect(row?.[1]).toBe("María Test");
+    expect(row?.[3]).toBe("+51999111333");
+    expect(row?.[5]).toBe("web-paisajismo");
+  });
+});

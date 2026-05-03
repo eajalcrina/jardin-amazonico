@@ -90,3 +90,35 @@ export async function appendPlantPurchaseLead(
     },
   });
 }
+
+export type LandscapingLeadInput = {
+  fullName: string;
+  email: string;
+  phone: string;
+  message?: string;
+};
+
+export async function appendLandscapingLead(
+  input: LandscapingLeadInput,
+): Promise<void> {
+  const { sheets, spreadsheetId } = getSheetsClient();
+  const timestamp = new Date().toISOString();
+
+  const row = [
+    timestamp,
+    input.fullName,
+    input.email,
+    input.phone,
+    input.message ?? "",
+    "web-paisajismo",
+  ];
+
+  await sheets.spreadsheets.values.append({
+    spreadsheetId,
+    range: "Landscaping Leads!A:F",
+    valueInputOption: "USER_ENTERED",
+    requestBody: {
+      values: [row],
+    },
+  });
+}
