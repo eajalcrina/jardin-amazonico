@@ -24,7 +24,7 @@ export function Accordion({ items }: { items: AccordionItem[] }) {
               onClick={() => setOpenId(isOpen ? null : item.id)}
               aria-expanded={isOpen}
               aria-controls={`acc-${item.id}`}
-              className="flex w-full items-center justify-between gap-6 py-5 text-left"
+              className="flex w-full items-center justify-between gap-6 py-5 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ja-mid"
             >
               <span className="font-display text-lg md:text-xl text-ja-dark">
                 {item.question}
