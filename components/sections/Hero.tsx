@@ -85,7 +85,7 @@ export function Hero() {
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
           <Link href="#quiz">
-            <Button size="lg" fullWidth className="sm:w-auto">
+            <Button variant="primary-dark" size="lg" fullWidth className="sm:w-auto">
               Encuentra tu planta →
             </Button>
           </Link>
