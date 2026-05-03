@@ -1,12 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
-import * as Icons from "lucide-react";
-import { LucideIcon, PawPrint } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Badge } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
+import { ArrowRight, PawPrint } from "lucide-react";
 import type { Plant } from "@/lib/plants";
 
 type PlantCardProps = {
@@ -20,84 +15,80 @@ const TIER_LABEL: Record<Plant["tier"], string> = {
   B: "Básico",
 };
 
-const TIER_TONE: Record<Plant["tier"], "signature" | "premium" | "basic"> = {
-  S: "signature",
-  P: "premium",
-  B: "basic",
+const TIER_PILL: Record<Plant["tier"], string> = {
+  S: "bg-ja-gold/95 text-ja-dark",
+  P: "bg-ja-mid/95 text-ja-paper",
+  B: "bg-ja-paper/85 text-ja-dark",
 };
 
 export function PlantCard({ plant, onSelect }: PlantCardProps) {
-  const [showInfo, setShowInfo] = useState(false);
-
-  const BenefitIcon = (Icons[
-    plant.benefit.iconLucide
-      .split("-")
-      .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
-      .join("") as keyof typeof Icons
-  ] ?? Icons.Leaf) as LucideIcon;
-
   const priceFrom =
     plant.regenerative.priceRange.split("–")[0]?.trim() ??
     plant.regenerative.priceRange;
 
   return (
-    <article className="group flex flex-col rounded-3xl bg-ja-paper border border-ja-dark/10 overflow-hidden transition-shadow hover:shadow-lg">
-      <button
-        type="button"
-        onClick={() => setShowInfo((v) => !v)}
-        aria-expanded={showInfo}
-        aria-label={showInfo ? `Ocultar info de ${plant.name}` : `Ver info de ${plant.name}`}
-        className="relative aspect-[4/5] overflow-hidden bg-ja-cream w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ja-mid"
-      >
+    <button
+      type="button"
+      onClick={() => onSelect(plant)}
+      aria-label={`Ver detalle de ${plant.name}`}
+      className="group relative block w-full text-left rounded-3xl overflow-hidden bg-ja-cream transition-all duration-500 hover:shadow-[0_24px_60px_-25px_rgba(15,42,28,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ja-mid focus-visible:ring-offset-2 focus-visible:ring-offset-ja-paper"
+    >
+      <div className="relative aspect-[4/5] overflow-hidden">
         <Image
           src={plant.images[0] ?? ""}
           alt={plant.imageAlt}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+          className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
           loading="lazy"
         />
-        <div className="absolute top-3 left-3 flex gap-2">
-          <Badge tone={TIER_TONE[plant.tier]}>{TIER_LABEL[plant.tier]}</Badge>
-          {plant.petSafe && (
-            <Badge tone="pet">
-              <PawPrint size={12} /> Pet friendly
-            </Badge>
-          )}
+
+        {/* Top row — name pill + tier + pet */}
+        <div className="absolute top-4 left-4 right-4 flex items-start justify-between gap-3 z-10">
+          <h3 className="font-display text-base md:text-lg leading-tight text-ja-dark px-3 py-1.5 rounded-full bg-ja-paper/90 backdrop-blur-sm shadow-[0_2px_8px_-2px_rgba(15,42,28,0.18)] max-w-[70%] truncate">
+            {plant.name}
+          </h3>
+          <div className="flex flex-col items-end gap-1.5 shrink-0">
+            <span
+              className={[
+                "inline-flex items-center px-2.5 py-1 rounded-full text-[10px] uppercase tracking-[0.1em] font-medium backdrop-blur-sm",
+                TIER_PILL[plant.tier],
+              ].join(" ")}
+            >
+              {TIER_LABEL[plant.tier]}
+            </span>
+            {plant.petSafe && (
+              <span
+                aria-label="Pet friendly"
+                className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-ja-paper/90 text-ja-dark backdrop-blur-sm"
+              >
+                <PawPrint size={11} />
+              </span>
+            )}
+          </div>
         </div>
 
-        <AnimatePresence>
-          {showInfo && (
-            <motion.div
-              initial={{ y: "100%" }}
-              animate={{ y: 0 }}
-              exit={{ y: "100%" }}
-              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="absolute inset-x-0 bottom-0 bg-ja-paper/95 backdrop-blur-sm p-5 text-left"
-            >
-              <h3 className="font-display text-lg text-ja-dark">{plant.name}</h3>
-              <p className="text-xs italic text-ja-ink/60">{plant.scientificName}</p>
-              <p className="mt-2 text-sm font-medium text-ja-terra">
-                Desde {priceFrom}
+        {/* Bottom — gradient + price + arrow (always visible, refined) */}
+        <div className="absolute inset-x-0 bottom-0 z-10 pt-14 pb-4 px-5 bg-gradient-to-t from-ja-paper via-ja-paper/85 to-ja-paper/0">
+          <div className="flex items-end justify-between gap-3">
+            <div className="min-w-0">
+              <p className="text-[10px] uppercase tracking-[0.18em] text-ja-ink/55">
+                Desde
               </p>
-              <p className="mt-2 flex items-start gap-2 text-xs text-ja-ink/75">
-                <BenefitIcon size={14} className="mt-0.5 shrink-0 text-ja-mid" />
-                <span className="line-clamp-2">{plant.benefit.text}</span>
+              <p className="font-display text-lg md:text-xl text-ja-terra leading-none mt-1">
+                {priceFrom}
               </p>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </button>
-
-      <div className="p-4">
-        <Button
-          fullWidth
-          size="sm"
-          onClick={() => onSelect(plant)}
-        >
-          Me gusta →
-        </Button>
+            </div>
+            <span className="inline-flex items-center gap-1 text-sm font-medium text-ja-dark pb-0.5 transition-colors group-hover:text-ja-mid">
+              Ver
+              <ArrowRight
+                size={14}
+                className="transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-1.5"
+              />
+            </span>
+          </div>
+        </div>
       </div>
-    </article>
+    </button>
   );
 }
