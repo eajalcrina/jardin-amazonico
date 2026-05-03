@@ -50,12 +50,13 @@ describe("buildPlantWhatsAppUrl", () => {
     expect(decoded).toContain("Alocasia 'Amazonica'");
   });
 
-  it("includes labubu and artisan info", () => {
+  it("includes plant name, surprise labubu mention, and pot description", () => {
     const url = buildPlantWhatsAppUrl(samplePlant, "51999111222");
     const decoded = decodeURIComponent(url.split("?text=")[1] ?? "");
-    expect(decoded).toContain("Rana Venenosa");
-    expect(decoded).toContain("Rosa Cumapa");
-    expect(decoded).toContain("Shipibo-Conibo");
+    expect(decoded).toContain("Alocasia Amazónica");
+    expect(decoded).toContain("Maceta minimalista curada");
+    expect(decoded).toContain("(sorpresa");
+    expect(decoded).toContain("agradecimiento de la artesana");
   });
 
   it("includes price range", () => {

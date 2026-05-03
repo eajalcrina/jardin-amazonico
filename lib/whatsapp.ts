@@ -2,7 +2,7 @@ import type { Plant } from "./plants";
 
 export function buildPlantWhatsAppUrl(plant: Plant, waNumber: string): string {
   const { name, scientificName, regenerative } = plant;
-  const { labubu, priceRange, pot, includes } = regenerative;
+  const { priceRange } = regenerative;
 
   const message = [
     "Hola 🌿 Vengo de la web de Jardín Amazónico.",
@@ -11,12 +11,13 @@ export function buildPlantWhatsAppUrl(plant: Plant, waNumber: string): string {
     `*${name}* (_${scientificName}_)`,
     "",
     "Incluye:",
-    `- ${includes[0] ?? `Planta ${name}`}`,
-    `- Maceta ${pot}`,
-    `- Labubu ${labubu.animal} tejido en chambira por ${labubu.artisan}, comunidad ${labubu.community} (${labubu.region})`,
-    "- Tarjeta dedicatoria personalizada",
+    `- Planta ${name}`,
+    "- Maceta minimalista curada",
+    "- Labubu amazónico de fibra de chambira (sorpresa — el animal del mes)",
+    "- Tarjeta de agradecimiento de la artesana",
     "",
     `Precio: ${priceRange}`,
+    "Envío: 24 a 48 horas en Lima",
     "",
     "¿Tienen disponibilidad?",
   ].join("\n");
