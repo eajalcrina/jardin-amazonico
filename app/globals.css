@@ -49,4 +49,28 @@
   .form-input {
     @apply w-full rounded-xl border border-ja-dark/15 bg-ja-paper px-4 py-3 text-base text-ja-ink placeholder:text-ja-ink/40 focus:border-ja-dark focus:outline-none focus:ring-2 focus:ring-ja-mid;
   }
+
+  .btn-kene {
+    background-color: var(--color-ja-paper);
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        transparent 0px,
+        transparent 4px,
+        color-mix(in oklab, var(--color-ja-darker) 18%, transparent) 4px,
+        color-mix(in oklab, var(--color-ja-darker) 18%, transparent) 5px,
+        transparent 5px,
+        transparent 11px,
+        color-mix(in oklab, var(--color-ja-darker) 12%, transparent) 11px,
+        color-mix(in oklab, var(--color-ja-darker) 12%, transparent) 12px,
+        transparent 12px,
+        transparent 18px
+      );
+    background-size: 100% 18px;
+    background-repeat: repeat;
+  }
+
+  .btn-kene:hover {
+    background-color: var(--color-ja-cream);
+  }
 }

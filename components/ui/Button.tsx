@@ -5,7 +5,7 @@ type Size = "sm" | "md" | "lg";
 
 const VARIANT_STYLES: Record<Variant, string> = {
   primary:
-    "bg-ja-dark text-ja-paper hover:bg-ja-mid focus-visible:ring-ja-mid",
+    "btn-kene text-ja-darker hover:text-ja-dark border border-ja-darker/20 hover:border-ja-darker/40 focus-visible:ring-ja-mid",
   secondary:
     "bg-transparent text-ja-dark border border-ja-dark hover:bg-ja-dark hover:text-ja-paper focus-visible:ring-ja-dark",
   ghost:
@@ -33,7 +33,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         className={[
-          "inline-flex items-center justify-center gap-2 rounded-full font-medium transition-colors",
+          "inline-flex items-center justify-center gap-2 rounded-full font-medium transition-colors relative overflow-hidden",
           "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-ja-paper",
           "disabled:opacity-40 disabled:pointer-events-none",
           VARIANT_STYLES[variant],
