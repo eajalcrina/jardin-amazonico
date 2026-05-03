@@ -1,0 +1,145 @@
+"use client";
+
+import Image from "next/image";
+import { Sun, Droplet, CloudFog, AlertTriangle, PawPrint, MessageCircle } from "lucide-react";
+import { Modal } from "@/components/ui/Modal";
+import { Button } from "@/components/ui/Button";
+import { Badge } from "@/components/ui/Badge";
+import { KenePattern } from "@/components/ui/KenePattern";
+import { buildPlantWhatsAppUrl } from "@/lib/whatsapp";
+import type { Plant } from "@/lib/plants";
+
+const TIER_LABEL: Record<Plant["tier"], string> = {
+  S: "Signature",
+  P: "Premium",
+  B: "Básico",
+};
+
+const TIER_TONE: Record<Plant["tier"], "signature" | "premium" | "basic"> = {
+  S: "signature",
+  P: "premium",
+  B: "basic",
+};
+
+type Props = {
+  plant: Plant | null;
+  onClose: () => void;
+};
+
+export function PlantDetailModal({ plant, onClose }: Props) {
+  if (!plant) {
+    return <Modal open={false} onClose={onClose}>{null}</Modal>;
+  }
+
+  const waNumber = process.env.NEXT_PUBLIC_WA_NUMBER ?? "51999999999";
+  const waUrl = buildPlantWhatsAppUrl(plant, waNumber);
+
+  return (
+    <Modal open={!!plant} onClose={onClose} maxWidth="max-w-3xl">
+      <div className="relative aspect-[4/3] bg-ja-cream">
+        <Image
+          src={plant.imageUrl}
+          alt={plant.imageAlt}
+          fill
+          sizes="(max-width: 768px) 100vw, 768px"
+          className="object-cover"
+        />
+        <div className="absolute top-4 left-4 flex gap-2">
+          <Badge tone={TIER_TONE[plant.tier]}>{TIER_LABEL[plant.tier]}</Badge>
+          {plant.petSafe && (
+            <Badge tone="pet">
+              <PawPrint size={12} /> Pet friendly
+            </Badge>
+          )}
+        </div>
+      </div>
+
+      <div className="px-6 md:px-10 py-8 md:py-10 space-y-6">
+        <div>
+          <h3 className="font-display text-3xl md:text-4xl text-ja-dark">
+            {plant.name}
+          </h3>
+          <p className="mt-1 italic text-ja-ink/60">{plant.scientificName}</p>
+        </div>
+
+        <p className="text-ja-ink/85 leading-relaxed">{plant.longDescription}</p>
+
+        <div className="relative overflow-hidden rounded-2xl bg-ja-cream p-5">
+          <div className="absolute inset-0 text-ja-mid">
+            <KenePattern opacity={0.06} />
+          </div>
+          <p className="relative text-sm text-ja-dark">
+            <span className="block uppercase tracking-wider text-xs text-ja-mid font-medium mb-1">
+              Beneficio
+            </span>
+            {plant.benefit.text}
+          </p>
+        </div>
+
+        <div>
+          <p className="uppercase tracking-wider text-xs text-ja-mid font-medium">
+            Cuidados
+          </p>
+          <ul className="mt-3 grid gap-3 sm:grid-cols-3 text-sm">
+            <li className="flex items-start gap-2">
+              <Sun size={16} className="mt-0.5 shrink-0 text-ja-mid" />
+              <span><span className="font-medium">Luz:</span> {plant.care.light}</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <Droplet size={16} className="mt-0.5 shrink-0 text-ja-mid" />
+              <span><span className="font-medium">Riego:</span> {plant.care.water}</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <CloudFog size={16} className="mt-0.5 shrink-0 text-ja-mid" />
+              <span><span className="font-medium">Humedad:</span> {plant.care.humidity}</span>
+            </li>
+          </ul>
+        </div>
+
+        {!plant.petSafe && (
+          <div className="rounded-xl bg-ja-sand/30 p-4 text-sm text-ja-ink flex gap-2">
+            <AlertTriangle size={16} className="mt-0.5 shrink-0 text-ja-terra" />
+            <span>No apta para mascotas. Esta planta es tóxica para gatos y perros si se ingiere.</span>
+          </div>
+        )}
+
+        {plant.seasonalWarningLima && (
+          <div className="rounded-xl bg-ja-cream p-4 text-sm text-ja-ink/80">
+            <span className="font-medium block">Aviso estacional:</span>
+            {plant.seasonalWarningLima}
+          </div>
+        )}
+
+        <div className="border-t border-ja-dark/10 pt-6">
+          <p className="uppercase tracking-wider text-xs text-ja-mid font-medium">
+            Opción Regenerativa
+          </p>
+          <ul className="mt-3 space-y-1 text-sm text-ja-ink/85">
+            {plant.regenerative.includes.map((item) => (
+              <li key={item} className="flex items-start gap-2">
+                <span className="mt-2 block h-1 w-1 rounded-full bg-ja-mid shrink-0" />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-3 text-sm text-ja-ink/70">
+            Tejido por <span className="text-ja-dark font-medium">{plant.regenerative.labubu.artisan}</span>,
+            comunidad {plant.regenerative.labubu.community}, {plant.regenerative.labubu.region}.
+          </p>
+          <p className="mt-4 font-display text-2xl text-ja-terra">
+            {plant.regenerative.priceRange}
+          </p>
+
+          <Button
+            fullWidth
+            size="lg"
+            className="mt-6"
+            onClick={() => window.open(waUrl, "_blank", "noopener,noreferrer")}
+          >
+            <MessageCircle size={18} /> Quiero esta →
+          </Button>
+        </div>
+      </div>
+    </Modal>
+  );
+}
