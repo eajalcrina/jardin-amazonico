@@ -35,7 +35,7 @@ export function Testimonials() {
               className="rounded-3xl bg-ja-cream p-7 md:p-8 border border-ja-dark/10 flex flex-col"
             >
               <p className="font-display italic text-lg text-ja-dark leading-snug">
-                "{t.quote}"
+                &ldquo;{t.quote}&rdquo;
               </p>
               <footer className="mt-6 pt-6 border-t border-ja-dark/10 text-sm">
                 <p className="font-medium text-ja-dark">{t.author}</p>

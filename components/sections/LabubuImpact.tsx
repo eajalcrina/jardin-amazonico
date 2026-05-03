@@ -68,8 +68,8 @@ export function LabubuImpact() {
 
         <blockquote className="mt-14 max-w-3xl">
           <p className="font-display italic text-2xl md:text-3xl text-ja-dark leading-snug">
-            "Cuando tejo el mono, pienso en mis hijos y en el río. Que alguien
-            en Lima lo tenga en su casa me hace sentir que el bosque llega lejos."
+            &ldquo;Cuando tejo el mono, pienso en mis hijos y en el río. Que alguien
+            en Lima lo tenga en su casa me hace sentir que el bosque llega lejos.&rdquo;
           </p>
           <footer className="mt-4 text-sm text-ja-ink/70">
             — <span className="font-medium text-ja-dark">Rosa Cumapa</span>,
