@@ -54,3 +54,9 @@ yarn-error.log*
 .cache/
 .parcel-cache/
 .turbo
+
+# Local-only reference materials (large)
+Referencias/Fotos/
+
+# Claude internal config
+.claude/
