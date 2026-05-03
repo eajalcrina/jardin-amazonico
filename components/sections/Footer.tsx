@@ -5,7 +5,7 @@ const WA_NUMBER = process.env.NEXT_PUBLIC_WA_NUMBER ?? "51999999999";
 export function Footer() {
   return (
     <footer className="bg-ja-dark text-ja-paper">
-      <div className="container mx-auto px-6 py-16 max-w-6xl">
+      <div className="container mx-auto px-6 py-16 max-w-5xl">
         <div className="grid gap-12 md:grid-cols-3">
           <div>
             <p className="font-display text-2xl">Jardín Amazónico</p>

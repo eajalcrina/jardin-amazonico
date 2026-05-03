@@ -21,8 +21,8 @@ const TESTIMONIALS = [
 
 export function Testimonials() {
   return (
-    <section className="bg-ja-paper py-20 md:py-28">
-      <div className="container mx-auto px-6 max-w-6xl">
+    <section className="bg-ja-paper py-16 md:py-24">
+      <div className="container mx-auto px-6 max-w-5xl">
         <p className="text-xs uppercase tracking-[0.2em] text-ja-mid">Comunidad</p>
         <h2 className="mt-3 font-display text-3xl md:text-5xl text-ja-dark max-w-3xl">
           Los que ya tienen su selva adentro.

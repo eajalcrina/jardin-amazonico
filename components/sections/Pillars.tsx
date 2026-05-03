@@ -20,8 +20,8 @@ const PILLARS = [
 
 export function Pillars() {
   return (
-    <section className="bg-ja-cream py-20 md:py-28">
-      <div className="container mx-auto px-6 max-w-6xl">
+    <section className="bg-ja-cream py-16 md:py-24">
+      <div className="container mx-auto px-6 max-w-5xl">
         <p className="text-xs uppercase tracking-[0.2em] text-ja-mid">
           Nuestra propuesta
         </p>

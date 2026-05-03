@@ -21,7 +21,7 @@ export function LabubuImpact() {
   const reel = [...LABUBU_PHOTOS, ...LABUBU_PHOTOS];
 
   return (
-    <section id="labubu" className="relative bg-ja-cream py-20 md:py-28 overflow-hidden">
+    <section id="labubu" className="relative bg-ja-cream py-16 md:py-24 overflow-hidden">
       <div className="absolute inset-0 text-ja-mid">
         <KenePattern opacity={0.04} />
       </div>
