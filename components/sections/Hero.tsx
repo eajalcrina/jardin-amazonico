@@ -17,7 +17,7 @@ const ROTATION_IMAGES = [
   "/images/general-8.jpg",
 ];
 
-const ROTATE_INTERVAL_MS = 500;
+const ROTATE_INTERVAL_MS = 5000;
 
 export function Hero() {
   const reduceMotion = useReducedMotion();
@@ -41,7 +41,7 @@ export function Hero() {
         {ROTATION_IMAGES.map((src, i) => (
           <div
             key={src}
-            className="absolute inset-0 transition-opacity duration-300 ease-in-out"
+            className="absolute inset-0 transition-opacity duration-[1200ms] ease-in-out"
             style={{
               opacity: i === idx ? 1 : 0,
               filter: "saturate(0.85) brightness(0.88)",
