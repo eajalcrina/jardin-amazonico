@@ -76,6 +76,15 @@ export function LabubuImpact() {
             artesana Shipibo-Conibo, Ucayali.
           </footer>
         </blockquote>
+
+        <div className="mt-8">
+          <a
+            href="#faq"
+            className="inline-flex items-center gap-2 text-ja-dark font-medium underline underline-offset-4 hover:text-ja-mid"
+          >
+            Conoce más sobre el modelo regenerativo →
+          </a>
+        </div>
       </div>
     </section>
   );
