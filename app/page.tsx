@@ -5,6 +5,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Pillars } from "@/components/sections/Pillars";
 import { Quiz } from "@/components/sections/Quiz";
 import { Catalog } from "@/components/sections/Catalog";
+import { Membership } from "@/components/sections/Membership";
 import { Footer } from "@/components/sections/Footer";
 import { PlantDetailModal } from "@/components/catalog/PlantDetailModal";
 import type { QuizAnswers } from "@/lib/quiz-types";
@@ -26,6 +27,7 @@ export default function Home() {
         quizAnswers={quizAnswers}
         onSelectPlant={setSelectedPlant}
       />
+      <Membership />
       <PlantDetailModal
         plant={selectedPlant}
         onClose={() => setSelectedPlant(null)}
