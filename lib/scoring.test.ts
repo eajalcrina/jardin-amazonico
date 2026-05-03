@@ -109,7 +109,7 @@ describe("getRecommendations", () => {
     const recs = getRecommendations(PLANTS, answers);
     const scores = recs.map((p) => calculateScore(p, answers));
     for (let i = 0; i < scores.length - 1; i++) {
-      expect(scores[i]).toBeGreaterThanOrEqual(scores[i + 1]);
+      expect(scores[i]!).toBeGreaterThanOrEqual(scores[i + 1]!);
     }
   });
 });
