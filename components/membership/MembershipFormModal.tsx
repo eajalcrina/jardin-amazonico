@@ -73,7 +73,7 @@ export function MembershipFormModal({ open, initialPlan, onClose }: Props) {
   if (success) {
     const mpLink = MP_LINKS[plan];
     return (
-      <Modal open={open} onClose={handleClose} maxWidth="max-w-lg">
+      <Modal open={open} onClose={handleClose} maxWidth="max-w-lg" title={`Suscripción al plan ${plan}`}>
         <div className="px-6 md:px-10 py-10 text-center">
           <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-ja-light text-ja-dark mb-4">
             <Check size={28} />
@@ -106,7 +106,7 @@ export function MembershipFormModal({ open, initialPlan, onClose }: Props) {
   }
 
   return (
-    <Modal open={open} onClose={handleClose} maxWidth="max-w-lg">
+    <Modal open={open} onClose={handleClose} maxWidth="max-w-lg" title={`Suscripción al plan ${plan}`}>
       <div className="px-6 md:px-10 py-8 md:py-10">
         <p className="text-xs uppercase tracking-[0.2em] text-ja-mid">Membresía</p>
         <h3 className="mt-2 font-display text-3xl text-ja-dark">
