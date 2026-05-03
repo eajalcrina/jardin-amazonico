@@ -58,3 +58,15 @@ export type Plant = {
 };
 
 export type PlantsCatalog = Plant[];
+
+import plantsData from "@/data/plants.json";
+
+export const PLANTS: PlantsCatalog = plantsData as PlantsCatalog;
+
+export function getPlantById(id: string): Plant | undefined {
+  return PLANTS.find((p) => p.id === id);
+}
+
+export function getPlantBySlug(slug: string): Plant | undefined {
+  return PLANTS.find((p) => p.slug === slug);
+}
