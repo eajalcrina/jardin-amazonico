@@ -42,4 +42,17 @@ describe("calculateScore", () => {
     const score = calculateScore(samplePetUnsafe, answers);
     expect(score).toBeLessThan(0);
   });
+
+  it("scores +9 for exotic+S match: type +3, tier S +1, size +2, care +2, purpose me +1", () => {
+    const sampleExoticS: Plant = {
+      ...samplePetUnsafe,
+      id: "TEST-2",
+      tier: "S",
+      petSafe: true,
+      tags: { type: ["exotic", "indoor"], size: ["medium"], care: ["amateur"] },
+    };
+    const answers: QuizAnswers = { ...baseAnswers, type: "exotic" };
+    const score = calculateScore(sampleExoticS, answers);
+    expect(score).toBe(9);
+  });
 });
