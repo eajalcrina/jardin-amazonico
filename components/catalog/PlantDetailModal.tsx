@@ -1,7 +1,7 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
-import { useState, useEffect } from "react";
 import { Sun, Droplet, CloudFog, AlertTriangle, PawPrint, MessageCircle } from "lucide-react";
 import { Modal } from "@/components/ui/Modal";
 import { Button } from "@/components/ui/Button";
@@ -28,22 +28,26 @@ type Props = {
 };
 
 export function PlantDetailModal({ plant, onClose }: Props) {
+  return (
+    <Modal
+      open={!!plant}
+      onClose={onClose}
+      maxWidth="max-w-3xl"
+      title={plant ? `Detalle de ${plant.name}` : undefined}
+    >
+      {plant ? <PlantDetailModalBody key={plant.id} plant={plant} /> : null}
+    </Modal>
+  );
+}
+
+function PlantDetailModalBody({ plant }: { plant: Plant }) {
   const [activeIdx, setActiveIdx] = useState(0);
-
-  useEffect(() => {
-    setActiveIdx(0);
-  }, [plant?.id]);
-
-  if (!plant) {
-    return <Modal open={false} onClose={onClose}>{null}</Modal>;
-  }
-
-  const mainSrc = plant.images[activeIdx] ?? plant.images[0] ?? "";
   const waNumber = process.env.NEXT_PUBLIC_WA_NUMBER ?? "51999999999";
   const waUrl = buildPlantWhatsAppUrl(plant, waNumber);
+  const mainSrc = plant.images[activeIdx] ?? plant.images[0] ?? "";
 
   return (
-    <Modal open={!!plant} onClose={onClose} maxWidth="max-w-3xl">
+    <>
       <div className="relative aspect-[4/3] bg-ja-cream">
         <Image
           key={mainSrc}
@@ -62,6 +66,7 @@ export function PlantDetailModal({ plant, onClose }: Props) {
           )}
         </div>
       </div>
+
       {plant.images.length > 1 && (
         <div className="flex gap-2 px-6 md:px-10 pt-4">
           {plant.images.map((src, i) => (
@@ -75,13 +80,7 @@ export function PlantDetailModal({ plant, onClose }: Props) {
               ].join(" ")}
               aria-label={`Foto ${i + 1} de ${plant.images.length}`}
             >
-              <Image
-                src={src}
-                alt=""
-                fill
-                sizes="80px"
-                className="object-cover"
-              />
+              <Image src={src} alt="" fill sizes="80px" className="object-cover" />
             </button>
           ))}
         </div>
@@ -89,9 +88,7 @@ export function PlantDetailModal({ plant, onClose }: Props) {
 
       <div className="px-6 md:px-10 py-8 md:py-10 space-y-6">
         <div>
-          <h3 className="font-display text-3xl md:text-4xl text-ja-dark">
-            {plant.name}
-          </h3>
+          <h3 className="font-display text-3xl md:text-4xl text-ja-dark">{plant.name}</h3>
           <p className="mt-1 italic text-ja-ink/60">{plant.scientificName}</p>
         </div>
 
@@ -110,9 +107,7 @@ export function PlantDetailModal({ plant, onClose }: Props) {
         </div>
 
         <div>
-          <p className="uppercase tracking-wider text-xs text-ja-mid font-medium">
-            Cuidados
-          </p>
+          <p className="uppercase tracking-wider text-xs text-ja-mid font-medium">Cuidados</p>
           <ul className="mt-3 grid gap-3 sm:grid-cols-3 text-sm">
             <li className="flex items-start gap-2">
               <Sun size={16} className="mt-0.5 shrink-0 text-ja-mid" />
@@ -144,9 +139,7 @@ export function PlantDetailModal({ plant, onClose }: Props) {
         )}
 
         <div className="border-t border-ja-dark/10 pt-6">
-          <p className="uppercase tracking-wider text-xs text-ja-mid font-medium">
-            Opción Regenerativa
-          </p>
+          <p className="uppercase tracking-wider text-xs text-ja-mid font-medium">Opción Regenerativa</p>
           <ul className="mt-3 space-y-1 text-sm text-ja-ink/85">
             {plant.regenerative.includes.map((item) => (
               <li key={item} className="flex items-start gap-2">
@@ -159,9 +152,7 @@ export function PlantDetailModal({ plant, onClose }: Props) {
             Tejido por <span className="text-ja-dark font-medium">{plant.regenerative.labubu.artisan}</span>,
             comunidad {plant.regenerative.labubu.community}, {plant.regenerative.labubu.region}.
           </p>
-          <p className="mt-4 font-display text-2xl text-ja-terra">
-            {plant.regenerative.priceRange}
-          </p>
+          <p className="mt-4 font-display text-2xl text-ja-terra">{plant.regenerative.priceRange}</p>
 
           <Button
             fullWidth
@@ -173,6 +164,6 @@ export function PlantDetailModal({ plant, onClose }: Props) {
           </Button>
         </div>
       </div>
-    </Modal>
+    </>
   );
 }
