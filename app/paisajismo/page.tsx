@@ -8,108 +8,22 @@ import { Button } from "@/components/ui/Button";
 import { KeneDivider } from "@/components/ui/KeneDivider";
 import { Footer } from "@/components/sections/Footer";
 import { LandscapingCheckoutModal } from "@/components/paisajismo/LandscapingCheckoutModal";
+import { ProjectCarousel, type CarouselProject } from "@/components/paisajismo/ProjectCarousel";
 
-const PROJECTS = [
-  {
-    n: "I",
-    title: "Casa Verde · I",
-    type: "Residencial",
-    location: "Miraflores, Lima",
-    year: "2025",
-    image: "/images/paisajismo/casa-verde-1.jpg",
-    description:
-      "Residencia familiar en Miraflores. 12 especies de interior y un jardín vertical en sala — una pared viva que se transforma con la luz del día.",
-  },
-  {
-    n: "II",
-    title: "Oficina Verde · I",
-    type: "Corporativo",
-    location: "San Isidro, Lima",
-    year: "2025",
-    image: "/images/paisajismo/oficina-verde-1.jpg",
-    description:
-      "Estudio creativo de 280 m². 28 plantas distribuidas estratégicamente entre zonas de trabajo y descanso, reduciendo ruido y estrés visual.",
-  },
-  {
-    n: "III",
-    title: "Casa Verde · II",
-    type: "Residencial",
-    location: "Barranco, Lima",
-    year: "2025",
-    image: "/images/paisajismo/casa-verde-2.jpg",
-    description:
-      "Departamento con terraza orientada al oeste. Composición tropical seleccionada para tolerar el sol intenso de las tardes limeñas.",
-  },
-  {
-    n: "IV",
-    title: "Oficina Verde · II",
-    type: "Corporativo",
-    location: "Miraflores, Lima",
-    year: "2024",
-    image: "/images/paisajismo/oficina-verde-2.jpg",
-    description:
-      "Lobby de edificio corporativo. Composición de Filodendros y Monsteras de gran formato como pieza arquitectónica de bienvenida.",
-  },
-  {
-    n: "V",
-    title: "Casa Verde · III",
-    type: "Residencial",
-    location: "La Molina, Lima",
-    year: "2024",
-    image: "/images/paisajismo/casa-verde-3.jpg",
-    description:
-      "Casa con jardín de invierno integrado al living. Especies de bajo mantenimiento seleccionadas para una familia con dos perros.",
-  },
-  {
-    n: "VI",
-    title: "Oficina Verde · III",
-    type: "Corporativo",
-    location: "San Isidro, Lima",
-    year: "2024",
-    image: "/images/paisajismo/oficina-verde-3.jpg",
-    description:
-      "Sala de reuniones premium. Cuerno de Alce montado en pared como pieza arquitectónica — vegetación que se lee como obra de arte.",
-  },
-  {
-    n: "VII",
-    title: "Casa Verde · IV",
-    type: "Residencial",
-    location: "San Isidro, Lima",
-    year: "2024",
-    image: "/images/paisajismo/casa-verde-4.jpg",
-    description:
-      "Loft con doble altura. Plantas de colección — Filodendro Gloriosum y Anturio Cristalino — como protagonistas del espacio.",
-  },
-  {
-    n: "VIII",
-    title: "Oficina Verde · IV",
-    type: "Corporativo",
-    location: "San Isidro, Lima",
-    year: "2024",
-    image: "/images/paisajismo/oficina-verde-4.jpg",
-    description:
-      "Espacio de coworking de 450 m². Vegetación distribuida en cápsulas verdes que organizan el flujo de circulación.",
-  },
-  {
-    n: "IX",
-    title: "Oficina Verde · V",
-    type: "Corporativo",
-    location: "Miraflores, Lima",
-    year: "2023",
-    image: "/images/paisajismo/oficina-verde-5.jpg",
-    description:
-      "Showroom inmobiliario. Plantas de alto impacto visual con renovación trimestral según la temporada.",
-  },
-  {
-    n: "X",
-    title: "Oficina Verde · VI",
-    type: "Corporativo",
-    location: "La Molina, Lima",
-    year: "2023",
-    image: "/images/paisajismo/oficina-verde-6.jpg",
-    description:
-      "Oficinas administrativas. Mantenimiento mensual incluido con rotación estacional para mantener la frescura visual del espacio.",
-  },
+const RESIDENTIAL_PROJECTS: CarouselProject[] = [
+  { n: "I", title: "Casa Verde · I", type: "Residencial", location: "Miraflores", year: "2025", image: "/images/paisajismo/casa-verde-1.jpg" },
+  { n: "II", title: "Casa Verde · II", type: "Residencial", location: "Barranco", year: "2025", image: "/images/paisajismo/casa-verde-2.jpg" },
+  { n: "III", title: "Casa Verde · III", type: "Residencial", location: "La Molina", year: "2024", image: "/images/paisajismo/casa-verde-3.jpg" },
+  { n: "IV", title: "Casa Verde · IV", type: "Residencial", location: "San Isidro", year: "2024", image: "/images/paisajismo/casa-verde-4.jpg" },
+];
+
+const CORPORATE_PROJECTS: CarouselProject[] = [
+  { n: "I", title: "Oficina Verde · I", type: "Corporativo", location: "San Isidro", year: "2025", image: "/images/paisajismo/oficina-verde-1.jpg" },
+  { n: "II", title: "Oficina Verde · II", type: "Corporativo", location: "Miraflores", year: "2024", image: "/images/paisajismo/oficina-verde-2.jpg" },
+  { n: "III", title: "Oficina Verde · III", type: "Corporativo", location: "San Isidro", year: "2024", image: "/images/paisajismo/oficina-verde-3.jpg" },
+  { n: "IV", title: "Oficina Verde · IV", type: "Corporativo", location: "San Isidro", year: "2024", image: "/images/paisajismo/oficina-verde-4.jpg" },
+  { n: "V", title: "Oficina Verde · V", type: "Corporativo", location: "Miraflores", year: "2023", image: "/images/paisajismo/oficina-verde-5.jpg" },
+  { n: "VI", title: "Oficina Verde · VI", type: "Corporativo", location: "La Molina", year: "2023", image: "/images/paisajismo/oficina-verde-6.jpg" },
 ];
 
 const SERVICES = [
@@ -245,68 +159,23 @@ export default function PaisajismoPage() {
         </div>
       </section>
 
-      {/* Portfolio — alternating image / text rows */}
-      <section className="bg-ja-paper py-16 md:py-24" id="portafolio">
-        <div className="container mx-auto px-6 max-w-6xl">
-          <p className="text-xs uppercase tracking-[0.2em] text-ja-mid">Portafolio</p>
-          <h2 className="mt-3 font-display text-3xl md:text-5xl text-ja-dark max-w-3xl">
-            Proyectos seleccionados.
-          </h2>
-          <p className="mt-3 text-ja-ink/75 max-w-2xl">
-            Una selección de espacios donde el verde es protagonista — desde
-            intervenciones íntimas hasta instalaciones corporativas a escala.
-          </p>
-        </div>
+      {/* Portfolio — Casa Verde carousel */}
+      <div id="portafolio">
+        <ProjectCarousel
+          projects={RESIDENTIAL_PROJECTS}
+          eyebrow="Portafolio · Residencial"
+          headline="Casa Verde."
+          intro="Cuatro residencias donde el verde se integra a la arquitectura del hogar."
+        />
+      </div>
 
-        <div className="mt-16 space-y-20 md:space-y-28">
-          {PROJECTS.map((project, idx) => {
-            const reverse = idx % 2 === 1;
-            return (
-              <div
-                key={project.title}
-                className="container mx-auto px-6 max-w-6xl"
-              >
-                <div
-                  className={[
-                    "grid gap-8 md:gap-14 items-center",
-                    "md:grid-cols-2",
-                    reverse ? "md:[&>*:first-child]:order-2" : "",
-                  ].join(" ")}
-                >
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
-                    <Image
-                      src={project.image}
-                      alt={`${project.title} — ${project.location}`}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-cover transition-transform duration-700 hover:scale-[1.02]"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-3">
-                    <p className="font-display italic text-sm text-ja-mid">
-                      {project.n}
-                    </p>
-                    <h3 className="font-display text-2xl md:text-4xl text-ja-dark leading-tight">
-                      {project.title}
-                    </h3>
-                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs uppercase tracking-wider text-ja-ink/55">
-                      <span>{project.type}</span>
-                      <span aria-hidden>·</span>
-                      <span>{project.location}</span>
-                      <span aria-hidden>·</span>
-                      <span>{project.year}</span>
-                    </div>
-                    <p className="mt-3 text-ja-ink/80 leading-relaxed">
-                      {project.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
+      {/* Portfolio — Oficina Verde carousel */}
+      <ProjectCarousel
+        projects={CORPORATE_PROJECTS}
+        eyebrow="Portafolio · Corporativo"
+        headline="Oficina Verde."
+        intro="Seis intervenciones en oficinas, lobbies y espacios de trabajo en Lima."
+      />
 
       <div className="bg-ja-cream py-3 text-ja-mid">
         <KeneDivider opacity={0.5} />
