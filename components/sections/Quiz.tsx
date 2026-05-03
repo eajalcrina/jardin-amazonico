@@ -54,7 +54,7 @@ export function Quiz({ onComplete, onReset }: QuizProps) {
     return (
       <section
         id="quiz"
-        className="bg-ja-paper py-16 md:py-24"
+        className="bg-ja-paper py-14 md:py-20"
       >
         <div className="container mx-auto px-6 max-w-2xl text-center">
           <p className="text-xs uppercase tracking-[0.2em] text-ja-mid">
@@ -79,8 +79,8 @@ export function Quiz({ onComplete, onReset }: QuizProps) {
   }
 
   return (
-    <section id="quiz" className="bg-ja-paper py-16 md:py-24">
-      <div className="container mx-auto px-6 max-w-3xl">
+    <section id="quiz" className="bg-ja-paper py-14 md:py-20">
+      <div className="container mx-auto px-6 max-w-2xl">
         <ProgressBar total={totalSteps} current={stepIndex} />
 
         <AnimatePresence mode="wait">
@@ -100,7 +100,12 @@ export function Quiz({ onComplete, onReset }: QuizProps) {
             </h2>
             <p className="mt-2 text-ja-ink/70">{question.subtitle}</p>
 
-            <div className="mt-8 grid gap-3 sm:grid-cols-2">
+            <div
+              className={[
+                "mt-8 grid gap-3",
+                question.options.length === 3 ? "sm:grid-cols-3" : "sm:grid-cols-2",
+              ].join(" ")}
+            >
               {question.options.map((opt) => (
                 <OptionCard
                   key={opt.value}
