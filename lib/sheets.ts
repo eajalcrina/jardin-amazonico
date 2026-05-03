@@ -1,0 +1,56 @@
+import { google } from "googleapis";
+
+export type MembershipLeadInput = {
+  fullName: string;
+  email: string;
+  district: string;
+  plan: "Bosque" | "Suelo";
+  message?: string;
+};
+
+function getSheetsClient() {
+  const clientEmail = process.env.GOOGLE_SHEETS_CLIENT_EMAIL;
+  const privateKey = process.env.GOOGLE_SHEETS_PRIVATE_KEY?.replace(/\\n/g, "\n");
+  const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
+
+  if (!clientEmail || !privateKey || !spreadsheetId) {
+    throw new Error(
+      "Missing Google Sheets env vars (CLIENT_EMAIL, PRIVATE_KEY, SPREADSHEET_ID)",
+    );
+  }
+
+  const auth = new google.auth.JWT({
+    email: clientEmail,
+    key: privateKey,
+    scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+  });
+
+  const sheets = google.sheets({ version: "v4", auth });
+  return { sheets, spreadsheetId };
+}
+
+export async function appendMembershipLead(
+  input: MembershipLeadInput,
+): Promise<void> {
+  const { sheets, spreadsheetId } = getSheetsClient();
+  const timestamp = new Date().toISOString();
+
+  const row = [
+    timestamp,
+    input.fullName,
+    input.email,
+    input.district,
+    input.plan,
+    input.message ?? "",
+    "web",
+  ];
+
+  await sheets.spreadsheets.values.append({
+    spreadsheetId,
+    range: "A:G",
+    valueInputOption: "USER_ENTERED",
+    requestBody: {
+      values: [row],
+    },
+  });
+}
