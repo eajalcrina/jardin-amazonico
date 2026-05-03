@@ -17,11 +17,16 @@
 
 @layer base {
   html {
+    scroll-behavior: smooth;
     font-family: var(--font-body);
     color: var(--color-ja-ink);
     background: var(--color-ja-paper);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  [id] {
+    scroll-margin-top: 1rem;
   }
 
   body {
