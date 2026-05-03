@@ -38,3 +38,9 @@
     color: var(--color-ja-dark);
   }
 }
+
+@layer components {
+  .form-input {
+    @apply w-full rounded-xl border border-ja-dark/15 bg-ja-paper px-4 py-3 text-base text-ja-ink placeholder:text-ja-ink/40 focus:border-ja-dark focus:outline-none focus:ring-2 focus:ring-ja-mid;
+  }
+}
