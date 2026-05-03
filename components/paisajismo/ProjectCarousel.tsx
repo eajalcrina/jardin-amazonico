@@ -72,7 +72,6 @@ export function ProjectCarousel({ projects, eyebrow, headline, intro }: Props) {
                   fill
                   sizes="(max-width: 1280px) 100vw, 1280px"
                   className="object-cover"
-                  priority={idx === 0}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ja-ink/35 via-transparent to-transparent" />
               </motion.div>
