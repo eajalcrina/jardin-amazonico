@@ -6,6 +6,10 @@ import { Pillars } from "@/components/sections/Pillars";
 import { Quiz } from "@/components/sections/Quiz";
 import { Catalog } from "@/components/sections/Catalog";
 import { Membership } from "@/components/sections/Membership";
+import { LabubuImpact } from "@/components/sections/LabubuImpact";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { FAQ } from "@/components/sections/FAQ";
+import { B2BTeaser } from "@/components/sections/B2BTeaser";
 import { Footer } from "@/components/sections/Footer";
 import { PlantDetailModal } from "@/components/catalog/PlantDetailModal";
 import type { QuizAnswers } from "@/lib/quiz-types";
@@ -28,6 +32,10 @@ export default function Home() {
         onSelectPlant={setSelectedPlant}
       />
       <Membership />
+      <LabubuImpact />
+      <Testimonials />
+      <FAQ />
+      <B2BTeaser />
       <PlantDetailModal
         plant={selectedPlant}
         onClose={() => setSelectedPlant(null)}
