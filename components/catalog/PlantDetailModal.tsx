@@ -7,7 +7,6 @@ import { Modal } from "@/components/ui/Modal";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { KenePattern } from "@/components/ui/KenePattern";
-import { buildPlantWhatsAppUrl } from "@/lib/whatsapp";
 import type { Plant } from "@/lib/plants";
 
 const TIER_LABEL: Record<Plant["tier"], string> = {
@@ -25,9 +24,10 @@ const TIER_TONE: Record<Plant["tier"], "signature" | "premium" | "basic"> = {
 type Props = {
   plant: Plant | null;
   onClose: () => void;
+  onPurchase: (plant: Plant) => void;
 };
 
-export function PlantDetailModal({ plant, onClose }: Props) {
+export function PlantDetailModal({ plant, onClose, onPurchase }: Props) {
   return (
     <Modal
       open={!!plant}
@@ -35,15 +35,13 @@ export function PlantDetailModal({ plant, onClose }: Props) {
       maxWidth="max-w-3xl"
       title={plant ? `Detalle de ${plant.name}` : undefined}
     >
-      {plant ? <PlantDetailModalBody key={plant.id} plant={plant} /> : null}
+      {plant ? <PlantDetailModalBody key={plant.id} plant={plant} onPurchase={onPurchase} /> : null}
     </Modal>
   );
 }
 
-function PlantDetailModalBody({ plant }: { plant: Plant }) {
+function PlantDetailModalBody({ plant, onPurchase }: { plant: Plant; onPurchase: (p: Plant) => void }) {
   const [activeIdx, setActiveIdx] = useState(0);
-  const waNumber = process.env.NEXT_PUBLIC_WA_NUMBER ?? "51999999999";
-  const waUrl = buildPlantWhatsAppUrl(plant, waNumber);
   const mainSrc = plant.images[activeIdx] ?? plant.images[0] ?? "";
 
   return (
@@ -169,7 +167,7 @@ function PlantDetailModalBody({ plant }: { plant: Plant }) {
             fullWidth
             size="lg"
             className="mt-6"
-            onClick={() => window.open(waUrl, "_blank", "noopener,noreferrer")}
+            onClick={() => onPurchase(plant)}
           >
             <MessageCircle size={18} /> ¡La quiero! →
           </Button>
