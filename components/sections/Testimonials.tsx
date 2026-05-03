@@ -27,8 +27,31 @@ export function Testimonials() {
         <h2 className="mt-3 font-display text-3xl md:text-5xl text-ja-dark max-w-3xl">
           Los que ya tienen su selva adentro.
         </h2>
+      </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+      {/* Mobile: horizontal scroll with snap */}
+      <div className="mt-12 md:hidden -mx-px">
+        <div className="flex gap-4 overflow-x-auto px-6 pb-4 snap-x snap-mandatory scrollbar-none">
+          {TESTIMONIALS.map((t) => (
+            <article
+              key={t.author}
+              className="snap-start shrink-0 w-[80vw] max-w-sm rounded-3xl bg-ja-cream p-7 border border-ja-dark/10 flex flex-col"
+            >
+              <p className="font-display italic text-lg text-ja-dark leading-snug">
+                &ldquo;{t.quote}&rdquo;
+              </p>
+              <footer className="mt-6 pt-6 border-t border-ja-dark/10 text-sm">
+                <p className="font-medium text-ja-dark">{t.author}</p>
+                <p className="text-ja-ink/60">{t.location} · {t.detail}</p>
+              </footer>
+            </article>
+          ))}
+        </div>
+      </div>
+
+      {/* Desktop: 3-col grid */}
+      <div className="container mx-auto px-6 max-w-5xl mt-12 hidden md:block">
+        <div className="grid gap-6 md:grid-cols-3">
           {TESTIMONIALS.map((t) => (
             <article
               key={t.author}
@@ -39,9 +62,7 @@ export function Testimonials() {
               </p>
               <footer className="mt-6 pt-6 border-t border-ja-dark/10 text-sm">
                 <p className="font-medium text-ja-dark">{t.author}</p>
-                <p className="text-ja-ink/60">
-                  {t.location} · {t.detail}
-                </p>
+                <p className="text-ja-ink/60">{t.location} · {t.detail}</p>
               </footer>
             </article>
           ))}
