@@ -2,15 +2,15 @@ import { describe, it, expect } from "vitest";
 import { PLANTS, getPlantById, getPlantBySlug } from "./plants";
 
 describe("plants catalog", () => {
-  it("loads 18 plants", () => {
-    expect(PLANTS).toHaveLength(18);
+  it("loads 29 plants", () => {
+    expect(PLANTS).toHaveLength(29);
   });
 
   it("each plant has unique id and slug", () => {
     const ids = new Set(PLANTS.map((p) => p.id));
     const slugs = new Set(PLANTS.map((p) => p.slug));
-    expect(ids.size).toBe(18);
-    expect(slugs.size).toBe(18);
+    expect(ids.size).toBe(29);
+    expect(slugs.size).toBe(29);
   });
 
   it("getPlantById finds existing plant", () => {

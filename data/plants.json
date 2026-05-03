@@ -6,7 +6,11 @@
     "scientificName": "Alocasia 'Amazonica'",
     "tier": "S",
     "iconLucide": "sparkles",
-    "imageUrl": "/images/plants/alocasia-amazonica.jpg",
+    "images": [
+      "/images/plants/alocasia-amazonica-1.jpg",
+      "/images/plants/alocasia-amazonica-2.jpg",
+      "/images/plants/alocasia-amazonica-3.jpg"
+    ],
     "imageAlt": "Alocasia Amazónica con hojas oscuras y venas blancas en maceta de cerámica",
     "tags": {
       "type": ["exotic", "indoor"],
@@ -45,13 +49,360 @@
     }
   },
   {
+    "id": "JA-S002",
+    "slug": "filodendro-pink-princess",
+    "name": "Filodendro Pink Princess",
+    "scientificName": "Philodendron erubescens 'Pink Princess'",
+    "tier": "S",
+    "iconLucide": "crown",
+    "images": [
+      "/images/plants/filodendro-pink-princess-1.jpg",
+      "/images/plants/filodendro-pink-princess-2.jpg",
+      "/images/plants/filodendro-pink-princess-3.jpg"
+    ],
+    "imageAlt": "Filodendro Pink Princess con manchas rosas irrepetibles sobre hojas verde oscuro en maceta de cerámica",
+    "tags": {
+      "type": ["exotic"],
+      "size": ["medium"],
+      "care": ["collector"]
+    },
+    "petSafe": false,
+    "suitableFor": { "gift": true, "space": true, "me": true },
+    "description": "Ninguna hoja es igual. Sus manchas rosas sobre verde oscuro son irrepetibles.",
+    "longDescription": "La planta más deseada del coleccionismo de aráceas en Lima. Cada hoja nueva emerge como una sorpresa — la cantidad de rosa varía según la luz y el estado de la planta. Es una relación, no una compra.",
+    "benefit": {
+      "iconLucide": "sparkles",
+      "text": "Rareza y distinción — quien la tiene, la convierte en conversación"
+    },
+    "care": {
+      "light": "Luz indirecta media — más luz = más variegación rosa",
+      "water": "Moderado — no encharcamiento",
+      "humidity": "Alta — humidificador recomendado"
+    },
+    "seasonalWarningLima": "Tolera el invierno limeño en interior. Requiere más humedad artificial en época de garúa. Evitar corrientes de aire frío de ventanas.",
+    "regenerative": {
+      "priceRange": "S/ 330–510",
+      "pot": "Tierra",
+      "includes": [
+        "Planta Filodendro Pink Princess",
+        "Maceta Tierra (cerámica artesanal)",
+        "Labubu Guacamayo Rosado — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Guacamayo Rosado",
+        "artisan": "Nora Cumapa",
+        "community": "Shipibo-Conibo",
+        "region": "Ucayali, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-S003",
+    "slug": "filodendro-dark-lord",
+    "name": "Filodendro Dark Lord",
+    "scientificName": "Philodendron 'Dark Lord'",
+    "tier": "S",
+    "iconLucide": "shield",
+    "images": [
+      "/images/plants/filodendro-dark-lord-1.jpg",
+      "/images/plants/filodendro-dark-lord-2.jpg",
+      "/images/plants/filodendro-dark-lord-3.jpg"
+    ],
+    "imageAlt": "Filodendro Dark Lord con hojas de rojo sangre a negro metálico en maceta de cemento",
+    "tags": {
+      "type": ["exotic", "indoor"],
+      "size": ["medium", "large"],
+      "care": ["collector"]
+    },
+    "petSafe": false,
+    "suitableFor": { "gift": true, "space": true, "me": true },
+    "description": "Sus hojas van de rojo sangre a negro metálico. La planta más dramática de la familia — presencia de galería de arte, sin necesitar un cuadro.",
+    "longDescription": "El Filodendro Dark Lord llega con hojas nuevas en rojo sangre que maduran a un negro metálico que absorbe la luz del cuarto. No es una planta decorativa — es una declaración. Para coleccionistas que entienden que lo oscuro también es belleza.",
+    "benefit": {
+      "iconLucide": "shield",
+      "text": "Protección del espacio y poder silencioso"
+    },
+    "care": {
+      "light": "Luz indirecta media-alta",
+      "water": "Moderado — sustrato húmedo pero drenado",
+      "humidity": "Alta — nebulizar regularmente"
+    },
+    "seasonalWarningLima": null,
+    "regenerative": {
+      "priceRange": "S/ 250–475",
+      "pot": "Piedra",
+      "includes": [
+        "Planta Filodendro Dark Lord",
+        "Maceta Piedra (cemento pulido)",
+        "Labubu Jaguar Negro — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Jaguar Negro",
+        "artisan": "Marco Inuma",
+        "community": "Shipibo",
+        "region": "Ucayali, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-S004",
+    "slug": "filodendro-gloriosum",
+    "name": "Filodendro Gloriosum",
+    "scientificName": "Philodendron gloriosum",
+    "tier": "S",
+    "iconLucide": "crown",
+    "images": [
+      "/images/plants/filodendro-gloriosum-1.jpg",
+      "/images/plants/filodendro-gloriosum-2.jpg",
+      "/images/plants/filodendro-gloriosum-3.jpg"
+    ],
+    "imageAlt": "Filodendro Gloriosum con hojas aterciopeladas gigantes y venas blancas imponentes en maceta grande de cemento",
+    "tags": {
+      "type": ["exotic"],
+      "size": ["medium", "large"],
+      "care": ["collector"]
+    },
+    "petSafe": false,
+    "suitableFor": { "gift": false, "space": true, "me": true },
+    "description": "Hojas aterciopeladas gigantes con venas blancas imponentes — el ícono del coleccionismo mundial. Y es de nuestra Amazonía sudamericana.",
+    "longDescription": "El Filodendro Gloriosum es la razón por la que la gente cae en el mundo de las aráceas. Hojas enormes de terciopelo con venas blancas que parecen dibujadas. Crece arrastrándose, lento y majestuoso, como si supiera que merece ser observado. Orgullo de la Amazonía sudamericana.",
+    "benefit": {
+      "iconLucide": "sprout",
+      "text": "Grandeza amazónica — la razón por la que la gente cae en el mundo de las aráceas"
+    },
+    "care": {
+      "light": "Luz indirecta media — rampa horizontal (crece arrastrando, no trepando)",
+      "water": "Moderado — regar cuando el sustrato esté casi seco",
+      "humidity": "Muy alta — humidificador o bandeja con agua"
+    },
+    "seasonalWarningLima": "Sensible a corrientes de aire frío en invierno limeño (jun–sep). Mantener cerca de fuente de luz y evitar ventanas con frío.",
+    "regenerative": {
+      "priceRange": "S/ 290–580",
+      "pot": "Piedra",
+      "includes": [
+        "Planta Filodendro Gloriosum",
+        "Maceta Piedra (cemento pulido, talla grande)",
+        "Labubu Boa Esmeralda — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Boa Esmeralda",
+        "artisan": "Marco Inuma",
+        "community": "Ese Eja",
+        "region": "Madre de Dios, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-S005",
+    "slug": "filodendro-plowmonii",
+    "name": "Filodendro Plowmonii",
+    "scientificName": "Philodendron plowmanii",
+    "tier": "S",
+    "iconLucide": "crown",
+    "images": [
+      "/images/plants/filodendro-plowmonii-1.jpg",
+      "/images/plants/filodendro-plowmonii-2.jpg",
+      "/images/plants/filodendro-plowmonii-3.jpg"
+    ],
+    "imageAlt": "Filodendro Plowmonii con hojas gigantes onduladas y relieve 3D en maceta de cemento grande",
+    "tags": {
+      "type": ["exotic"],
+      "size": ["medium", "large"],
+      "care": ["collector"]
+    },
+    "petSafe": false,
+    "suitableFor": { "gift": false, "space": true, "me": true },
+    "description": "Hojas gigantes onduladas con relieve 3D — y es peruana de origen.",
+    "longDescription": "El Plowmonii tiene hojas con superficie ondulada y brillante como cuero vegetal. Sus venas hundidas crean un relieve tridimensional único. Y viene del Perú — de nuestra propia selva. La planta que detiene cualquier conversación.",
+    "benefit": {
+      "iconLucide": "leaf",
+      "text": "Magnificencia peruana"
+    },
+    "care": {
+      "light": "Luz indirecta media",
+      "water": "Moderado — sustrato consistentemente húmedo sin encharcamiento",
+      "humidity": "Muy alta"
+    },
+    "seasonalWarningLima": "Especie peruana que en Lima invierno entra en ralentización. Muy sensible al frío bajo 18°C. Proteger en invierno.",
+    "regenerative": {
+      "priceRange": "S/ 370–880",
+      "pot": "Piedra",
+      "includes": [
+        "Planta Filodendro Plowmonii",
+        "Maceta Piedra (cemento pulido, talla grande)",
+        "Labubu Tapir Amazónico — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Tapir Amazónico",
+        "artisan": "Elena Paima",
+        "community": "Asháninka",
+        "region": "Junín, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-S006",
+    "slug": "anturio-cristalino",
+    "name": "Anturio Cristalino",
+    "scientificName": "Anthurium crystallinum",
+    "tier": "S",
+    "iconLucide": "gem",
+    "images": [
+      "/images/plants/anturio-cristalino-1.jpg",
+      "/images/plants/anturio-cristalino-2.jpg",
+      "/images/plants/anturio-cristalino-3.jpg"
+    ],
+    "imageAlt": "Anturio Cristalino con venas plateadas sobre terciopelo verde oscuro en maceta de cerámica",
+    "tags": {
+      "type": ["exotic", "indoor"],
+      "size": ["medium"],
+      "care": ["collector"]
+    },
+    "petSafe": false,
+    "suitableFor": { "gift": true, "space": true, "me": true },
+    "description": "Venas plateadas sobre terciopelo verde oscuro — el Crystallinum parece tener luz propia. El Anturio que convierte a la gente en coleccionista.",
+    "longDescription": "El Anturio Cristalino llega de nuestra propia Amazonía y tiene un efecto conocido: quien lo ve, quiere uno. Sus venas plateadas sobre terciopelo verde oscuro parecen bordadas a mano — cada nueva hoja es una obra en miniatura que emerge lenta y perfecta.",
+    "benefit": {
+      "iconLucide": "sparkles",
+      "text": "Luz interior y conexión amazónica — viene de nuestra propia selva"
+    },
+    "care": {
+      "light": "Luz indirecta media — evitar sol directo",
+      "water": "Moderado — sustrato húmedo con buen drenaje",
+      "humidity": "Muy alta — humidificador recomendado"
+    },
+    "seasonalWarningLima": "Sensible a corrientes de aire frío en invierno limeño (jun–sep). Mantener cerca de fuente de luz y evitar ventanas con frío.",
+    "regenerative": {
+      "priceRange": "S/ 165–310",
+      "pot": "Tierra",
+      "includes": [
+        "Planta Anturio Cristalino",
+        "Maceta Tierra (cerámica artesanal)",
+        "Labubu Mariposa Morpho — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Mariposa Morpho",
+        "artisan": "Elena Paima",
+        "community": "Shipibo",
+        "region": "Ucayali, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-S007",
+    "slug": "anturio-warocqueanum",
+    "name": "Anturio Warocqueanum",
+    "scientificName": "Anthurium warocqueanum",
+    "tier": "S",
+    "iconLucide": "gem",
+    "images": [
+      "/images/plants/anturio-warocqueanum-1.jpg",
+      "/images/plants/anturio-warocqueanum-2.jpg",
+      "/images/plants/anturio-warocqueanum-3.jpg"
+    ],
+    "imageAlt": "Anturio Warocqueanum con hojas colgantes gigantes aterciopeladas y venación plateada",
+    "tags": {
+      "type": ["exotic", "indoor"],
+      "size": ["large"],
+      "care": ["collector"]
+    },
+    "petSafe": false,
+    "suitableFor": { "gift": false, "space": true, "me": true },
+    "description": "La Reina de los Anturios. Hojas colgantes de hasta 1.5m, aterciopeladas.",
+    "longDescription": "El Anthurium warocqueanum es considerado la reina absoluta del género. Sus hojas pueden superar el metro y medio, caen con elegancia y tienen una venación plateada irreal. Un solo ejemplar puede ser el centro absoluto de un espacio de lujo.",
+    "benefit": {
+      "iconLucide": "gem",
+      "text": "Realeza botánica"
+    },
+    "care": {
+      "light": "Luz indirecta media — no tolera luz directa",
+      "water": "Frecuente — mantener sustrato húmedo siempre",
+      "humidity": "Muy alta — +70% humedad relativa, humidificador"
+    },
+    "seasonalWarningLima": "La reina de los Anturios requiere condiciones estables todo el año. En invierno Lima es su mayor reto: baja temperatura y poca luz la estresan. Humidificador obligatorio.",
+    "regenerative": {
+      "priceRange": "S/ 540–1,120",
+      "pot": "Tierra",
+      "includes": [
+        "Planta Anturio Warocqueanum",
+        "Maceta Tierra (cerámica artesanal, talla extra grande)",
+        "Labubu Cóndor Andino — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Cóndor Andino",
+        "artisan": "Rosa Cumapa",
+        "community": "Shipibo-Conibo",
+        "region": "Ucayali, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-S008",
+    "slug": "monstera-thai-constellation",
+    "name": "Monstera Thai Constellation",
+    "scientificName": "Monstera deliciosa 'Thai Constellation'",
+    "tier": "S",
+    "iconLucide": "sparkles",
+    "images": [
+      "/images/plants/monstera-thai-constellation-1.jpg",
+      "/images/plants/monstera-thai-constellation-2.jpg",
+      "/images/plants/monstera-thai-constellation-3.jpg"
+    ],
+    "imageAlt": "Monstera Thai Constellation con constelación de manchas blancas sobre hojas verde profundo",
+    "tags": {
+      "type": ["exotic", "indoor"],
+      "size": ["medium", "large"],
+      "care": ["collector"]
+    },
+    "petSafe": false,
+    "suitableFor": { "gift": true, "space": true, "me": true },
+    "description": "La Monstera más codiciada del planeta. Cada hoja es obra única.",
+    "longDescription": "Constelación de manchas blancas estables sobre verde profundo — a diferencia de otras variegadas, la Thai Constellation mantiene su patrón de generación en generación. Cada hoja es irrepetible. La planta que todos conocen del Instagram y pocos tienen.",
+    "benefit": {
+      "iconLucide": "sparkles",
+      "text": "Exclusividad y estatus"
+    },
+    "care": {
+      "light": "Luz indirecta media-alta — más luz = más variegación blanca",
+      "water": "Moderado — regar cuando 3–4 cm de sustrato estén secos",
+      "humidity": "Alta — nebulizar o humidificador"
+    },
+    "seasonalWarningLima": "Tolera bien el invierno en interior. La variegación puede ser menos llamativa en temporadas con poca luz. Evitar ventanas con corriente fría en invierno.",
+    "regenerative": {
+      "priceRange": "S/ 355–860",
+      "pot": "Tierra",
+      "includes": [
+        "Planta Monstera Thai Constellation",
+        "Maceta Tierra (cerámica artesanal)",
+        "Labubu Guacamayo Dorado — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Guacamayo Dorado",
+        "artisan": "Nora Cumapa",
+        "community": "Shipibo-Conibo",
+        "region": "Ucayali, Perú"
+      }
+    }
+  },
+  {
     "id": "JA-P001",
     "slug": "filodendro-micans",
     "name": "Filodendro Micans",
     "scientificName": "Philodendron hederaceum 'Micans'",
     "tier": "P",
     "iconLucide": "leaf",
-    "imageUrl": "/images/plants/filodendro-micans.jpg",
+    "images": [
+      "/images/plants/filodendro-micans-1.jpg",
+      "/images/plants/filodendro-micans-2.jpg",
+      "/images/plants/filodendro-micans-3.jpg"
+    ],
     "imageAlt": "Filodendro Micans con hojas aterciopeladas verde-bronce iridiscente en maceta de cemento",
     "tags": {
       "type": ["exotic", "indoor"],
@@ -90,13 +441,605 @@
     }
   },
   {
+    "id": "JA-P002",
+    "slug": "filodendro-birkin",
+    "name": "Filodendro Birkin",
+    "scientificName": "Philodendron 'Birkin'",
+    "tier": "P",
+    "iconLucide": "leaf",
+    "images": [
+      "/images/plants/filodendro-birkin-1.jpg",
+      "/images/plants/filodendro-birkin-2.jpg",
+      "/images/plants/filodendro-birkin-3.jpg"
+    ],
+    "imageAlt": "Filodendro Birkin con hojas oscuras y líneas blancas finas en maceta de cemento pulido",
+    "tags": {
+      "type": ["exotic", "indoor"],
+      "size": ["small", "medium"],
+      "care": ["amateur", "collector"]
+    },
+    "petSafe": true,
+    "suitableFor": { "gift": true, "space": true, "me": true },
+    "description": "Hojas oscuras con líneas blancas finas — sofisticación botánica pura.",
+    "longDescription": "El Birkin es el filodendro del coleccionista que aprecia los detalles. Sus líneas blancas sobre verde oscuro brillante son casi geométricas. Cada hoja nueva puede sorprender con un patrón diferente — incluso puede revertir a verde sólido y volver.",
+    "benefit": {
+      "iconLucide": "leaf",
+      "text": "Elegancia y concentración"
+    },
+    "care": {
+      "light": "Luz indirecta media — más luz acentúa las líneas blancas",
+      "water": "Moderado",
+      "humidity": "Media"
+    },
+    "seasonalWarningLima": "Resistente al invierno limeño en interior bien protegido. El patrón de variegación puede variar con menor luz en invierno.",
+    "regenerative": {
+      "priceRange": "S/ 195–305",
+      "pot": "Piedra",
+      "includes": [
+        "Planta Filodendro Birkin",
+        "Maceta Piedra (cemento pulido)",
+        "Labubu Boa Plateada — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Boa Plateada",
+        "artisan": "Carmen Shawit",
+        "community": "Awajún",
+        "region": "Amazonas, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-P003",
+    "slug": "filodendro-congo-rojo",
+    "name": "Filodendro Congo Rojo",
+    "scientificName": "Philodendron tatei 'Congo Rojo'",
+    "tier": "P",
+    "iconLucide": "leaf",
+    "images": [
+      "/images/plants/filodendro-congo-rojo-1.jpg",
+      "/images/plants/filodendro-congo-rojo-2.jpg",
+      "/images/plants/filodendro-congo-rojo-3.jpg"
+    ],
+    "imageAlt": "Filodendro Congo Rojo con hojas rojas que maduran a verde oscuro brillante en maceta de cemento",
+    "tags": {
+      "type": ["exotic", "indoor"],
+      "size": ["medium", "large"],
+      "care": ["amateur"]
+    },
+    "petSafe": false,
+    "suitableFor": { "gift": true, "space": true, "me": true },
+    "description": "Sus hojas rojas maduran a verde oscuro brillante — elegancia de selva.",
+    "longDescription": "El Congo Rojo es el filodendro de los espacios con altura. Sus hojas nuevas emergen en tonos rojizos y maduran lentamente a un verde profundo brillante. Tiene presencia — ocupa el espacio con elegancia tropical sin necesitar tutor.",
+    "benefit": {
+      "iconLucide": "sprout",
+      "text": "Vitalidad y crecimiento tropical"
+    },
+    "care": {
+      "light": "Luz indirecta media-alta",
+      "water": "Moderado",
+      "humidity": "Media-alta"
+    },
+    "seasonalWarningLima": "Resistente al invierno en interior. Las hojas nuevas emergen con menos frecuencia en épocas frías. Regar menos en invierno.",
+    "regenerative": {
+      "priceRange": "S/ 350–460",
+      "pot": "Piedra",
+      "includes": [
+        "Planta Filodendro Congo Rojo",
+        "Maceta Piedra (cemento pulido, talla grande)",
+        "Labubu Mono Capuchino — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Mono Capuchino",
+        "artisan": "Yeni Tangoa",
+        "community": "Ese Eja",
+        "region": "Madre de Dios, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-P004",
+    "slug": "alocasia-frydek",
+    "name": "Alocasia Frydek",
+    "scientificName": "Alocasia micholitziana 'Frydek'",
+    "tier": "P",
+    "iconLucide": "leaf",
+    "images": [
+      "/images/plants/alocasia-frydek-1.jpg",
+      "/images/plants/alocasia-frydek-2.jpg",
+      "/images/plants/alocasia-frydek-3.jpg"
+    ],
+    "imageAlt": "Alocasia Frydek con hojas de terciopelo verde oscuro y venas blancas nítidas en maceta de cerámica",
+    "tags": {
+      "type": ["exotic", "indoor"],
+      "size": ["medium"],
+      "care": ["amateur", "collector"]
+    },
+    "petSafe": false,
+    "suitableFor": { "gift": true, "space": true, "me": true },
+    "description": "Terciopelo verde oscuro con venas blancas de porcelana.",
+    "longDescription": "La Alocasia Frydek tiene hojas de terciopelo verde profundo con venación blanca nítida — un contraste que parece diseñado. Su textura es la más suave del reino vegetal. Una joya que se siente tanto como se ve.",
+    "benefit": {
+      "iconLucide": "gem",
+      "text": "Elegancia aterciopelada"
+    },
+    "care": {
+      "light": "Luz indirecta media — sin sol directo",
+      "water": "Moderado en verano — reducido en invierno",
+      "humidity": "Alta — nebulizar regularmente"
+    },
+    "seasonalWarningLima": "Sensible al frío limeño. En invierno puede detener el crecimiento. Reducir riego significativamente. Mantener alejada de ventanas. Puede perder hojas en invierno — es temporal.",
+    "regenerative": {
+      "priceRange": "S/ 125–295",
+      "pot": "Tierra",
+      "includes": [
+        "Planta Alocasia Frydek",
+        "Maceta Tierra (cerámica artesanal)",
+        "Labubu Pájaro Carpintero — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Pájaro Carpintero",
+        "artisan": "Marleni Flores",
+        "community": "Yine",
+        "region": "Ucayali, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-P005",
+    "slug": "monstera-adansonii",
+    "name": "Monstera Adansonii",
+    "scientificName": "Monstera adansonii",
+    "tier": "P",
+    "iconLucide": "leaf",
+    "images": [
+      "/images/plants/monstera-adansonii-1.jpg",
+      "/images/plants/monstera-adansonii-2.jpg",
+      "/images/plants/monstera-adansonii-3.jpg"
+    ],
+    "imageAlt": "Monstera Adansonii con hojas perforadas que crean juego de luz y sombra en maceta de fibra natural",
+    "tags": {
+      "type": ["exotic", "indoor"],
+      "size": ["medium"],
+      "care": ["amateur", "collector"]
+    },
+    "petSafe": false,
+    "suitableFor": { "gift": true, "space": true, "me": true },
+    "description": "Sus hojas perforadas crean un juego de luz y sombra fascinante. Crece rápido y trepa con entusiasmo — llena el espacio con movimiento.",
+    "longDescription": "La Monstera Adansonii tiene esa energía de selva en expansión — hojas que parecen recortadas por la naturaleza para dejar pasar la luz. Trepa, cuelga, llena. En pocas semanas transforma un rincón vacío en un fragmento de Amazonía.",
+    "benefit": {
+      "iconLucide": "leaf",
+      "text": "Dinamismo y abundancia — energía de selva en movimiento"
+    },
+    "care": {
+      "light": "Luz indirecta media",
+      "water": "Moderado — regar cuando el sustrato esté casi seco",
+      "humidity": "Alta — agradece nebulización"
+    },
+    "seasonalWarningLima": null,
+    "regenerative": {
+      "priceRange": "S/ 120–210",
+      "pot": "Selva",
+      "includes": [
+        "Planta Monstera Adansonii",
+        "Maceta Selva (fibra natural)",
+        "Labubu Rana Arborícola — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Rana Arborícola",
+        "artisan": "Yeni Tangoa",
+        "community": "Ese Eja",
+        "region": "Madre de Dios, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-P006",
+    "slug": "monstera-deliciosa",
+    "name": "Monstera Deliciosa",
+    "scientificName": "Monstera deliciosa",
+    "tier": "P",
+    "iconLucide": "leaf",
+    "images": [
+      "/images/plants/monstera-deliciosa-1.jpg",
+      "/images/plants/monstera-deliciosa-2.jpg",
+      "/images/plants/monstera-deliciosa-3.jpg"
+    ],
+    "imageAlt": "Monstera Deliciosa con hojas fenestradas icónicas montada en tutor en maceta de cemento",
+    "tags": {
+      "type": ["indoor"],
+      "size": ["medium", "large"],
+      "care": ["amateur"]
+    },
+    "petSafe": false,
+    "suitableFor": { "gift": true, "space": true, "me": true },
+    "description": "El ícono del diseño de interiores del siglo XXI. En tutor, lista para instalarse.",
+    "longDescription": "La Monstera Deliciosa es la planta que definió una década de interiores. Sus hojas fenestradas son inconfundibles. La ofrecemos con tutor de 1 metro instalado — lista para colocar, lista para crecer.",
+    "benefit": {
+      "iconLucide": "leaf",
+      "text": "Icono botánico urbano"
+    },
+    "care": {
+      "light": "Luz indirecta media-alta — sin sol directo intenso",
+      "water": "Moderado — regar cuando 3–5 cm de sustrato estén secos",
+      "humidity": "Alta — agradece nebulización en verano"
+    },
+    "seasonalWarningLima": "Muy adaptable. En invierno Lima crece más lento y las hojas nuevas pueden tardar. Reducir riego en invierno. La fenestración mejora con más luz.",
+    "regenerative": {
+      "priceRange": "S/ 250–475",
+      "pot": "Piedra",
+      "includes": [
+        "Planta Monstera Deliciosa",
+        "Maceta Piedra (cemento pulido, talla grande)",
+        "Labubu Mono Aullador — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Mono Aullador",
+        "artisan": "Graciela Huanca",
+        "community": "Matsiguenka",
+        "region": "Cusco, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-P007",
+    "slug": "zz-plant",
+    "name": "ZZ Plant — Zamioculca",
+    "scientificName": "Zamioculcas zamiifolia",
+    "tier": "P",
+    "iconLucide": "gem",
+    "images": [
+      "/images/plants/zz-plant-1.jpg",
+      "/images/plants/zz-plant-2.jpg",
+      "/images/plants/zz-plant-3.jpg"
+    ],
+    "imageAlt": "ZZ Plant con hojas verde brillante casi perfectas en maceta de cemento pulido",
+    "tags": {
+      "type": ["indoor"],
+      "size": ["medium"],
+      "care": ["none"]
+    },
+    "petSafe": false,
+    "suitableFor": { "gift": true, "space": true, "me": true },
+    "description": "Sin luz, sin agua, sin problemas. La planta más estoica del mundo — sus hojas verde brillante son casi artificialmente perfectas.",
+    "longDescription": "La ZZ Plant es el zen hecho planta. Hojas lacadas, simétricas, que no necesitan atención para estar perfectas. Crece lenta y con dignidad, ignorando olvidadas, cambios de temperatura y períodos de sequía. La planta para los que quieren verde sin culpa.",
+    "benefit": {
+      "iconLucide": "clover",
+      "text": "Prosperidad y resiliencia — crece incluso cuando te olvidas de ella"
+    },
+    "care": {
+      "light": "Luz tenue a indirecta baja — tolera casi oscuridad total",
+      "water": "Muy escaso — cada 2–4 semanas",
+      "humidity": "Baja — muy adaptable"
+    },
+    "seasonalWarningLima": null,
+    "regenerative": {
+      "priceRange": "S/ 190–230",
+      "pot": "Piedra",
+      "includes": [
+        "Planta ZZ Plant",
+        "Maceta Piedra (cemento pulido)",
+        "Labubu Tortuga Amazónica — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Tortuga Amazónica",
+        "artisan": "Sonia Inuma",
+        "community": "Yawanapi",
+        "region": "Loreto, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-P008",
+    "slug": "sansevieria-golden",
+    "name": "Sansevieria Golden",
+    "scientificName": "Dracaena trifasciata 'Golden Hahnii'",
+    "tier": "P",
+    "iconLucide": "swords",
+    "images": [
+      "/images/plants/sansevieria-golden-1.jpg",
+      "/images/plants/sansevieria-golden-2.jpg",
+      "/images/plants/sansevieria-golden-3.jpg"
+    ],
+    "imageAlt": "Sansevieria Golden con hojas doradas y erguidas en maceta de cerámica artesanal",
+    "tags": {
+      "type": ["indoor"],
+      "size": ["medium", "large"],
+      "care": ["none"]
+    },
+    "petSafe": true,
+    "suitableFor": { "gift": true, "space": true, "me": true },
+    "description": "La indestructible. Sus hojas doradas y erguidas purifican el aire dormida — requiere casi nada y da mucho a cambio.",
+    "longDescription": "La Sansevieria Golden es el guardián silencioso del espacio. Hojas doradas y firmes que purifica el aire mientras todos duermen — según la NASA, una de las mejores plantas para interiores. Requiere tan poco que parece injusto lo mucho que aporta.",
+    "benefit": {
+      "iconLucide": "wind",
+      "text": "Purifica el aire y protege el espacio — el guardián verde"
+    },
+    "care": {
+      "light": "Luz tenue — soporta sombra profunda",
+      "water": "Muy escaso — cada 3–4 semanas",
+      "humidity": "Baja — muy resistente"
+    },
+    "seasonalWarningLima": null,
+    "regenerative": {
+      "priceRange": "S/ 245–335",
+      "pot": "Tierra",
+      "includes": [
+        "Planta Sansevieria Golden",
+        "Maceta Tierra (cerámica artesanal)",
+        "Labubu Caimán Dorado — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Caimán Dorado",
+        "artisan": "Luz Marina Flores",
+        "community": "Kukama-Kukamiria",
+        "region": "Loreto, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-P009",
+    "slug": "anturio-rojo",
+    "name": "Anturio Rojo",
+    "scientificName": "Anthurium andraeanum",
+    "tier": "P",
+    "iconLucide": "heart",
+    "images": [
+      "/images/plants/anturio-rojo-1.jpg",
+      "/images/plants/anturio-rojo-2.jpg",
+      "/images/plants/anturio-rojo-3.jpg"
+    ],
+    "imageAlt": "Anturio Rojo con espatas rojas lacadas en maceta de cerámica artesanal",
+    "tags": {
+      "type": ["indoor"],
+      "size": ["medium"],
+      "care": ["amateur"]
+    },
+    "petSafe": false,
+    "suitableFor": { "gift": true, "space": false, "me": false },
+    "description": "Sus espatas rojas lacadas florecen casi sin parar. El anturio rojo es el regalo vivo más reconocido de Lima — hermoso, duradero y emotivo.",
+    "longDescription": "El Anturio Rojo es el clásico que nunca defrauda. Sus espatas rojo lacado se renuevan de manera casi continua, convirtiéndolo en un regalo que sigue diciendo algo semanas después de entregado. La planta que representa el corazón abierto.",
+    "benefit": {
+      "iconLucide": "heart",
+      "text": "Amor y hospitalidad — la planta del corazón abierto"
+    },
+    "care": {
+      "light": "Luz indirecta media — sin sol directo",
+      "water": "Moderado — sustrato húmedo no encharcado",
+      "humidity": "Alta — agradece nebulización en verano"
+    },
+    "seasonalWarningLima": "Sensible a corrientes de aire frío en invierno limeño (jun–sep). Mantener cerca de fuente de luz y evitar ventanas con frío.",
+    "regenerative": {
+      "priceRange": "S/ 145–190",
+      "pot": "Tierra",
+      "includes": [
+        "Planta Anturio Rojo",
+        "Maceta Tierra (cerámica artesanal)",
+        "Labubu Guacamayo Rojo — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Guacamayo Rojo",
+        "artisan": "Rosa Cumapa",
+        "community": "Shipibo-Conibo",
+        "region": "Ucayali, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-P010",
+    "slug": "anturio-papillilaminum",
+    "name": "Anturio Papillilaminum",
+    "scientificName": "Anthurium papillilaminum",
+    "tier": "P",
+    "iconLucide": "gem",
+    "images": [
+      "/images/plants/anturio-papillilaminum-1.jpg",
+      "/images/plants/anturio-papillilaminum-2.jpg",
+      "/images/plants/anturio-papillilaminum-3.jpg"
+    ],
+    "imageAlt": "Anturio Papillilaminum con hojas negras aterciopeladas de gran formato en maceta de cerámica",
+    "tags": {
+      "type": ["exotic", "indoor"],
+      "size": ["medium"],
+      "care": ["collector"]
+    },
+    "petSafe": false,
+    "suitableFor": { "gift": false, "space": true, "me": true },
+    "description": "Hojas negras aterciopeladas de gran formato — el lujo botánico oscuro.",
+    "longDescription": "El Anthurium papillilaminum tiene hojas casi negras de terciopelo — una rareza extrema del género. Su tamaño imponente y color oscuro profundo lo convierten en la declaración más sofisticada que puede hacer una planta en un interior.",
+    "benefit": {
+      "iconLucide": "gem",
+      "text": "Lujo oscuro y rareza extrema"
+    },
+    "care": {
+      "light": "Luz indirecta media — sin sol directo en absoluto",
+      "water": "Moderado — sustrato húmedo con excelente drenaje",
+      "humidity": "Muy alta — humidificador obligatorio"
+    },
+    "seasonalWarningLima": "Muy sensible al frío y a la garúa. En invierno Lima es el mes más difícil para esta especie. Requiere humidificador. Hojas pueden adquirir manchas con agua fría.",
+    "regenerative": {
+      "priceRange": "S/ 310–660",
+      "pot": "Tierra",
+      "includes": [
+        "Planta Anturio Papillilaminum",
+        "Maceta Tierra (cerámica artesanal, talla grande)",
+        "Labubu Jaguar Negro — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Jaguar Negro",
+        "artisan": "Marco Inuma",
+        "community": "Shipibo",
+        "region": "Ucayali, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-P011",
+    "slug": "ficus-caucho-variegado",
+    "name": "Ficus Caucho Variegado",
+    "scientificName": "Ficus elastica (variegata)",
+    "tier": "P",
+    "iconLucide": "leaf",
+    "images": [
+      "/images/plants/ficus-caucho-variegado-1.jpg",
+      "/images/plants/ficus-caucho-variegado-2.jpg",
+      "/images/plants/ficus-caucho-variegado-3.jpg"
+    ],
+    "imageAlt": "Ficus Caucho Variegado con hojas en verde, crema y rosa en maceta de cemento",
+    "tags": {
+      "type": ["indoor"],
+      "size": ["medium", "large"],
+      "care": ["amateur"]
+    },
+    "petSafe": false,
+    "suitableFor": { "gift": true, "space": true, "me": true },
+    "description": "Verde, crema y rosa en una sola hoja — el Ficus más raro del mercado.",
+    "longDescription": "El Ficus Elastica Variegado es una rareza dentro de una especie ya popular. Sus hojas mezclan verde, crema y toques rosados en cada hoja — sin dos iguales. Una pieza arquitectónica y artística a la vez.",
+    "benefit": {
+      "iconLucide": "sparkles",
+      "text": "Sofisticación cromática tricolor"
+    },
+    "care": {
+      "light": "Luz indirecta media-alta — más luz = más colores en las hojas",
+      "water": "Moderado — dejar secar entre riegos",
+      "humidity": "Media"
+    },
+    "seasonalWarningLima": "El Ficus puede perder algunas hojas con el cambio de temperatura en invierno — es normal. Evitar mover la planta de lugar en invierno. No regar de más en épocas frías.",
+    "regenerative": {
+      "priceRange": "S/ 225–475",
+      "pot": "Piedra",
+      "includes": [
+        "Planta Ficus Caucho Variegado",
+        "Maceta Piedra (cemento pulido, talla grande)",
+        "Labubu Tucán Tricolor — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Tucán Tricolor",
+        "artisan": "David Ruiz",
+        "community": "Kokama",
+        "region": "Loreto, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-P012",
+    "slug": "cuerno-de-alce",
+    "name": "Cuerno de Alce",
+    "scientificName": "Platycerium bifurcatum",
+    "tier": "P",
+    "iconLucide": "mountain",
+    "images": [
+      "/images/plants/cuerno-de-alce-1.jpg",
+      "/images/plants/cuerno-de-alce-2.jpg",
+      "/images/plants/cuerno-de-alce-3.jpg"
+    ],
+    "imageAlt": "Cuerno de Alce montado en tabla de madera en pared con frondes en forma de cuerno",
+    "tags": {
+      "type": ["indoor", "outdoor"],
+      "size": ["medium"],
+      "care": ["amateur", "collector"]
+    },
+    "petSafe": true,
+    "suitableFor": { "gift": true, "space": true, "me": true },
+    "description": "Vive montado en pared — no necesita maceta. Sus frondes en forma de cuerno son una declaración de interiores. Es un cuadro vivo.",
+    "longDescription": "El Cuerno de Alce es la planta para quien entiende que los interiores son una extensión de uno mismo. Epífita y orgullosa, se monta en tabla y cuelga de cualquier pared convirtiéndola en selva viva. Sus frondes en forma de asta son inconfundibles — arte natural que ningún cuadro puede replicar.",
+    "benefit": {
+      "iconLucide": "shield",
+      "text": "Protección y arte — transforma cualquier pared en selva viva"
+    },
+    "care": {
+      "light": "Luz indirecta media a sombra — interior con algo de luz",
+      "water": "Nebulización o baño semanal — epífito, no tiene sustrato",
+      "humidity": "Media-alta — agradece ambientes húmedos"
+    },
+    "seasonalWarningLima": null,
+    "regenerative": {
+      "priceRange": "S/ 145–215",
+      "pot": "Selva",
+      "includes": [
+        "Planta Cuerno de Alce",
+        "Tabla de madera para montaje",
+        "Labubu Cóndor — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Cóndor",
+        "artisan": "David Ruiz",
+        "community": "Kokama",
+        "region": "Loreto, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-P013",
+    "slug": "jazmin-limon",
+    "name": "Jazmín Limón",
+    "scientificName": "Murraya paniculata",
+    "tier": "P",
+    "iconLucide": "flower",
+    "images": [
+      "/images/plants/jazmin-limon-1.jpg",
+      "/images/plants/jazmin-limon-2.jpg",
+      "/images/plants/jazmin-limon-3.jpg"
+    ],
+    "imageAlt": "Jazmín Limón con flores blancas perfumadas en maceta de fibra natural",
+    "tags": {
+      "type": ["outdoor", "indoor"],
+      "size": ["medium"],
+      "care": ["amateur"]
+    },
+    "petSafe": true,
+    "suitableFor": { "gift": true, "space": true, "me": true },
+    "description": "Sus flores blancas desprenden un perfume dulce y cítrico que impregna toda la habitación. El Jazmín es una experiencia sensorial completa.",
+    "longDescription": "El Jazmín Limón no solo se ve — se siente y se huele. Sus pequeñas flores blancas liberan un aroma dulce-cítrico que transforma cualquier balcón o sala en un rincón de bienestar. Una planta para quienes entienden que los jardines también se viven con todos los sentidos.",
+    "benefit": {
+      "iconLucide": "wind",
+      "text": "Bienestar y calma sensorial — el aroma que transforma el ambiente"
+    },
+    "care": {
+      "light": "Luz intensa / sol indirecto — balcón o ventana luminosa",
+      "water": "Moderado — regar cuando el sustrato esté casi seco",
+      "humidity": "Media — adaptable a interiores bien iluminados"
+    },
+    "seasonalWarningLima": null,
+    "regenerative": {
+      "priceRange": "S/ 145–200",
+      "pot": "Selva",
+      "includes": [
+        "Planta Jazmín Limón",
+        "Maceta Selva (fibra natural)",
+        "Labubu Colibrí — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Colibrí",
+        "artisan": "Miriam Cushi",
+        "community": "Matsés",
+        "region": "Loreto, Perú"
+      }
+    }
+  },
+  {
     "id": "JA-B001",
     "slug": "pothos-golden",
     "name": "Pothos Golden",
     "scientificName": "Epipremnum aureum 'Golden'",
     "tier": "B",
     "iconLucide": "sun",
-    "imageUrl": "/images/plants/pothos-golden.jpg",
+    "images": [
+      "/images/plants/pothos-golden-1.jpg",
+      "/images/plants/pothos-golden-2.jpg",
+      "/images/plants/pothos-golden-3.jpg"
+    ],
     "imageAlt": "Pothos Golden colgante con hojas doradas y verdes en maceta de fibra natural",
     "tags": {
       "type": ["indoor"],
@@ -136,12 +1079,65 @@
   },
   {
     "id": "JA-B002",
+    "slug": "filodendro-corazon-neon",
+    "name": "Filodendro Corazón Neon",
+    "scientificName": "Philodendron hederaceum 'Neon'",
+    "tier": "B",
+    "iconLucide": "heart",
+    "images": [
+      "/images/plants/filodendro-corazon-neon-1.jpg",
+      "/images/plants/filodendro-corazon-neon-2.jpg",
+      "/images/plants/filodendro-corazon-neon-3.jpg"
+    ],
+    "imageAlt": "Filodendro Corazón Neon con hojas en corazón verde lima fluorescente en maceta de fibra natural",
+    "tags": {
+      "type": ["indoor"],
+      "size": ["small", "medium"],
+      "care": ["none", "amateur"]
+    },
+    "petSafe": true,
+    "suitableFor": { "gift": true, "space": true, "me": true },
+    "description": "Verde lima eléctrico en hojas de corazón — conecta emocionalmente e ilumina hasta los rincones más oscuros.",
+    "longDescription": "El Neon es la inyección de color más inmediata del portafolio. Sus hojas en corazón en verde lima casi fluorescente transforman visualmente cualquier espacio. Crece rápido, genera esquejes constantemente y es perfecto para regalar con intención.",
+    "benefit": {
+      "iconLucide": "sun",
+      "text": "Alegría y amor — hojas en corazón que conectan con cualquier persona"
+    },
+    "care": {
+      "light": "Luz indirecta media — más luz = verde más vibrante",
+      "water": "Moderado",
+      "humidity": "Media"
+    },
+    "seasonalWarningLima": "En invierno Lima con poca luz, el verde lima vibrante puede tornarse más apagado. Buscar la ubicación más luminosa de la casa.",
+    "regenerative": {
+      "priceRange": "S/ 130–220",
+      "pot": "Selva",
+      "includes": [
+        "Planta Filodendro Corazón Neon",
+        "Maceta Selva (fibra natural)",
+        "Labubu Loro Amarillo — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Loro Amarillo",
+        "artisan": "Marleni Flores",
+        "community": "Yine",
+        "region": "Ucayali, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-B003",
     "slug": "aglaonema-rosada",
     "name": "Aglaonema Rosada",
     "scientificName": "Aglaonema commutatum 'Pink'",
     "tier": "B",
     "iconLucide": "flower",
-    "imageUrl": "/images/plants/aglaonema-rosada.jpg",
+    "images": [
+      "/images/plants/aglaonema-rosada-1.jpg",
+      "/images/plants/aglaonema-rosada-2.jpg",
+      "/images/plants/aglaonema-rosada-3.jpg"
+    ],
     "imageAlt": "Aglaonema Rosada con hojas pintadas de blanco cremoso a rosa profundo en maceta de cerámica",
     "tags": {
       "type": ["indoor"],
@@ -180,314 +1176,48 @@
     }
   },
   {
-    "id": "JA-P002",
-    "slug": "aglaonema-pattaya",
-    "name": "Aglaonema Pattaya",
-    "scientificName": "Aglaonema commutatum 'Pattaya'",
-    "tier": "P",
-    "iconLucide": "flame",
-    "imageUrl": "/images/plants/aglaonema-pattaya.jpg",
-    "imageAlt": "Aglaonema Pattaya con hojas rojo y verde vibrantes en maceta de cemento pulido",
+    "id": "JA-B004",
+    "slug": "fittonia",
+    "name": "Fittonia",
+    "scientificName": "Fittonia albivenis",
+    "tier": "B",
+    "iconLucide": "flower",
+    "images": [
+      "/images/plants/fittonia-1.jpg",
+      "/images/plants/fittonia-2.jpg",
+      "/images/plants/fittonia-3.jpg"
+    ],
+    "imageAlt": "Fittonia con venas blancas sobre verde oscuro formando arte amazónico en miniatura en maceta pequeña",
     "tags": {
       "type": ["indoor"],
-      "size": ["medium"],
-      "care": ["amateur", "collector"]
-    },
-    "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
-    "description": "Rojo y verde en explosión. La Aglaonema más dramática del mercado — sus hojas son un grito de color y vitalidad.",
-    "longDescription": "La Aglaonema Pattaya no entra en un espacio — lo toma. Sus hojas rojo-verde son una declaración de intención: aquí vive algo que no pasa desapercibido. Para espacios que necesitan un punto focal y personalidades que no temen el color.",
-    "benefit": {
-      "iconLucide": "flame",
-      "text": "Activa la energía, la creatividad y la pasión en el espacio"
-    },
-    "care": {
-      "light": "Luz indirecta media",
-      "water": "Moderado — 1 vez por semana",
-      "humidity": "Alta — ambientes cálidos"
-    },
-    "seasonalWarningLima": null,
-    "regenerative": {
-      "priceRange": "S/ 195–355",
-      "pot": "Piedra",
-      "includes": [
-        "Planta Aglaonema Pattaya",
-        "Maceta Piedra (cemento pulido)",
-        "Labubu Guacamayo Verde-Rojo — fibra de chambira",
-        "Tarjeta dedicatoria personalizada"
-      ],
-      "labubu": {
-        "animal": "Guacamayo Verde-Rojo",
-        "artisan": "Elena Paima",
-        "community": "Asháninka",
-        "region": "Junín, Perú"
-      }
-    }
-  },
-  {
-    "id": "JA-S002",
-    "slug": "filodendro-dark-lord",
-    "name": "Filodendro Dark Lord",
-    "scientificName": "Philodendron 'Dark Lord'",
-    "tier": "S",
-    "iconLucide": "shield",
-    "imageUrl": "/images/plants/filodendro-dark-lord.jpg",
-    "imageAlt": "Filodendro Dark Lord con hojas de rojo sangre a negro metálico en maceta de cemento",
-    "tags": {
-      "type": ["exotic", "indoor"],
-      "size": ["medium", "large"],
-      "care": ["collector"]
-    },
-    "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
-    "description": "Sus hojas van de rojo sangre a negro metálico. La planta más dramática de la familia — presencia de galería de arte, sin necesitar un cuadro.",
-    "longDescription": "El Filodendro Dark Lord llega con hojas nuevas en rojo sangre que maduran a un negro metálico que absorbe la luz del cuarto. No es una planta decorativa — es una declaración. Para coleccionistas que entienden que lo oscuro también es belleza.",
-    "benefit": {
-      "iconLucide": "shield",
-      "text": "Protección del espacio y poder silencioso"
-    },
-    "care": {
-      "light": "Luz indirecta media-alta",
-      "water": "Moderado — sustrato húmedo pero drenado",
-      "humidity": "Alta — nebulizar regularmente"
-    },
-    "seasonalWarningLima": null,
-    "regenerative": {
-      "priceRange": "S/ 250–475",
-      "pot": "Piedra",
-      "includes": [
-        "Planta Filodendro Dark Lord",
-        "Maceta Piedra (cemento pulido)",
-        "Labubu Jaguar Negro — fibra de chambira",
-        "Tarjeta dedicatoria personalizada"
-      ],
-      "labubu": {
-        "animal": "Jaguar Negro",
-        "artisan": "Marco Inuma",
-        "community": "Shipibo",
-        "region": "Ucayali, Perú"
-      }
-    }
-  },
-  {
-    "id": "JA-S003",
-    "slug": "filodendro-pink-princess",
-    "name": "Filodendro Pink Princess",
-    "scientificName": "Philodendron erubescens 'Pink Princess'",
-    "tier": "S",
-    "iconLucide": "crown",
-    "imageUrl": "/images/plants/filodendro-pink-princess.jpg",
-    "imageAlt": "Filodendro Pink Princess con manchas rosas irrepetibles sobre hojas verde oscuro en maceta de cerámica",
-    "tags": {
-      "type": ["exotic"],
-      "size": ["medium"],
-      "care": ["collector"]
-    },
-    "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
-    "description": "Ninguna hoja es igual. Sus manchas rosas sobre verde oscuro son irrepetibles — cada nueva hoja es una sorpresa que la planta te reserva.",
-    "longDescription": "La Pink Princess es la estrella del coleccionismo mundial — y con razón. Cada hoja llega con una distribución de rosa única, irrepetible, que ni la misma planta puede predecir. Tenerla es empezar una relación de anticipación y sorpresa.",
-    "benefit": {
-      "iconLucide": "sparkles",
-      "text": "Rareza y distinción — quien la tiene, la convierte en conversación"
-    },
-    "care": {
-      "light": "Luz indirecta media — más luz = más variegación rosa",
-      "water": "Moderado — no encharcamiento",
-      "humidity": "Alta — humidificador recomendado"
-    },
-    "seasonalWarningLima": "Sensible a corrientes de aire frío en invierno limeño (jun–sep). Mantener cerca de fuente de luz y evitar ventanas con frío.",
-    "regenerative": {
-      "priceRange": "S/ 330–510",
-      "pot": "Tierra",
-      "includes": [
-        "Planta Filodendro Pink Princess",
-        "Maceta Tierra (cerámica artesanal)",
-        "Labubu Guacamayo Rosado — fibra de chambira",
-        "Tarjeta dedicatoria personalizada"
-      ],
-      "labubu": {
-        "animal": "Guacamayo Rosado",
-        "artisan": "Nora Cumapa",
-        "community": "Shipibo-Conibo",
-        "region": "Ucayali, Perú"
-      }
-    }
-  },
-  {
-    "id": "JA-P003",
-    "slug": "monstera-adansonii",
-    "name": "Monstera Adansonii",
-    "scientificName": "Monstera adansonii",
-    "tier": "P",
-    "iconLucide": "leaf",
-    "imageUrl": "/images/plants/monstera-adansonii.jpg",
-    "imageAlt": "Monstera Adansonii con hojas perforadas que crean juego de luz y sombra en maceta de fibra natural",
-    "tags": {
-      "type": ["exotic", "indoor"],
-      "size": ["medium"],
-      "care": ["amateur", "collector"]
-    },
-    "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
-    "description": "Sus hojas perforadas crean un juego de luz y sombra fascinante. Crece rápido y trepa con entusiasmo — llena el espacio con movimiento.",
-    "longDescription": "La Monstera Adansonii tiene esa energía de selva en expansión — hojas que parecen recortadas por la naturaleza para dejar pasar la luz. Trepa, cuelga, llena. En pocas semanas transforma un rincón vacío en un fragmento de Amazonía.",
-    "benefit": {
-      "iconLucide": "leaf",
-      "text": "Dinamismo y abundancia — energía de selva en movimiento"
-    },
-    "care": {
-      "light": "Luz indirecta media",
-      "water": "Moderado — regar cuando el sustrato esté casi seco",
-      "humidity": "Alta — agradece nebulización"
-    },
-    "seasonalWarningLima": null,
-    "regenerative": {
-      "priceRange": "S/ 120–210",
-      "pot": "Selva",
-      "includes": [
-        "Planta Monstera Adansonii",
-        "Maceta Selva (fibra natural)",
-        "Labubu Rana Arborícola — fibra de chambira",
-        "Tarjeta dedicatoria personalizada"
-      ],
-      "labubu": {
-        "animal": "Rana Arborícola",
-        "artisan": "Yeni Tangoa",
-        "community": "Ese Eja",
-        "region": "Madre de Dios, Perú"
-      }
-    }
-  },
-  {
-    "id": "JA-P004",
-    "slug": "zz-plant",
-    "name": "ZZ Plant — Zamioculca",
-    "scientificName": "Zamioculcas zamiifolia",
-    "tier": "P",
-    "iconLucide": "gem",
-    "imageUrl": "/images/plants/zz-plant.jpg",
-    "imageAlt": "ZZ Plant con hojas verde brillante casi perfectas en maceta de cemento pulido",
-    "tags": {
-      "type": ["indoor"],
-      "size": ["medium"],
-      "care": ["none"]
-    },
-    "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
-    "description": "Sin luz, sin agua, sin problemas. La planta más estoica del mundo — sus hojas verde brillante son casi artificialmente perfectas.",
-    "longDescription": "La ZZ Plant es el zen hecho planta. Hojas lacadas, simétricas, que no necesitan atención para estar perfectas. Crece lenta y con dignidad, ignorando olvidadas, cambios de temperatura y períodos de sequía. La planta para los que quieren verde sin culpa.",
-    "benefit": {
-      "iconLucide": "clover",
-      "text": "Prosperidad y resiliencia — crece incluso cuando te olvidas de ella"
-    },
-    "care": {
-      "light": "Luz tenue a indirecta baja — tolera casi oscuridad total",
-      "water": "Muy escaso — cada 2–4 semanas",
-      "humidity": "Baja — muy adaptable"
-    },
-    "seasonalWarningLima": null,
-    "regenerative": {
-      "priceRange": "S/ 190–230",
-      "pot": "Piedra",
-      "includes": [
-        "Planta ZZ Plant",
-        "Maceta Piedra (cemento pulido)",
-        "Labubu Tortuga Amazónica — fibra de chambira",
-        "Tarjeta dedicatoria personalizada"
-      ],
-      "labubu": {
-        "animal": "Tortuga Amazónica",
-        "artisan": "Sonia Inuma",
-        "community": "Yawanapi",
-        "region": "Loreto, Perú"
-      }
-    }
-  },
-  {
-    "id": "JA-P005",
-    "slug": "sansevieria-golden",
-    "name": "Sansevieria Golden",
-    "scientificName": "Dracaena trifasciata 'Golden Hahnii'",
-    "tier": "P",
-    "iconLucide": "swords",
-    "imageUrl": "/images/plants/sansevieria-golden.jpg",
-    "imageAlt": "Sansevieria Golden con hojas doradas y erguidas en maceta de cerámica artesanal",
-    "tags": {
-      "type": ["indoor"],
-      "size": ["medium", "large"],
-      "care": ["none"]
+      "size": ["small"],
+      "care": ["none", "amateur"]
     },
     "petSafe": true,
     "suitableFor": { "gift": true, "space": true, "me": true },
-    "description": "La indestructible. Sus hojas doradas y erguidas purifican el aire dormida — requiere casi nada y da mucho a cambio.",
-    "longDescription": "La Sansevieria Golden es el guardián silencioso del espacio. Hojas doradas y firmes que purifica el aire mientras todos duermen — según la NASA, una de las mejores plantas para interiores. Requiere tan poco que parece injusto lo mucho que aporta.",
+    "description": "Originaria del Perú — sus venas son arte amazónico en miniatura.",
+    "longDescription": "La Fittonia es originaria de la Amazonía peruana — lleva en sus hojas el mismo patrón que los artesanos shipibo-conibo expresan en tela y cerámica. Sus venas blancas o rojas sobre verde oscuro son arte vivo en miniatura.",
     "benefit": {
-      "iconLucide": "wind",
-      "text": "Purifica el aire y protege el espacio — el guardián verde"
+      "iconLucide": "leaf",
+      "text": "Conexión con raíces amazónicas peruanas"
     },
     "care": {
-      "light": "Luz tenue — soporta sombra profunda",
-      "water": "Muy escaso — cada 3–4 semanas",
-      "humidity": "Baja — muy resistente"
+      "light": "Luz indirecta baja — tolera sombra",
+      "water": "Frecuente — mantener sustrato húmedo",
+      "humidity": "Muy alta — humedad constante"
     },
-    "seasonalWarningLima": null,
+    "seasonalWarningLima": "La garúa y humedad del invierno limeño le viene bien. En verano nebulizar más.",
     "regenerative": {
-      "priceRange": "S/ 245–335",
-      "pot": "Tierra",
+      "priceRange": "S/ 85–110",
+      "pot": "Selva",
       "includes": [
-        "Planta Sansevieria Golden",
-        "Maceta Tierra (cerámica artesanal)",
-        "Labubu Caimán Dorado — fibra de chambira",
+        "Planta Fittonia",
+        "Maceta Selva (fibra natural, talla pequeña)",
+        "Labubu Dendrobates — Rana de Colores — fibra de chambira",
         "Tarjeta dedicatoria personalizada"
       ],
       "labubu": {
-        "animal": "Caimán Dorado",
-        "artisan": "Luz Marina Flores",
-        "community": "Kukama-Kukamiria",
-        "region": "Loreto, Perú"
-      }
-    }
-  },
-  {
-    "id": "JA-P006",
-    "slug": "anturio-rojo",
-    "name": "Anturio Rojo",
-    "scientificName": "Anthurium andraeanum",
-    "tier": "P",
-    "iconLucide": "heart",
-    "imageUrl": "/images/plants/anturio-rojo.jpg",
-    "imageAlt": "Anturio Rojo con espatas rojas lacadas en maceta de cerámica artesanal",
-    "tags": {
-      "type": ["indoor"],
-      "size": ["medium"],
-      "care": ["amateur"]
-    },
-    "petSafe": false,
-    "suitableFor": { "gift": true, "space": false, "me": false },
-    "description": "Sus espatas rojas lacadas florecen casi sin parar. El anturio rojo es el regalo vivo más reconocido de Lima — hermoso, duradero y emotivo.",
-    "longDescription": "El Anturio Rojo es el clásico que nunca defrauda. Sus espatas rojo lacado se renuevan de manera casi continua, convirtiéndolo en un regalo que sigue diciendo algo semanas después de entregado. La planta que representa el corazón abierto.",
-    "benefit": {
-      "iconLucide": "heart",
-      "text": "Amor y hospitalidad — la planta del corazón abierto"
-    },
-    "care": {
-      "light": "Luz indirecta media — sin sol directo",
-      "water": "Moderado — sustrato húmedo no encharcado",
-      "humidity": "Alta — agradece nebulización en verano"
-    },
-    "seasonalWarningLima": "Sensible a corrientes de aire frío en invierno limeño (jun–sep). Mantener cerca de fuente de luz y evitar ventanas con frío.",
-    "regenerative": {
-      "priceRange": "S/ 145–190",
-      "pot": "Tierra",
-      "includes": [
-        "Planta Anturio Rojo",
-        "Maceta Tierra (cerámica artesanal)",
-        "Labubu Guacamayo Rojo — fibra de chambira",
-        "Tarjeta dedicatoria personalizada"
-      ],
-      "labubu": {
-        "animal": "Guacamayo Rojo",
+        "animal": "Dendrobates — Rana de Colores",
         "artisan": "Rosa Cumapa",
         "community": "Shipibo-Conibo",
         "region": "Ucayali, Perú"
@@ -495,283 +1225,66 @@
     }
   },
   {
-    "id": "JA-P007",
-    "slug": "anturio-amarillo-chocolate",
-    "name": "Anturio Amarillo / Chocolate",
-    "scientificName": "Anthurium andraeanum (vars. raras)",
-    "tier": "P",
-    "iconLucide": "flame",
-    "imageUrl": "/images/plants/anturio-amarillo-chocolate.jpg",
-    "imageAlt": "Anturio en variedad de color amarillo solar o marrón chocolate en maceta de cemento pulido",
+    "id": "JA-B005",
+    "slug": "helecho-nido",
+    "name": "Helecho Nido",
+    "scientificName": "Asplenium nidus",
+    "tier": "B",
+    "iconLucide": "leaf",
+    "images": [
+      "/images/plants/helecho-nido-1.jpg",
+      "/images/plants/helecho-nido-2.jpg",
+      "/images/plants/helecho-nido-3.jpg"
+    ],
+    "imageAlt": "Helecho Nido con hojas brillantes emergiendo del centro en espiral en maceta de fibra natural",
     "tags": {
       "type": ["indoor"],
-      "size": ["medium"],
-      "care": ["amateur", "collector"]
-    },
-    "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": false },
-    "description": "El color que nadie espera en un anturio — amarillo solar o marrón chocolate que convierte un regalo común en algo que nadie ha visto antes.",
-    "longDescription": "Cuando el rojo no es suficiente. El Anturio Amarillo o Chocolate es el regalo para quien quiere sorprender de verdad — un color que la mayoría desconoce que existe en esta especie. Raro, elegante, y con la misma floración prolífica del anturio clásico.",
-    "benefit": {
-      "iconLucide": "flame",
-      "text": "Alegría única — el regalo que rompe todos los esquemas"
-    },
-    "care": {
-      "light": "Luz indirecta media",
-      "water": "Moderado — regar 1 vez por semana",
-      "humidity": "Alta — nebulizar en verano"
-    },
-    "seasonalWarningLima": "Sensible a corrientes de aire frío en invierno limeño (jun–sep). Mantener cerca de fuente de luz y evitar ventanas con frío.",
-    "regenerative": {
-      "priceRange": "S/ 175–220",
-      "pot": "Piedra",
-      "includes": [
-        "Planta Anturio (variedad de color)",
-        "Maceta Piedra (cemento pulido)",
-        "Labubu Mariposa Amarilla — fibra de chambira",
-        "Tarjeta dedicatoria personalizada"
-      ],
-      "labubu": {
-        "animal": "Mariposa Amarilla",
-        "artisan": "Carla Tangoa",
-        "community": "Huitoto",
-        "region": "Loreto, Perú"
-      }
-    }
-  },
-  {
-    "id": "JA-B003",
-    "slug": "tillandsia",
-    "name": "Tillandsia — Planta de Aire",
-    "scientificName": "Tillandsia spp.",
-    "tier": "B",
-    "iconLucide": "wind",
-    "imageUrl": "/images/plants/tillandsia.jpg",
-    "imageAlt": "Tillandsia planta de aire posada sobre base de madera amazónica sin tierra ni maceta",
-    "tags": {
-      "type": ["air", "outdoor"],
-      "size": ["small"],
+      "size": ["small", "medium"],
       "care": ["none", "amateur"]
     },
     "petSafe": true,
     "suitableFor": { "gift": true, "space": true, "me": true },
-    "description": "Sin tierra, sin maceta. La Tillandsia vive del aire y un poco de agua nebulizada — puede posarse en cualquier superficie y transformarla.",
-    "longDescription": "La Tillandsia desafía todo lo que creemos saber sobre las plantas. Sin tierra, sin raíces en sustrato, se aferra a donde quieras ponerla y vive del aire y la humedad ambiente. Colócala en una rama, en una piedra, en una repisa — donde esté, llama la atención.",
-    "benefit": {
-      "iconLucide": "sparkles",
-      "text": "Libertad y energía del aire — desafía la idea de lo que una planta puede ser"
-    },
-    "care": {
-      "light": "Luz indirecta alta — cerca de ventana sin sol directo",
-      "water": "Nebulización 2–3 veces por semana o baño semanal",
-      "humidity": "Media — sin sustrato, absorbe por hojas"
-    },
-    "seasonalWarningLima": null,
-    "regenerative": {
-      "priceRange": "S/ 90–155",
-      "pot": "Selva",
-      "includes": [
-        "Tillandsia (especie seleccionada)",
-        "Base de madera amazónica",
-        "Labubu Loro Epífito — fibra de chambira",
-        "Tarjeta dedicatoria personalizada"
-      ],
-      "labubu": {
-        "animal": "Loro Epífito",
-        "artisan": "Ana Soria",
-        "community": "Nomatsiguenga",
-        "region": "Junín, Perú"
-      }
-    }
-  },
-  {
-    "id": "JA-P008",
-    "slug": "jazmin-limon",
-    "name": "Jazmín Limón",
-    "scientificName": "Murraya paniculata",
-    "tier": "P",
-    "iconLucide": "flower",
-    "imageUrl": "/images/plants/jazmin-limon.jpg",
-    "imageAlt": "Jazmín Limón con flores blancas perfumadas en maceta de fibra natural",
-    "tags": {
-      "type": ["outdoor", "indoor"],
-      "size": ["medium"],
-      "care": ["amateur"]
-    },
-    "petSafe": true,
-    "suitableFor": { "gift": true, "space": true, "me": true },
-    "description": "Sus flores blancas desprenden un perfume dulce y cítrico que impregna toda la habitación. El Jazmín es una experiencia sensorial completa.",
-    "longDescription": "El Jazmín Limón no solo se ve — se siente y se huele. Sus pequeñas flores blancas liberan un aroma dulce-cítrico que transforma cualquier balcón o sala en un rincón de bienestar. Una planta para quienes entienden que los jardines también se viven con todos los sentidos.",
+    "description": "Sus hojas brillantes emergen del centro en espiral — naturaleza pura.",
+    "longDescription": "El Helecho Nido es una de las plantas más antiguas de la tierra — lleva millones de años con la misma forma perfecta. Sus hojas largas y brillantes emergen del centro en espiral, como una obra de orfebrería vegetal.",
     "benefit": {
       "iconLucide": "wind",
-      "text": "Bienestar y calma sensorial — el aroma que transforma el ambiente"
+      "text": "Calma y frescura natural"
     },
     "care": {
-      "light": "Luz intensa / sol indirecto — balcón o ventana luminosa",
-      "water": "Moderado — regar cuando el sustrato esté casi seco",
-      "humidity": "Media — adaptable a interiores bien iluminados"
+      "light": "Luz indirecta baja — sin sol directo",
+      "water": "Frecuente — mantener sustrato consistentemente húmedo",
+      "humidity": "Muy alta — le encanta la garúa de Lima"
     },
-    "seasonalWarningLima": null,
+    "seasonalWarningLima": "Paradójicamente, el invierno limeño con garúa y humedad es ideal para este helecho. En verano, ubicar lejos del sol directo y nebulizar con frecuencia.",
     "regenerative": {
-      "priceRange": "S/ 145–200",
+      "priceRange": "S/ 90–175",
       "pot": "Selva",
       "includes": [
-        "Planta Jazmín Limón",
+        "Planta Helecho Nido",
         "Maceta Selva (fibra natural)",
-        "Labubu Colibrí — fibra de chambira",
+        "Labubu Pez Paiche — fibra de chambira",
         "Tarjeta dedicatoria personalizada"
       ],
       "labubu": {
-        "animal": "Colibrí",
-        "artisan": "Miriam Cushi",
-        "community": "Matsés",
-        "region": "Loreto, Perú"
-      }
-    }
-  },
-  {
-    "id": "JA-P009",
-    "slug": "cuerno-de-alce",
-    "name": "Cuerno de Alce",
-    "scientificName": "Platycerium bifurcatum",
-    "tier": "P",
-    "iconLucide": "mountain",
-    "imageUrl": "/images/plants/cuerno-de-alce.jpg",
-    "imageAlt": "Cuerno de Alce montado en tabla de madera en pared con frondes en forma de cuerno",
-    "tags": {
-      "type": ["indoor", "outdoor"],
-      "size": ["medium"],
-      "care": ["amateur", "collector"]
-    },
-    "petSafe": true,
-    "suitableFor": { "gift": true, "space": true, "me": true },
-    "description": "Vive montado en pared — no necesita maceta. Sus frondes en forma de cuerno son una declaración de interiores. Es un cuadro vivo.",
-    "longDescription": "El Cuerno de Alce es la planta para quien entiende que los interiores son una extensión de uno mismo. Epífita y orgullosa, se monta en tabla y cuelga de cualquier pared convirtiéndola en selva viva. Sus frondes en forma de asta son inconfundibles — arte natural que ningún cuadro puede replicar.",
-    "benefit": {
-      "iconLucide": "shield",
-      "text": "Protección y arte — transforma cualquier pared en selva viva"
-    },
-    "care": {
-      "light": "Luz indirecta media a sombra — interior con algo de luz",
-      "water": "Nebulización o baño semanal — epífito, no tiene sustrato",
-      "humidity": "Media-alta — agradece ambientes húmedos"
-    },
-    "seasonalWarningLima": null,
-    "regenerative": {
-      "priceRange": "S/ 145–215",
-      "pot": "Selva",
-      "includes": [
-        "Planta Cuerno de Alce",
-        "Tabla de madera para montaje",
-        "Labubu Cóndor — fibra de chambira",
-        "Tarjeta dedicatoria personalizada"
-      ],
-      "labubu": {
-        "animal": "Cóndor",
-        "artisan": "David Ruiz",
-        "community": "Kokama",
-        "region": "Loreto, Perú"
-      }
-    }
-  },
-  {
-    "id": "JA-S004",
-    "slug": "anturio-cristalino",
-    "name": "Anturio Cristalino",
-    "scientificName": "Anthurium crystallinum",
-    "tier": "S",
-    "iconLucide": "gem",
-    "imageUrl": "/images/plants/anturio-cristalino.jpg",
-    "imageAlt": "Anturio Cristalino con venas plateadas sobre terciopelo verde oscuro en maceta de cerámica",
-    "tags": {
-      "type": ["exotic", "indoor"],
-      "size": ["medium"],
-      "care": ["collector"]
-    },
-    "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
-    "description": "Venas plateadas sobre terciopelo verde oscuro — el Crystallinum parece tener luz propia. El Anturio que convierte a la gente en coleccionista.",
-    "longDescription": "El Anturio Cristalino llega de nuestra propia Amazonía y tiene un efecto conocido: quien lo ve, quiere uno. Sus venas plateadas sobre terciopelo verde oscuro parecen bordadas a mano — cada nueva hoja es una obra en miniatura que emerge lenta y perfecta.",
-    "benefit": {
-      "iconLucide": "sparkles",
-      "text": "Luz interior y conexión amazónica — viene de nuestra propia selva"
-    },
-    "care": {
-      "light": "Luz indirecta media — evitar sol directo",
-      "water": "Moderado — sustrato húmedo con buen drenaje",
-      "humidity": "Muy alta — humidificador recomendado"
-    },
-    "seasonalWarningLima": "Sensible a corrientes de aire frío en invierno limeño (jun–sep). Mantener cerca de fuente de luz y evitar ventanas con frío.",
-    "regenerative": {
-      "priceRange": "S/ 165–310",
-      "pot": "Tierra",
-      "includes": [
-        "Planta Anturio Cristalino",
-        "Maceta Tierra (cerámica artesanal)",
-        "Labubu Mariposa Morpho — fibra de chambira",
-        "Tarjeta dedicatoria personalizada"
-      ],
-      "labubu": {
-        "animal": "Mariposa Morpho",
-        "artisan": "Elena Paima",
-        "community": "Shipibo",
-        "region": "Ucayali, Perú"
-      }
-    }
-  },
-  {
-    "id": "JA-S005",
-    "slug": "filodendro-gloriosum",
-    "name": "Filodendro Gloriosum",
-    "scientificName": "Philodendron gloriosum",
-    "tier": "S",
-    "iconLucide": "crown",
-    "imageUrl": "/images/plants/filodendro-gloriosum.jpg",
-    "imageAlt": "Filodendro Gloriosum con hojas aterciopeladas gigantes y venas blancas imponentes en maceta grande de cemento",
-    "tags": {
-      "type": ["exotic"],
-      "size": ["medium", "large"],
-      "care": ["collector"]
-    },
-    "petSafe": false,
-    "suitableFor": { "gift": false, "space": true, "me": true },
-    "description": "Hojas aterciopeladas gigantes con venas blancas imponentes — el ícono del coleccionismo mundial. Y es de nuestra Amazonía sudamericana.",
-    "longDescription": "El Filodendro Gloriosum es la razón por la que la gente cae en el mundo de las aráceas. Hojas enormes de terciopelo con venas blancas que parecen dibujadas. Crece arrastrándose, lento y majestuoso, como si supiera que merece ser observado. Orgullo de la Amazonía sudamericana.",
-    "benefit": {
-      "iconLucide": "sprout",
-      "text": "Grandeza amazónica — la razón por la que la gente cae en el mundo de las aráceas"
-    },
-    "care": {
-      "light": "Luz indirecta media — rampa horizontal (crece arrastrando, no trepando)",
-      "water": "Moderado — regar cuando el sustrato esté casi seco",
-      "humidity": "Muy alta — humidificador o bandeja con agua"
-    },
-    "seasonalWarningLima": "Sensible a corrientes de aire frío en invierno limeño (jun–sep). Mantener cerca de fuente de luz y evitar ventanas con frío.",
-    "regenerative": {
-      "priceRange": "S/ 290–580",
-      "pot": "Piedra",
-      "includes": [
-        "Planta Filodendro Gloriosum",
-        "Maceta Piedra (cemento pulido, talla grande)",
-        "Labubu Boa Esmeralda — fibra de chambira",
-        "Tarjeta dedicatoria personalizada"
-      ],
-      "labubu": {
-        "animal": "Boa Esmeralda",
-        "artisan": "Marco Inuma",
+        "animal": "Pez Paiche",
+        "artisan": "Yeni Tangoa",
         "community": "Ese Eja",
         "region": "Madre de Dios, Perú"
       }
     }
   },
   {
-    "id": "JA-B004",
+    "id": "JA-B006",
     "slug": "maranta-prayer-plant",
     "name": "Maranta Prayer Plant",
     "scientificName": "Maranta leuconeura",
     "tier": "B",
     "iconLucide": "hand",
-    "imageUrl": "/images/plants/maranta-prayer-plant.jpg",
+    "images": [
+      "/images/plants/maranta-prayer-plant-1.jpg",
+      "/images/plants/maranta-prayer-plant-2.jpg",
+      "/images/plants/maranta-prayer-plant-3.jpg"
+    ],
     "imageAlt": "Maranta Prayer Plant con hojas plegadas en patrones elaborados en maceta de fibra natural",
     "tags": {
       "type": ["indoor"],
@@ -806,6 +1319,104 @@
         "artisan": "Graciela Huanca",
         "community": "Matsiguenka",
         "region": "Cusco, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-B007",
+    "slug": "caladium-white",
+    "name": "Caladium White",
+    "scientificName": "Caladium bicolor 'White'",
+    "tier": "B",
+    "iconLucide": "flower",
+    "images": [
+      "/images/plants/caladium-white-1.jpg",
+      "/images/plants/caladium-white-2.jpg",
+      "/images/plants/caladium-white-3.jpg"
+    ],
+    "imageAlt": "Caladium White con hojas casi translúcidas en blanco puro captando la luz en maceta de cerámica",
+    "tags": {
+      "type": ["indoor"],
+      "size": ["small", "medium"],
+      "care": ["amateur"]
+    },
+    "petSafe": false,
+    "suitableFor": { "gift": true, "space": true, "me": true },
+    "description": "Hojas casi translúcidas en blanco puro — luz sólida en forma de planta.",
+    "longDescription": "El Caladium White es magia vegetal en temporada de sol. Sus hojas casi translúcidas en blanco puro parecen capturar y amplificar la luz del espacio. En invierno descansa y vuelve en primavera con la misma intensidad.",
+    "benefit": {
+      "iconLucide": "sun",
+      "text": "Luminosidad y pureza visual"
+    },
+    "care": {
+      "light": "Luz indirecta media — sin sol directo",
+      "water": "Moderado durante crecimiento — nulo en latencia",
+      "humidity": "Alta — nebulizar regularmente en crecimiento"
+    },
+    "seasonalWarningLima": "ATENCIÓN: el Caladium entra en latencia en invierno Lima — pierde todas sus hojas y queda solo el tubérculo. Es normal. No regar durante la latencia. Retomará en primavera.",
+    "regenerative": {
+      "priceRange": "S/ 130–250",
+      "pot": "Tierra",
+      "includes": [
+        "Planta Caladium White",
+        "Maceta Tierra (cerámica artesanal)",
+        "Labubu Garza Blanca — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Garza Blanca",
+        "artisan": "Julia Yareja",
+        "community": "Kukama",
+        "region": "Loreto, Perú"
+      }
+    }
+  },
+  {
+    "id": "JA-B008",
+    "slug": "scindapsus-pictus",
+    "name": "Scindapsus Pictus",
+    "scientificName": "Scindapsus pictus 'Argyraeus'",
+    "tier": "B",
+    "iconLucide": "sparkles",
+    "images": [
+      "/images/plants/scindapsus-pictus-1.jpg",
+      "/images/plants/scindapsus-pictus-2.jpg",
+      "/images/plants/scindapsus-pictus-3.jpg"
+    ],
+    "imageAlt": "Scindapsus Pictus con manchas plateadas como estrellas sobre hojas verde oscuro en maceta de fibra",
+    "tags": {
+      "type": ["indoor"],
+      "size": ["small", "medium"],
+      "care": ["amateur"]
+    },
+    "petSafe": true,
+    "suitableFor": { "gift": true, "space": true, "me": true },
+    "description": "Manchas plateadas como estrellas sobre hojas verde oscuro — la prima sofisticada del Pothos.",
+    "longDescription": "El Scindapsus es la versión premium del Pothos sin el precio de una planta de colección. Sus manchas plateadas sobre verde oscuro brillan como fragmentos de luz. Prima del Pothos, con mucho más carácter.",
+    "benefit": {
+      "iconLucide": "sparkles",
+      "text": "Magia y distinción plateada"
+    },
+    "care": {
+      "light": "Luz indirecta media — más luz = más manchas plateadas",
+      "water": "Moderado",
+      "humidity": "Media-alta"
+    },
+    "seasonalWarningLima": "En invierno puede crecer más lento. Las manchas plateadas pueden ser menos brillantes con menos luz — buscar ubicación luminosa.",
+    "regenerative": {
+      "priceRange": "S/ 150–190",
+      "pot": "Selva",
+      "includes": [
+        "Planta Scindapsus Pictus",
+        "Maceta Selva (fibra natural)",
+        "Labubu Mariposa Morpho Pequeña — fibra de chambira",
+        "Tarjeta dedicatoria personalizada"
+      ],
+      "labubu": {
+        "animal": "Mariposa Morpho Pequeña",
+        "artisan": "Carmen Shawit",
+        "community": "Awajún",
+        "region": "Amazonas, Perú"
       }
     }
   }
