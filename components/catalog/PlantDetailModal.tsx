@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useState, useEffect } from "react";
 import { Sun, Droplet, CloudFog, AlertTriangle, PawPrint, MessageCircle } from "lucide-react";
 import { Modal } from "@/components/ui/Modal";
 import { Button } from "@/components/ui/Button";
@@ -27,10 +28,17 @@ type Props = {
 };
 
 export function PlantDetailModal({ plant, onClose }: Props) {
+  const [activeIdx, setActiveIdx] = useState(0);
+
+  useEffect(() => {
+    setActiveIdx(0);
+  }, [plant?.id]);
+
   if (!plant) {
     return <Modal open={false} onClose={onClose}>{null}</Modal>;
   }
 
+  const mainSrc = plant.images[activeIdx] ?? plant.images[0] ?? "";
   const waNumber = process.env.NEXT_PUBLIC_WA_NUMBER ?? "51999999999";
   const waUrl = buildPlantWhatsAppUrl(plant, waNumber);
 
@@ -38,7 +46,8 @@ export function PlantDetailModal({ plant, onClose }: Props) {
     <Modal open={!!plant} onClose={onClose} maxWidth="max-w-3xl">
       <div className="relative aspect-[4/3] bg-ja-cream">
         <Image
-          src={plant.imageUrl}
+          key={mainSrc}
+          src={mainSrc}
           alt={plant.imageAlt}
           fill
           sizes="(max-width: 768px) 100vw, 768px"
@@ -53,6 +62,30 @@ export function PlantDetailModal({ plant, onClose }: Props) {
           )}
         </div>
       </div>
+      {plant.images.length > 1 && (
+        <div className="flex gap-2 px-6 md:px-10 pt-4">
+          {plant.images.map((src, i) => (
+            <button
+              key={src}
+              type="button"
+              onClick={() => setActiveIdx(i)}
+              className={[
+                "relative w-20 h-20 rounded-xl overflow-hidden border-2 transition-colors",
+                activeIdx === i ? "border-ja-dark" : "border-transparent hover:border-ja-mid/40",
+              ].join(" ")}
+              aria-label={`Foto ${i + 1} de ${plant.images.length}`}
+            >
+              <Image
+                src={src}
+                alt=""
+                fill
+                sizes="80px"
+                className="object-cover"
+              />
+            </button>
+          ))}
+        </div>
+      )}
 
       <div className="px-6 md:px-10 py-8 md:py-10 space-y-6">
         <div>

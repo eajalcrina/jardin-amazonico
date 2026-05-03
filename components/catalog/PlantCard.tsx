@@ -36,7 +36,7 @@ export function PlantCard({ plant, onSelect }: PlantCardProps) {
     <article className="group flex flex-col rounded-3xl bg-ja-paper border border-ja-dark/10 overflow-hidden transition-shadow hover:shadow-lg">
       <div className="relative aspect-[4/5] overflow-hidden bg-ja-cream">
         <Image
-          src={plant.imageUrl}
+          src={plant.images[0] ?? ""}
           alt={plant.imageAlt}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
