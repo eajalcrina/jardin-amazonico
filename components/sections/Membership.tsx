@@ -86,6 +86,7 @@ export function Membership() {
                   <Button
                     fullWidth
                     size="lg"
+                    aria-label={`Suscribirme al plan ${plan}`}
                     className="mt-6"
                     onClick={() => setOpenPlan(plan)}
                   >
