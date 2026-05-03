@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Check, ShieldCheck } from "lucide-react";
+import { Check, MessageCircle, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Accordion } from "@/components/ui/Accordion";
 import { MembershipFormModal } from "@/components/membership/MembershipFormModal";
@@ -15,10 +15,10 @@ const PLAN_DATA: Record<Plan, {
   note: string;
 }> = {
   Bosque: {
-    headline: "Para cuando quieres que tu selva crezca.",
+    headline: "Quiero crear mi colección",
     includes: [
-      "Una planta seleccionada del mes por nuestro equipo de curaduría",
-      "Una maceta de la colección (Tierra, Piedra o Selva)",
+      "Seleccionamos una planta de colección al mes, incluyen las más exóticas",
+      "Una maceta de estilo minimalista de buena calidad",
       "Un labubu amazónico — el animal del mes, en fibra de chambira",
       "Aplica para garantía del esqueje",
     ],
@@ -26,7 +26,7 @@ const PLAN_DATA: Record<Plan, {
     note: "Incluye delivery en Lima.",
   },
   Suelo: {
-    headline: "Para cuando ya tienes tu selva y quieres que prospere.",
+    headline: "Quiero cuidarlas y replicarlas",
     includes: [
       "1 Kg de sustrato especializado (interior, suculentas o tropical)",
       "Kit mensual de cuidado: nutrientes, control de plagas preventivo y correctivo",
@@ -47,6 +47,7 @@ const FAQ_ITEMS = [
 
 export function Membership() {
   const [openPlan, setOpenPlan] = useState<Plan | null>(null);
+  const waCommunity = process.env.NEXT_PUBLIC_WA_COMMUNITY_LINK ?? "";
 
   return (
     <section id="membresia" className="bg-ja-cream py-16 md:py-24">
@@ -56,7 +57,7 @@ export function Membership() {
           Una membresía que respira contigo.
         </h2>
         <p className="mt-3 text-ja-ink/75 max-w-2xl">
-          El mundo de las plantas tiene temporadas. Nosotros también.
+          Planes de membresía diseñada para coleccionistas de plantas únicas.
         </p>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -88,7 +89,7 @@ export function Membership() {
                     className="mt-6"
                     onClick={() => setOpenPlan(plan)}
                   >
-                    Suscribirme al {plan} →
+                    Suscribirme →
                   </Button>
                 </div>
               </article>
@@ -104,6 +105,23 @@ export function Membership() {
             de membresía continua.
           </p>
         </div>
+
+        {waCommunity && (
+          <div className="mt-6 rounded-2xl bg-ja-paper p-5 border border-ja-dark/10 flex items-start gap-3">
+            <MessageCircle size={22} className="mt-0.5 shrink-0 text-ja-mid" />
+            <p className="text-sm text-ja-dark">
+              <a
+                href={waCommunity}
+                target="_blank"
+                rel="noreferrer"
+                className="underline underline-offset-4 hover:text-ja-mid"
+              >
+                Únete a la comunidad WhatsApp →
+              </a>{" "}
+              Recibe consejos de cuidado, intercambia esquejes y conecta con otros coleccionistas de plantas.
+            </p>
+          </div>
+        )}
 
         <div className="mt-12">
           <h3 className="font-display text-xl text-ja-dark">
