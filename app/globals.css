@@ -50,27 +50,15 @@
     @apply w-full rounded-xl border border-ja-dark/15 bg-ja-paper px-4 py-3 text-base text-ja-ink placeholder:text-ja-ink/40 focus:border-ja-dark focus:outline-none focus:ring-2 focus:ring-ja-mid;
   }
 
-  .btn-kene {
+  .btn-kene-zigzag {
     background-color: var(--color-ja-paper);
-    background-image:
-      repeating-linear-gradient(
-        0deg,
-        transparent 0px,
-        transparent 4px,
-        color-mix(in oklab, var(--color-ja-darker) 18%, transparent) 4px,
-        color-mix(in oklab, var(--color-ja-darker) 18%, transparent) 5px,
-        transparent 5px,
-        transparent 11px,
-        color-mix(in oklab, var(--color-ja-darker) 12%, transparent) 11px,
-        color-mix(in oklab, var(--color-ja-darker) 12%, transparent) 12px,
-        transparent 12px,
-        transparent 18px
-      );
-    background-size: 100% 18px;
-    background-repeat: repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Cpolyline%20points%3D%220%2C16%2020%2C4%2040%2C28%2060%2C4%2080%2C28%20100%2C4%20120%2C28%20140%2C4%20160%2C28%20180%2C4%20200%2C16%22%20stroke%3D%22%231B4332%22%20stroke-width%3D%223%22%20fill%3D%22none%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E");
+    background-size: 100% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
-  .btn-kene:hover {
+  .btn-kene-zigzag:hover {
     background-color: var(--color-ja-cream);
   }
 }

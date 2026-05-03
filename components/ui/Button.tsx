@@ -5,7 +5,7 @@ type Size = "sm" | "md" | "lg";
 
 const VARIANT_STYLES: Record<Variant, string> = {
   primary:
-    "btn-kene text-ja-darker hover:text-ja-dark border border-ja-darker/20 hover:border-ja-darker/40 focus-visible:ring-ja-mid",
+    "btn-kene-zigzag text-ja-darker hover:text-ja-dark border border-ja-darker/20 hover:border-ja-darker/40 focus-visible:ring-ja-mid",
   secondary:
     "bg-transparent text-ja-dark border border-ja-dark hover:bg-ja-dark hover:text-ja-paper focus-visible:ring-ja-dark",
   ghost:
@@ -26,14 +26,14 @@ export type ButtonProps = ComponentPropsWithoutRef<"button"> & {
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   function Button(
-    { variant = "primary", size = "md", fullWidth, className = "", ...props },
+    { variant = "primary", size = "md", fullWidth, className = "", children, ...props },
     ref,
   ) {
     return (
       <button
         ref={ref}
         className={[
-          "inline-flex items-center justify-center gap-2 rounded-full font-medium transition-colors relative overflow-hidden",
+          "relative inline-flex items-center justify-center rounded-full font-medium transition-colors",
           "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-ja-paper",
           "disabled:opacity-40 disabled:pointer-events-none",
           VARIANT_STYLES[variant],
@@ -42,7 +42,15 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           className,
         ].join(" ")}
         {...props}
-      />
+      >
+        {variant === "primary" ? (
+          <span className="relative z-10 inline-flex items-center gap-2 bg-inherit px-3">
+            {children}
+          </span>
+        ) : (
+          <span className="inline-flex items-center gap-2">{children}</span>
+        )}
+      </button>
     );
   },
 );
