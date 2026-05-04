@@ -31,7 +31,7 @@ export function PlantCard({ plant, onSelect }: PlantCardProps) {
       type="button"
       onClick={() => onSelect(plant)}
       aria-label={`Ver detalle de ${plant.name}`}
-      className="group relative block w-full text-left rounded-3xl overflow-hidden bg-ja-cream transition-all duration-500 hover:shadow-[0_24px_60px_-25px_rgba(15,42,28,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ja-mid focus-visible:ring-offset-2 focus-visible:ring-offset-ja-paper"
+      className="group relative block w-full text-left rounded-xl overflow-hidden bg-ja-cream transition-all duration-500 hover:shadow-[0_24px_60px_-25px_rgba(15,42,28,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ja-mid focus-visible:ring-offset-2 focus-visible:ring-offset-ja-paper"
     >
       <div className="relative aspect-[4/5] overflow-hidden">
         <Image
