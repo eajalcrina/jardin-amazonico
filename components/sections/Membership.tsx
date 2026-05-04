@@ -5,6 +5,7 @@ import { Check, MessageCircle, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Accordion } from "@/components/ui/Accordion";
 import { MembershipFormModal } from "@/components/membership/MembershipFormModal";
+import { MEMBERSHIP_FAQ_ITEMS } from "@/lib/faq-data";
 
 type Plan = "Bosque" | "Suelo";
 
@@ -40,12 +41,6 @@ const PLAN_DATA: Record<Plan, {
   },
 };
 
-const FAQ_ITEMS = [
-  { id: "pause", question: "¿Puedo pausar la membresía?", answer: "Sí. Escríbenos antes del día 20 del mes y pausamos sin costo." },
-  { id: "cancel", question: "¿Puedo cancelar cuando quiera?", answer: "Sí. Sin permanencias mínimas más allá del mes en curso." },
-  { id: "outside", question: "¿Entregan fuera de Lima?", answer: "Por ahora solo Lima Metropolitana. Estamos evaluando expandirnos." },
-  { id: "gift", question: "¿Puedo regalar la membresía?", answer: "Sí. Cada suscripción es independiente." },
-];
 
 export function Membership() {
   const [openPlan, setOpenPlan] = useState<Plan | null>(null);
@@ -131,7 +126,7 @@ export function Membership() {
             Preguntas frecuentes de membresía
           </h3>
           <div className="mt-4">
-            <Accordion items={FAQ_ITEMS} />
+            <Accordion items={MEMBERSHIP_FAQ_ITEMS} />
           </div>
         </div>
       </div>
