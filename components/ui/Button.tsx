@@ -35,7 +35,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         className={[
-          "relative inline-flex items-center justify-center rounded-full font-medium tracking-[0.01em]",
+          "relative inline-flex items-center justify-center rounded-lg font-medium tracking-[0.01em]",
           "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-ja-paper",
           "disabled:opacity-40 disabled:pointer-events-none",
           VARIANT_STYLES[variant],
@@ -46,7 +46,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
       >
         {variant === "primary" || variant === "primary-dark" ? (
-          <span className="relative z-10 inline-flex items-center gap-2 bg-inherit px-3 py-0.5 rounded-full">
+          <span className="relative z-10 inline-flex items-center gap-2 bg-inherit px-3 py-0.5 rounded-lg">
             {children}
           </span>
         ) : (

@@ -90,7 +90,7 @@ export function Modal({
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 40, opacity: 0 }}
             transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-            className={`relative w-full ${maxWidth} bg-ja-paper rounded-t-3xl md:rounded-3xl max-h-[90svh] overflow-y-auto`}
+            className={`relative w-full ${maxWidth} bg-ja-paper rounded-t-xl md:rounded-xl max-h-[90svh] overflow-y-auto`}
             onClick={(e) => e.stopPropagation()}
           >
             <button
