@@ -122,3 +122,35 @@ export async function appendLandscapingLead(
     },
   });
 }
+
+export type CorporateLeadInput = {
+  fullName: string;
+  email: string;
+  phone: string;
+  message?: string;
+};
+
+export async function appendCorporateLead(
+  input: CorporateLeadInput,
+): Promise<void> {
+  const { sheets, spreadsheetId } = getSheetsClient();
+  const timestamp = new Date().toISOString();
+
+  const row = [
+    timestamp,
+    input.fullName,
+    input.email,
+    input.phone,
+    input.message ?? "",
+    "web-corporativo",
+  ];
+
+  await sheets.spreadsheets.values.append({
+    spreadsheetId,
+    range: "Corporate Leads!A:F",
+    valueInputOption: "USER_ENTERED",
+    requestBody: {
+      values: [row],
+    },
+  });
+}

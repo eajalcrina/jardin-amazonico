@@ -92,3 +92,22 @@ describe("appendLandscapingLead", () => {
     expect(row?.[5]).toBe("web-paisajismo");
   });
 });
+
+describe("appendCorporateLead", () => {
+  it("calls sheets.values.append with Corporate Leads range", async () => {
+    const { appendCorporateLead } = await import("./sheets");
+    await appendCorporateLead({
+      fullName: "Empresa Test",
+      email: "rep@empresa.com",
+      phone: "+51999111444",
+      message: "Necesitamos plantas trofeo para premiación anual",
+    });
+    expect(mockAppend).toHaveBeenCalled();
+    const lastCall = mockAppend.mock.calls.at(-1)?.[0];
+    expect(lastCall?.range).toBe("Corporate Leads!A:F");
+    const row = lastCall?.requestBody?.values?.[0];
+    expect(row?.[1]).toBe("Empresa Test");
+    expect(row?.[3]).toBe("+51999111444");
+    expect(row?.[5]).toBe("web-corporativo");
+  });
+});
