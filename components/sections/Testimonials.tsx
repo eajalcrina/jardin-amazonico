@@ -35,7 +35,7 @@ export function Testimonials() {
           {TESTIMONIALS.map((t) => (
             <article
               key={t.author}
-              className="snap-start shrink-0 w-[80vw] max-w-sm rounded-3xl bg-ja-cream p-7 border border-ja-dark/10 flex flex-col"
+              className="snap-start shrink-0 w-[80vw] max-w-sm rounded-xl bg-ja-cream p-7 border border-ja-dark/10 flex flex-col"
             >
               <p className="font-display italic text-lg text-ja-dark leading-snug">
                 &ldquo;{t.quote}&rdquo;
@@ -55,7 +55,7 @@ export function Testimonials() {
           {TESTIMONIALS.map((t) => (
             <article
               key={t.author}
-              className="rounded-3xl bg-ja-cream p-7 md:p-8 border border-ja-dark/10 flex flex-col"
+              className="rounded-xl bg-ja-cream p-7 md:p-8 border border-ja-dark/10 flex flex-col"
             >
               <p className="font-display italic text-lg text-ja-dark leading-snug">
                 &ldquo;{t.quote}&rdquo;

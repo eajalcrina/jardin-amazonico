@@ -66,7 +66,7 @@ export function Membership() {
             return (
               <article
                 key={plan}
-                className="flex flex-col rounded-3xl bg-ja-paper p-8 md:p-10 border border-ja-dark/10"
+                className="flex flex-col rounded-xl bg-ja-paper p-8 md:p-10 border border-ja-dark/10"
               >
                 <div className="flex-grow">
                   <span className="text-xs uppercase tracking-[0.2em] text-ja-mid font-medium">{plan}</span>
@@ -98,7 +98,7 @@ export function Membership() {
           })}
         </div>
 
-        <div className="mt-10 rounded-2xl bg-ja-light/60 p-5 flex items-start gap-3">
+        <div className="mt-10 rounded-lg bg-ja-light/60 p-5 flex items-start gap-3">
           <ShieldCheck size={22} className="mt-0.5 shrink-0 text-ja-mid" />
           <p className="text-sm text-ja-dark">
             <span className="font-medium">Garantía del Esqueje:</span> si tu planta muere,
@@ -108,7 +108,7 @@ export function Membership() {
         </div>
 
         {waCommunity && (
-          <div className="mt-6 rounded-2xl bg-ja-paper p-5 border border-ja-dark/10 flex items-start gap-3">
+          <div className="mt-6 rounded-lg bg-ja-paper p-5 border border-ja-dark/10 flex items-start gap-3">
             <MessageCircle size={22} className="mt-0.5 shrink-0 text-ja-mid" />
             <p className="text-sm text-ja-dark">
               <a

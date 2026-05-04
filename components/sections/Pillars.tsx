@@ -32,7 +32,7 @@ export function Pillars() {
         <div className="mt-12 grid gap-8 md:grid-cols-3 md:gap-10">
           {PILLARS.map(({ icon: Icon, title, body }) => (
             <article key={title} className="flex flex-col gap-4">
-              <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-ja-dark text-ja-paper">
+              <span className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-ja-dark text-ja-paper">
                 <Icon size={22} />
               </span>
               <h3 className="font-display text-xl md:text-2xl text-ja-dark">

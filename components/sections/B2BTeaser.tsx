@@ -19,8 +19,8 @@ export function B2BTeaser() {
         </h2>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
-          <article className="rounded-3xl bg-ja-cream p-8 md:p-10 border border-ja-dark/10">
-            <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-ja-dark text-ja-paper">
+          <article className="rounded-xl bg-ja-cream p-8 md:p-10 border border-ja-dark/10">
+            <span className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-ja-dark text-ja-paper">
               <Trees size={22} />
             </span>
             <h3 className="mt-4 font-display text-2xl text-ja-dark">
@@ -35,8 +35,8 @@ export function B2BTeaser() {
             </Link>
           </article>
 
-          <article className="rounded-3xl bg-ja-cream p-8 md:p-10 border border-ja-dark/10">
-            <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-ja-dark text-ja-paper">
+          <article className="rounded-xl bg-ja-cream p-8 md:p-10 border border-ja-dark/10">
+            <span className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-ja-dark text-ja-paper">
               <Building2 size={22} />
             </span>
             <h3 className="mt-4 font-display text-2xl text-ja-dark">

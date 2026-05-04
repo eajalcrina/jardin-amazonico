@@ -58,7 +58,7 @@ export function LabubuImpact() {
           {reel.map((photo, idx) => (
             <div
               key={`${photo.src}-${idx}`}
-              className="relative h-56 w-44 md:h-72 md:w-56 shrink-0 overflow-hidden rounded-2xl"
+              className="relative h-56 w-44 md:h-72 md:w-56 shrink-0 overflow-hidden rounded-xl"
               style={{ filter: "saturate(0.85) contrast(1.05) brightness(0.97)" }}
             >
               <Image
@@ -79,7 +79,7 @@ export function LabubuImpact() {
           {STATS.map((s) => (
             <div
               key={s.label}
-              className="rounded-2xl bg-ja-paper p-6 border border-ja-dark/10"
+              className="rounded-xl bg-ja-paper p-6 border border-ja-dark/10"
             >
               <p className="font-display text-3xl md:text-4xl text-ja-terra">
                 {s.value}
