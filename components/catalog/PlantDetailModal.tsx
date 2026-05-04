@@ -73,7 +73,7 @@ function PlantDetailModalBody({ plant, onPurchase }: { plant: Plant; onPurchase:
               type="button"
               onClick={() => setActiveIdx(i)}
               className={[
-                "relative w-20 h-20 rounded-xl overflow-hidden border-2 transition-colors",
+                "relative w-20 h-20 rounded-lg overflow-hidden border-2 transition-colors",
                 activeIdx === i ? "border-ja-dark" : "border-transparent hover:border-ja-mid/40",
               ].join(" ")}
               aria-label={`Foto ${i + 1} de ${plant.images.length}`}
@@ -92,7 +92,7 @@ function PlantDetailModalBody({ plant, onPurchase }: { plant: Plant; onPurchase:
 
         <p className="text-ja-ink/85 leading-relaxed">{plant.longDescription}</p>
 
-        <div className="relative overflow-hidden rounded-2xl bg-ja-cream p-5">
+        <div className="relative overflow-hidden rounded-lg bg-ja-cream p-5">
           <div className="absolute inset-0 text-ja-mid">
             <KenePattern opacity={0.06} />
           </div>
@@ -123,14 +123,14 @@ function PlantDetailModalBody({ plant, onPurchase }: { plant: Plant; onPurchase:
         </div>
 
         {!plant.petSafe && (
-          <div className="rounded-xl bg-ja-sand/30 p-4 text-sm text-ja-ink flex gap-2">
+          <div className="rounded-lg bg-ja-sand/30 p-4 text-sm text-ja-ink flex gap-2">
             <AlertTriangle size={16} className="mt-0.5 shrink-0 text-ja-terra" />
             <span>No apta para mascotas. Esta planta es tóxica para gatos y perros si se ingiere.</span>
           </div>
         )}
 
         {plant.seasonalWarningLima && (
-          <div className="rounded-xl bg-ja-cream p-4 text-sm text-ja-ink/80">
+          <div className="rounded-lg bg-ja-cream p-4 text-sm text-ja-ink/80">
             <span className="font-medium block">Aviso estacional:</span>
             {plant.seasonalWarningLima}
           </div>

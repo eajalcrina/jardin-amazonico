@@ -65,7 +65,7 @@ export function PlantCard({ plant, onSelect }: PlantCardProps) {
 
         {/* Bottom pill — clean cloud, image stays crisp */}
         <div className="absolute bottom-3 left-3 right-3 z-10">
-          <div className="bg-ja-paper/95 backdrop-blur-sm rounded-2xl px-4 py-2.5 shadow-[0_8px_24px_-12px_rgba(15,42,28,0.35)] flex items-center justify-between gap-3">
+          <div className="bg-ja-paper/95 backdrop-blur-sm rounded-lg px-4 py-2.5 shadow-[0_8px_24px_-12px_rgba(15,42,28,0.35)] flex items-center justify-between gap-3">
             <h3 className="font-display text-sm md:text-base text-ja-dark leading-tight min-w-0 flex-1">
               {plant.name}
             </h3>

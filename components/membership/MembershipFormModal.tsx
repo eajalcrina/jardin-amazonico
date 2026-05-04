@@ -121,7 +121,7 @@ export function MembershipFormModal({ open, initialPlan, onClose }: Props) {
               <label
                 key={p}
                 className={[
-                  "rounded-xl border px-4 py-3 text-center text-sm cursor-pointer transition-colors",
+                  "rounded-lg border px-4 py-3 text-center text-sm cursor-pointer transition-colors",
                   plan === p
                     ? "border-ja-dark bg-ja-light text-ja-dark"
                     : "border-ja-dark/15 hover:border-ja-dark/40",
