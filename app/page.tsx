@@ -14,6 +14,33 @@ import { PlantDetailModal } from "@/components/catalog/PlantDetailModal";
 import { PlantCheckoutModal } from "@/components/catalog/PlantCheckoutModal";
 import { KeneDivider } from "@/components/ui/KeneDivider";
 import type { Plant } from "@/lib/plants";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { PlantCatalogJsonLd } from "@/components/seo/PlantCatalogJsonLd";
+import { FAQ_ITEMS, MEMBERSHIP_FAQ_ITEMS } from "@/lib/faq-data";
+
+const LOCAL_BUSINESS_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "Florist",
+  name: "Jardín Amazónico",
+  url: "https://www.rainforestlegacy.org",
+  description: "Plantas de colección amazónicas y artesanías de fibra de chambira en Lima.",
+  address: { "@type": "PostalAddress", addressLocality: "Lima", addressCountry: "PE" },
+  areaServed: { "@type": "City", name: "Lima Metropolitana" },
+  priceRange: "S/ 78 – S/ 170",
+  currenciesAccepted: "PEN",
+  paymentAccepted: "MercadoPago, Transferencia",
+  hasOfferCatalog: { "@type": "OfferCatalog", name: "Plantas de colección" },
+};
+
+const FAQ_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [...FAQ_ITEMS, ...MEMBERSHIP_FAQ_ITEMS].map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: { "@type": "Answer", text: item.answer },
+  })),
+};
 
 export default function Home() {
   const [selectedPlant, setSelectedPlant] = useState<Plant | null>(null);
@@ -27,6 +54,9 @@ export default function Home() {
 
   return (
     <main>
+      <JsonLd data={LOCAL_BUSINESS_SCHEMA} />
+      <JsonLd data={FAQ_SCHEMA} />
+      <PlantCatalogJsonLd />
       <Hero />
       <div className="bg-ja-cream py-3 text-ja-mid">
         <KeneDivider opacity={0.5} />
