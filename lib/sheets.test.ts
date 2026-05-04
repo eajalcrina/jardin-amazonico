@@ -24,6 +24,7 @@ describe("appendMembershipLead", () => {
     await appendMembershipLead({
       fullName: "Eddie Test",
       email: "eddie@test.com",
+      phone: "+51999111222",
       district: "Miraflores",
       plan: "Bosque",
       message: "Hola",
@@ -31,11 +32,12 @@ describe("appendMembershipLead", () => {
     expect(mockAppend).toHaveBeenCalledOnce();
     const call = mockAppend.mock.calls[0]?.[0];
     expect(call?.spreadsheetId).toBe("fake-id");
-    expect(call?.range).toBe("A:G");
+    expect(call?.range).toBe("A:H");
     const row = call?.requestBody?.values?.[0];
     expect(row?.[1]).toBe("Eddie Test");
-    expect(row?.[4]).toBe("Bosque");
-    expect(row?.[6]).toBe("web");
+    expect(row?.[3]).toBe("+51999111222");
+    expect(row?.[5]).toBe("Bosque");
+    expect(row?.[7]).toBe("web");
   });
 
   it("throws when env vars missing", async () => {
@@ -45,6 +47,7 @@ describe("appendMembershipLead", () => {
       appendMembershipLead({
         fullName: "x",
         email: "x@x.com",
+        phone: "+51999",
         district: "x",
         plan: "Bosque",
       }),

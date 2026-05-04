@@ -14,7 +14,7 @@ const MP_LINKS: Record<Plan, string | undefined> = {
 
 const PLAN_PRICE: Record<Plan, string> = {
   Bosque: "S/ 170 / mes",
-  Suelo: "S/ 55 / mes",
+  Suelo: "S/ 70 / mes",
 };
 
 type Props = {
@@ -27,6 +27,7 @@ export function MembershipFormModal({ open, initialPlan, onClose }: Props) {
   const [plan, setPlan] = useState<Plan>(initialPlan);
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [district, setDistrict] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
@@ -36,6 +37,7 @@ export function MembershipFormModal({ open, initialPlan, onClose }: Props) {
   function reset() {
     setFullName("");
     setEmail("");
+    setPhone("");
     setDistrict("");
     setMessage("");
     setError(null);
@@ -51,7 +53,7 @@ export function MembershipFormModal({ open, initialPlan, onClose }: Props) {
       const res = await fetch("/api/membership-signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ fullName, email, district, plan, message }),
+        body: JSON.stringify({ fullName, email, phone, district, plan, message }),
       });
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
@@ -156,6 +158,17 @@ export function MembershipFormModal({ open, initialPlan, onClose }: Props) {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              className="form-input"
+            />
+          </Field>
+
+          <Field label="Celular" required>
+            <input
+              type="tel"
+              required
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              placeholder="Ej: +51 999 999 999"
               className="form-input"
             />
           </Field>

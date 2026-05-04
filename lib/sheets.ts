@@ -3,6 +3,7 @@ import { google } from "googleapis";
 export type MembershipLeadInput = {
   fullName: string;
   email: string;
+  phone: string;
   district: string;
   plan: "Bosque" | "Suelo";
   message?: string;
@@ -39,6 +40,7 @@ export async function appendMembershipLead(
     timestamp,
     input.fullName,
     input.email,
+    input.phone,
     input.district,
     input.plan,
     input.message ?? "",
@@ -47,7 +49,7 @@ export async function appendMembershipLead(
 
   await sheets.spreadsheets.values.append({
     spreadsheetId,
-    range: "A:G",
+    range: "A:H",
     valueInputOption: "USER_ENTERED",
     requestBody: {
       values: [row],

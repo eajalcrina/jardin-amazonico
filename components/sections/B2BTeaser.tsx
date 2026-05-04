@@ -48,10 +48,6 @@ export function B2BTeaser() {
             </Link>
           </article>
         </div>
-
-        <p className="mt-8 text-sm text-ja-ink/60">
-          Próximamente: páginas dedicadas con casos y portafolio.
-        </p>
       </div>
     </section>
   );

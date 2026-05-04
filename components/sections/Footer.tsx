@@ -44,12 +44,12 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://instagram.com/jardinamazonico"
+                  href="https://www.instagram.com/jardin.amazonico?igsh=MXBsaXpzeHlsNWFqNQ=="
                   target="_blank"
                   rel="noreferrer"
                   className="hover:text-ja-light"
                 >
-                  Instagram @jardinamazonico
+                  Instagram @jardin.amazonico
                 </a>
               </li>
             </ul>
@@ -60,9 +60,20 @@ export function Footer() {
           </div>
         </div>
 
-        <p className="mt-12 pt-8 border-t border-ja-paper/15 text-xs text-ja-paper/60">
-          © 2026 Jardín Amazónico. Lima, Perú.
-        </p>
+        <div className="mt-12 pt-8 border-t border-ja-paper/15 text-xs text-ja-paper/60 flex flex-col sm:flex-row sm:justify-between gap-2">
+          <p>© 2026 Jardín Amazónico. Lima, Perú.</p>
+          <p>
+            Diseño y desarrollo por{" "}
+            <a
+              href="https://www.thousandfold.la"
+              target="_blank"
+              rel="noreferrer"
+              className="underline underline-offset-4 hover:text-ja-paper"
+            >
+              Thousandfold
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );

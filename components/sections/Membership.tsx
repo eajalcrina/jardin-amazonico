@@ -23,7 +23,7 @@ const PLAN_DATA: Record<Plan, {
       "Aplica para garantía del esqueje",
     ],
     price: "Desde S/ 170 / mes",
-    note: "Incluye delivery en Lima.",
+    note: "No incluye delivery en Lima.",
   },
   Suelo: {
     headline: "Quiero cuidarlas y replicarlas",
@@ -33,8 +33,8 @@ const PLAN_DATA: Record<Plan, {
       "3 macetas pequeñas para propagar esquejes",
       "Aplica para garantía del esqueje",
     ],
-    price: "Desde S/ 55 / mes",
-    note: "Incluye delivery en Lima.",
+    price: "Desde S/ 70 / mes",
+    note: "No incluye delivery en Lima.",
   },
 };
 
