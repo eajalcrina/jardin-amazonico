@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { Modal } from "@/components/ui/Modal";
 import { Button } from "@/components/ui/Button";
-import { Check, MessageCircle } from "lucide-react";
+import { Check } from "lucide-react";
 import { buildPlantWhatsAppUrl } from "@/lib/whatsapp";
 import type { Plant } from "@/lib/plants";
 
@@ -57,6 +57,8 @@ export function PlantCheckoutModal({ plant, onClose }: Props) {
         const data = await res.json().catch(() => ({}));
         throw new Error(data.error ?? "Error de envío");
       }
+      const waUrl = buildPlantWhatsAppUrl(plant, waNumber);
+      window.open(waUrl, "_blank", "noopener,noreferrer");
       setSuccess(true);
     } catch (err) {
       setError((err as Error).message);
@@ -72,7 +74,6 @@ export function PlantCheckoutModal({ plant, onClose }: Props) {
   const titleText = `Compra personalizada — ${plant.name}`;
 
   if (success) {
-    const waUrl = buildPlantWhatsAppUrl(plant, waNumber);
     return (
       <Modal open onClose={onClose} maxWidth="max-w-lg" title={titleText}>
         <div className="px-6 md:px-10 py-10 text-center">
@@ -81,19 +82,20 @@ export function PlantCheckoutModal({ plant, onClose }: Props) {
           </span>
           <h3 className="font-display text-3xl text-ja-dark">¡Datos recibidos!</h3>
           <p className="mt-3 text-ja-ink/80">
-            Continúa por WhatsApp para coordinar la entrega y completar tu compra de{" "}
+            Te abrimos WhatsApp para coordinar la entrega de{" "}
             <span className="font-medium">{plant.name}</span>.
           </p>
-          <a
-            href={waUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-6 inline-block"
-          >
-            <Button size="lg">
-              <MessageCircle size={18} /> Continuar por WhatsApp →
-            </Button>
-          </a>
+          <p className="mt-2 text-sm text-ja-ink/60">
+            ¿No se abrió?{" "}
+            <a
+              href={buildPlantWhatsAppUrl(plant, waNumber)}
+              target="_blank"
+              rel="noreferrer"
+              className="underline underline-offset-4 hover:text-ja-mid"
+            >
+              Haz clic aquí
+            </a>
+          </p>
           {waCommunity && (
             <a
               href={waCommunity}

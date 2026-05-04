@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactNode, useEffect, useRef } from "react";
+import { ReactNode, useCallback, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 
@@ -21,6 +21,10 @@ export function Modal({
 }: ModalProps) {
   const dialogRef = useRef<HTMLDivElement>(null);
   const previousFocus = useRef<HTMLElement | null>(null);
+  const onCloseRef = useRef(onClose);
+  useEffect(() => { onCloseRef.current = onClose; });
+
+  const stableOnClose = useCallback(() => onCloseRef.current(), []);
 
   useEffect(() => {
     if (!open) return;
@@ -29,7 +33,7 @@ export function Modal({
 
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
-        onClose();
+        stableOnClose();
         return;
       }
       if (e.key === "Tab" && dialogRef.current) {
@@ -53,7 +57,6 @@ export function Modal({
     document.addEventListener("keydown", onKey);
     document.body.style.overflow = "hidden";
 
-    // Focus the first focusable element on open (small timeout for animation)
     const focusTimer = setTimeout(() => {
       const firstFocusable = dialogRef.current?.querySelector<HTMLElement>(
         'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
@@ -65,10 +68,9 @@ export function Modal({
       document.removeEventListener("keydown", onKey);
       document.body.style.overflow = "";
       clearTimeout(focusTimer);
-      // Restore previous focus
       previousFocus.current?.focus?.();
     };
-  }, [open, onClose]);
+  }, [open, stableOnClose]);
 
   return (
     <AnimatePresence>

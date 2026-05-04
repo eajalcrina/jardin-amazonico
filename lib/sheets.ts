@@ -30,11 +30,42 @@ function getSheetsClient() {
   return { sheets, spreadsheetId };
 }
 
+async function ensureSheet(
+  sheets: ReturnType<typeof google.sheets>,
+  spreadsheetId: string,
+  sheetName: string,
+  headers: string[],
+): Promise<void> {
+  const meta = await sheets.spreadsheets.get({ spreadsheetId });
+  const exists = meta.data.sheets?.some(
+    (s) => s.properties?.title === sheetName,
+  );
+  if (exists) return;
+
+  await sheets.spreadsheets.batchUpdate({
+    spreadsheetId,
+    requestBody: {
+      requests: [{ addSheet: { properties: { title: sheetName } } }],
+    },
+  });
+
+  await sheets.spreadsheets.values.append({
+    spreadsheetId,
+    range: `${sheetName}!A1`,
+    valueInputOption: "USER_ENTERED",
+    requestBody: { values: [headers] },
+  });
+}
+
 export async function appendMembershipLead(
   input: MembershipLeadInput,
 ): Promise<void> {
   const { sheets, spreadsheetId } = getSheetsClient();
   const timestamp = new Date().toISOString();
+
+  await ensureSheet(sheets, spreadsheetId, "Sheet1", [
+    "Timestamp", "Nombre", "Email", "Celular", "Distrito", "Plan", "Mensaje", "Fuente",
+  ]);
 
   const row = [
     timestamp,
@@ -49,7 +80,7 @@ export async function appendMembershipLead(
 
   await sheets.spreadsheets.values.append({
     spreadsheetId,
-    range: "A:H",
+    range: "Sheet1!A:H",
     valueInputOption: "USER_ENTERED",
     requestBody: {
       values: [row],
@@ -71,6 +102,10 @@ export async function appendPlantPurchaseLead(
 ): Promise<void> {
   const { sheets, spreadsheetId } = getSheetsClient();
   const timestamp = new Date().toISOString();
+
+  await ensureSheet(sheets, spreadsheetId, "Plant Leads", [
+    "Timestamp", "Nombre", "Email", "Celular", "PlantID", "Planta", "Precio", "Fuente",
+  ]);
 
   const row = [
     timestamp,
@@ -106,6 +141,10 @@ export async function appendLandscapingLead(
   const { sheets, spreadsheetId } = getSheetsClient();
   const timestamp = new Date().toISOString();
 
+  await ensureSheet(sheets, spreadsheetId, "Landscaping Leads", [
+    "Timestamp", "Nombre", "Email", "Celular", "Mensaje", "Fuente",
+  ]);
+
   const row = [
     timestamp,
     input.fullName,
@@ -137,6 +176,10 @@ export async function appendCorporateLead(
 ): Promise<void> {
   const { sheets, spreadsheetId } = getSheetsClient();
   const timestamp = new Date().toISOString();
+
+  await ensureSheet(sheets, spreadsheetId, "Corporate Leads", [
+    "Timestamp", "Nombre", "Email", "Celular", "Mensaje", "Fuente",
+  ]);
 
   const row = [
     timestamp,

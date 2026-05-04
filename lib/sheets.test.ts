@@ -1,12 +1,20 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 
 const mockAppend = vi.fn().mockResolvedValue({});
+const mockGet = vi.fn().mockResolvedValue({
+  data: { sheets: [{ properties: { title: "Sheet1" } }, { properties: { title: "Plant Leads" } }, { properties: { title: "Landscaping Leads" } }, { properties: { title: "Corporate Leads" } }] },
+});
+const mockBatchUpdate = vi.fn().mockResolvedValue({});
 
 vi.mock("googleapis", () => ({
   google: {
     auth: { JWT: vi.fn() },
     sheets: vi.fn(() => ({
-      spreadsheets: { values: { append: mockAppend } },
+      spreadsheets: {
+        get: mockGet,
+        batchUpdate: mockBatchUpdate,
+        values: { append: mockAppend },
+      },
     })),
   },
 }));
@@ -16,6 +24,8 @@ beforeEach(() => {
   process.env.GOOGLE_SHEETS_PRIVATE_KEY = "fake\\nkey";
   process.env.GOOGLE_SHEETS_SPREADSHEET_ID = "fake-id";
   mockAppend.mockClear();
+  mockGet.mockClear();
+  mockBatchUpdate.mockClear();
 });
 
 describe("appendMembershipLead", () => {
@@ -32,7 +42,7 @@ describe("appendMembershipLead", () => {
     expect(mockAppend).toHaveBeenCalledOnce();
     const call = mockAppend.mock.calls[0]?.[0];
     expect(call?.spreadsheetId).toBe("fake-id");
-    expect(call?.range).toBe("A:H");
+    expect(call?.range).toBe("Sheet1!A:H");
     const row = call?.requestBody?.values?.[0];
     expect(row?.[1]).toBe("Eddie Test");
     expect(row?.[3]).toBe("+51999111222");
