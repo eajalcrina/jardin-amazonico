@@ -56,7 +56,7 @@ export function ProjectCarousel({ projects, eyebrow, headline, intro }: Props) {
 
       <div className="mt-10 md:mt-14">
         <div className="container mx-auto px-3 md:px-6 max-w-6xl">
-          <div className="relative aspect-[4/5] sm:aspect-[16/10] md:aspect-[16/9] overflow-hidden rounded-3xl bg-ja-cream">
+          <div className="relative aspect-[4/5] sm:aspect-[16/10] md:aspect-[16/9] overflow-hidden rounded-xl bg-ja-cream">
             <AnimatePresence mode="wait" initial={false}>
               <motion.div
                 key={current.image}
@@ -87,7 +87,7 @@ export function ProjectCarousel({ projects, eyebrow, headline, intro }: Props) {
                 transition={{ duration: 0.5, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
                 className="hidden md:block absolute bottom-8 left-8 max-w-sm"
               >
-                <div className="rounded-2xl bg-ja-paper p-6 shadow-[0_20px_40px_-20px_rgba(15,42,28,0.45)]">
+                <div className="rounded-lg bg-ja-paper p-6 shadow-[0_20px_40px_-20px_rgba(15,42,28,0.45)]">
                   <p className="font-display italic text-sm text-ja-mid">{current.n}</p>
                   <h3 className="mt-1 font-display text-2xl text-ja-dark leading-tight">
                     {current.title}
