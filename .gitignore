@@ -40,6 +40,8 @@ next-env.d.ts
 .env.production
 *.pem
 service-account*.json
+*-iam-*.json
+Referencias/*.json
 
 # Logs
 npm-debug.log*

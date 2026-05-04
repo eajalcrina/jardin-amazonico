@@ -13,12 +13,24 @@
     ],
     "imageAlt": "Alocasia Amazónica con hojas oscuras y venas blancas en maceta de cerámica",
     "tags": {
-      "type": ["exotic", "indoor"],
-      "size": ["medium"],
-      "care": ["amateur", "collector"]
+      "type": [
+        "exotic",
+        "indoor"
+      ],
+      "size": [
+        "medium"
+      ],
+      "care": [
+        "amateur",
+        "collector"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Sus hojas oscuras con bordes blancos parecen arte amazónico tallado en verde vivo.",
     "longDescription": "La Alocasia Amazónica lleva nuestro nombre en su propio nombre científico. Hojas oscuras con venación blanca nítida — como kené shipibo en verde. Protagonista absoluta del espacio donde vive.",
     "benefit": {
@@ -32,7 +44,7 @@
     },
     "seasonalWarningLima": "Sensible al frío de Lima. En invierno (jun–sep) reducir riego y proteger de corrientes. Puede entrar en semi-reposo.",
     "regenerative": {
-      "priceRange": "S/ 185–255",
+      "priceRange": "S/ 106",
       "pot": "Tierra",
       "includes": [
         "Planta Alocasia Amazónica",
@@ -62,12 +74,22 @@
     ],
     "imageAlt": "Filodendro Pink Princess con manchas rosas irrepetibles sobre hojas verde oscuro en maceta de cerámica",
     "tags": {
-      "type": ["exotic"],
-      "size": ["medium"],
-      "care": ["collector"]
+      "type": [
+        "exotic"
+      ],
+      "size": [
+        "medium"
+      ],
+      "care": [
+        "collector"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Ninguna hoja es igual. Sus manchas rosas sobre verde oscuro son irrepetibles.",
     "longDescription": "La planta más deseada del coleccionismo de aráceas en Lima. Cada hoja nueva emerge como una sorpresa — la cantidad de rosa varía según la luz y el estado de la planta. Es una relación, no una compra.",
     "benefit": {
@@ -81,7 +103,7 @@
     },
     "seasonalWarningLima": "Tolera el invierno limeño en interior. Requiere más humedad artificial en época de garúa. Evitar corrientes de aire frío de ventanas.",
     "regenerative": {
-      "priceRange": "S/ 330–510",
+      "priceRange": "S/ 124",
       "pot": "Tierra",
       "includes": [
         "Planta Filodendro Pink Princess",
@@ -111,12 +133,24 @@
     ],
     "imageAlt": "Filodendro Dark Lord con hojas de rojo sangre a negro metálico en maceta de cemento",
     "tags": {
-      "type": ["exotic", "indoor"],
-      "size": ["medium", "large"],
-      "care": ["collector"]
+      "type": [
+        "exotic",
+        "indoor"
+      ],
+      "size": [
+        "medium",
+        "large"
+      ],
+      "care": [
+        "collector"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Sus hojas van de rojo sangre a negro metálico. La planta más dramática de la familia — presencia de galería de arte, sin necesitar un cuadro.",
     "longDescription": "El Filodendro Dark Lord llega con hojas nuevas en rojo sangre que maduran a un negro metálico que absorbe la luz del cuarto. No es una planta decorativa — es una declaración. Para coleccionistas que entienden que lo oscuro también es belleza.",
     "benefit": {
@@ -130,7 +164,7 @@
     },
     "seasonalWarningLima": null,
     "regenerative": {
-      "priceRange": "S/ 250–475",
+      "priceRange": "S/ 124",
       "pot": "Piedra",
       "includes": [
         "Planta Filodendro Dark Lord",
@@ -160,12 +194,23 @@
     ],
     "imageAlt": "Filodendro Gloriosum con hojas aterciopeladas gigantes y venas blancas imponentes en maceta grande de cemento",
     "tags": {
-      "type": ["exotic"],
-      "size": ["medium", "large"],
-      "care": ["collector"]
+      "type": [
+        "exotic"
+      ],
+      "size": [
+        "medium",
+        "large"
+      ],
+      "care": [
+        "collector"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": false, "space": true, "me": true },
+    "suitableFor": {
+      "gift": false,
+      "space": true,
+      "me": true
+    },
     "description": "Hojas aterciopeladas gigantes con venas blancas imponentes — el ícono del coleccionismo mundial. Y es de nuestra Amazonía sudamericana.",
     "longDescription": "El Filodendro Gloriosum es la razón por la que la gente cae en el mundo de las aráceas. Hojas enormes de terciopelo con venas blancas que parecen dibujadas. Crece arrastrándose, lento y majestuoso, como si supiera que merece ser observado. Orgullo de la Amazonía sudamericana.",
     "benefit": {
@@ -179,7 +224,7 @@
     },
     "seasonalWarningLima": "Sensible a corrientes de aire frío en invierno limeño (jun–sep). Mantener cerca de fuente de luz y evitar ventanas con frío.",
     "regenerative": {
-      "priceRange": "S/ 290–580",
+      "priceRange": "S/ 106",
       "pot": "Piedra",
       "includes": [
         "Planta Filodendro Gloriosum",
@@ -209,12 +254,23 @@
     ],
     "imageAlt": "Filodendro Plowmonii con hojas gigantes onduladas y relieve 3D en maceta de cemento grande",
     "tags": {
-      "type": ["exotic"],
-      "size": ["medium", "large"],
-      "care": ["collector"]
+      "type": [
+        "exotic"
+      ],
+      "size": [
+        "medium",
+        "large"
+      ],
+      "care": [
+        "collector"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": false, "space": true, "me": true },
+    "suitableFor": {
+      "gift": false,
+      "space": true,
+      "me": true
+    },
     "description": "Hojas gigantes onduladas con relieve 3D — y es peruana de origen.",
     "longDescription": "El Plowmonii tiene hojas con superficie ondulada y brillante como cuero vegetal. Sus venas hundidas crean un relieve tridimensional único. Y viene del Perú — de nuestra propia selva. La planta que detiene cualquier conversación.",
     "benefit": {
@@ -228,7 +284,7 @@
     },
     "seasonalWarningLima": "Especie peruana que en Lima invierno entra en ralentización. Muy sensible al frío bajo 18°C. Proteger en invierno.",
     "regenerative": {
-      "priceRange": "S/ 370–880",
+      "priceRange": "S/ 106",
       "pot": "Piedra",
       "includes": [
         "Planta Filodendro Plowmonii",
@@ -258,12 +314,23 @@
     ],
     "imageAlt": "Anturio Cristalino con venas plateadas sobre terciopelo verde oscuro en maceta de cerámica",
     "tags": {
-      "type": ["exotic", "indoor"],
-      "size": ["medium"],
-      "care": ["collector"]
+      "type": [
+        "exotic",
+        "indoor"
+      ],
+      "size": [
+        "medium"
+      ],
+      "care": [
+        "collector"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Venas plateadas sobre terciopelo verde oscuro — el Crystallinum parece tener luz propia. El Anturio que convierte a la gente en coleccionista.",
     "longDescription": "El Anturio Cristalino llega de nuestra propia Amazonía y tiene un efecto conocido: quien lo ve, quiere uno. Sus venas plateadas sobre terciopelo verde oscuro parecen bordadas a mano — cada nueva hoja es una obra en miniatura que emerge lenta y perfecta.",
     "benefit": {
@@ -277,7 +344,7 @@
     },
     "seasonalWarningLima": "Sensible a corrientes de aire frío en invierno limeño (jun–sep). Mantener cerca de fuente de luz y evitar ventanas con frío.",
     "regenerative": {
-      "priceRange": "S/ 165–310",
+      "priceRange": "S/ 133",
       "pot": "Tierra",
       "includes": [
         "Planta Anturio Cristalino",
@@ -307,12 +374,23 @@
     ],
     "imageAlt": "Anturio Warocqueanum con hojas colgantes gigantes aterciopeladas y venación plateada",
     "tags": {
-      "type": ["exotic", "indoor"],
-      "size": ["large"],
-      "care": ["collector"]
+      "type": [
+        "exotic",
+        "indoor"
+      ],
+      "size": [
+        "large"
+      ],
+      "care": [
+        "collector"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": false, "space": true, "me": true },
+    "suitableFor": {
+      "gift": false,
+      "space": true,
+      "me": true
+    },
     "description": "La Reina de los Anturios. Hojas colgantes de hasta 1.5m, aterciopeladas.",
     "longDescription": "El Anthurium warocqueanum es considerado la reina absoluta del género. Sus hojas pueden superar el metro y medio, caen con elegancia y tienen una venación plateada irreal. Un solo ejemplar puede ser el centro absoluto de un espacio de lujo.",
     "benefit": {
@@ -326,7 +404,7 @@
     },
     "seasonalWarningLima": "La reina de los Anturios requiere condiciones estables todo el año. En invierno Lima es su mayor reto: baja temperatura y poca luz la estresan. Humidificador obligatorio.",
     "regenerative": {
-      "priceRange": "S/ 540–1,120",
+      "priceRange": "S/ 150",
       "pot": "Tierra",
       "includes": [
         "Planta Anturio Warocqueanum",
@@ -356,12 +434,24 @@
     ],
     "imageAlt": "Monstera Thai Constellation con constelación de manchas blancas sobre hojas verde profundo",
     "tags": {
-      "type": ["exotic", "indoor"],
-      "size": ["medium", "large"],
-      "care": ["collector"]
+      "type": [
+        "exotic",
+        "indoor"
+      ],
+      "size": [
+        "medium",
+        "large"
+      ],
+      "care": [
+        "collector"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "La Monstera más codiciada del planeta. Cada hoja es obra única.",
     "longDescription": "Constelación de manchas blancas estables sobre verde profundo — a diferencia de otras variegadas, la Thai Constellation mantiene su patrón de generación en generación. Cada hoja es irrepetible. La planta que todos conocen del Instagram y pocos tienen.",
     "benefit": {
@@ -375,7 +465,7 @@
     },
     "seasonalWarningLima": "Tolera bien el invierno en interior. La variegación puede ser menos llamativa en temporadas con poca luz. Evitar ventanas con corriente fría en invierno.",
     "regenerative": {
-      "priceRange": "S/ 355–860",
+      "priceRange": "S/ 124",
       "pot": "Tierra",
       "includes": [
         "Planta Monstera Thai Constellation",
@@ -405,12 +495,25 @@
     ],
     "imageAlt": "Filodendro Micans con hojas aterciopeladas verde-bronce iridiscente en maceta de cemento",
     "tags": {
-      "type": ["exotic", "indoor"],
-      "size": ["small", "medium"],
-      "care": ["amateur", "collector"]
+      "type": [
+        "exotic",
+        "indoor"
+      ],
+      "size": [
+        "small",
+        "medium"
+      ],
+      "care": [
+        "amateur",
+        "collector"
+      ]
     },
     "petSafe": true,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Sus hojas aterciopeladas en verde-bronce iridiscente capturan la luz de manera única. Hay que tocarlo para creerlo.",
     "longDescription": "El Filodendro Micans tiene una textura que ninguna foto hace justicia — terciopelo verde-bronce que cambia de tono con cada ángulo de luz. Una planta para tocar, para observar de cerca, para hacerla parte del ritmo diario.",
     "benefit": {
@@ -424,7 +527,7 @@
     },
     "seasonalWarningLima": null,
     "regenerative": {
-      "priceRange": "S/ 145–230",
+      "priceRange": "S/ 124",
       "pot": "Piedra",
       "includes": [
         "Planta Filodendro Micans",
@@ -454,12 +557,25 @@
     ],
     "imageAlt": "Filodendro Birkin con hojas oscuras y líneas blancas finas en maceta de cemento pulido",
     "tags": {
-      "type": ["exotic", "indoor"],
-      "size": ["small", "medium"],
-      "care": ["amateur", "collector"]
+      "type": [
+        "exotic",
+        "indoor"
+      ],
+      "size": [
+        "small",
+        "medium"
+      ],
+      "care": [
+        "amateur",
+        "collector"
+      ]
     },
     "petSafe": true,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Hojas oscuras con líneas blancas finas — sofisticación botánica pura.",
     "longDescription": "El Birkin es el filodendro del coleccionista que aprecia los detalles. Sus líneas blancas sobre verde oscuro brillante son casi geométricas. Cada hoja nueva puede sorprender con un patrón diferente — incluso puede revertir a verde sólido y volver.",
     "benefit": {
@@ -473,7 +589,7 @@
     },
     "seasonalWarningLima": "Resistente al invierno limeño en interior bien protegido. El patrón de variegación puede variar con menor luz en invierno.",
     "regenerative": {
-      "priceRange": "S/ 195–305",
+      "priceRange": "S/ 106",
       "pot": "Piedra",
       "includes": [
         "Planta Filodendro Birkin",
@@ -503,12 +619,24 @@
     ],
     "imageAlt": "Filodendro Congo Rojo con hojas rojas que maduran a verde oscuro brillante en maceta de cemento",
     "tags": {
-      "type": ["exotic", "indoor"],
-      "size": ["medium", "large"],
-      "care": ["amateur"]
+      "type": [
+        "exotic",
+        "indoor"
+      ],
+      "size": [
+        "medium",
+        "large"
+      ],
+      "care": [
+        "amateur"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Sus hojas rojas maduran a verde oscuro brillante — elegancia de selva.",
     "longDescription": "El Congo Rojo es el filodendro de los espacios con altura. Sus hojas nuevas emergen en tonos rojizos y maduran lentamente a un verde profundo brillante. Tiene presencia — ocupa el espacio con elegancia tropical sin necesitar tutor.",
     "benefit": {
@@ -522,7 +650,7 @@
     },
     "seasonalWarningLima": "Resistente al invierno en interior. Las hojas nuevas emergen con menos frecuencia en épocas frías. Regar menos en invierno.",
     "regenerative": {
-      "priceRange": "S/ 350–460",
+      "priceRange": "S/ 124",
       "pot": "Piedra",
       "includes": [
         "Planta Filodendro Congo Rojo",
@@ -552,12 +680,24 @@
     ],
     "imageAlt": "Alocasia Frydek con hojas de terciopelo verde oscuro y venas blancas nítidas en maceta de cerámica",
     "tags": {
-      "type": ["exotic", "indoor"],
-      "size": ["medium"],
-      "care": ["amateur", "collector"]
+      "type": [
+        "exotic",
+        "indoor"
+      ],
+      "size": [
+        "medium"
+      ],
+      "care": [
+        "amateur",
+        "collector"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Terciopelo verde oscuro con venas blancas de porcelana.",
     "longDescription": "La Alocasia Frydek tiene hojas de terciopelo verde profundo con venación blanca nítida — un contraste que parece diseñado. Su textura es la más suave del reino vegetal. Una joya que se siente tanto como se ve.",
     "benefit": {
@@ -571,7 +711,7 @@
     },
     "seasonalWarningLima": "Sensible al frío limeño. En invierno puede detener el crecimiento. Reducir riego significativamente. Mantener alejada de ventanas. Puede perder hojas en invierno — es temporal.",
     "regenerative": {
-      "priceRange": "S/ 125–295",
+      "priceRange": "S/ 106",
       "pot": "Tierra",
       "includes": [
         "Planta Alocasia Frydek",
@@ -601,12 +741,24 @@
     ],
     "imageAlt": "Monstera Adansonii con hojas perforadas que crean juego de luz y sombra en maceta de fibra natural",
     "tags": {
-      "type": ["exotic", "indoor"],
-      "size": ["medium"],
-      "care": ["amateur", "collector"]
+      "type": [
+        "exotic",
+        "indoor"
+      ],
+      "size": [
+        "medium"
+      ],
+      "care": [
+        "amateur",
+        "collector"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Sus hojas perforadas crean un juego de luz y sombra fascinante. Crece rápido y trepa con entusiasmo — llena el espacio con movimiento.",
     "longDescription": "La Monstera Adansonii tiene esa energía de selva en expansión — hojas que parecen recortadas por la naturaleza para dejar pasar la luz. Trepa, cuelga, llena. En pocas semanas transforma un rincón vacío en un fragmento de Amazonía.",
     "benefit": {
@@ -620,7 +772,7 @@
     },
     "seasonalWarningLima": null,
     "regenerative": {
-      "priceRange": "S/ 120–210",
+      "priceRange": "S/ 150",
       "pot": "Selva",
       "includes": [
         "Planta Monstera Adansonii",
@@ -650,12 +802,23 @@
     ],
     "imageAlt": "Monstera Deliciosa con hojas fenestradas icónicas montada en tutor en maceta de cemento",
     "tags": {
-      "type": ["indoor"],
-      "size": ["medium", "large"],
-      "care": ["amateur"]
+      "type": [
+        "indoor"
+      ],
+      "size": [
+        "medium",
+        "large"
+      ],
+      "care": [
+        "amateur"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "El ícono del diseño de interiores del siglo XXI. En tutor, lista para instalarse.",
     "longDescription": "La Monstera Deliciosa es la planta que definió una década de interiores. Sus hojas fenestradas son inconfundibles. La ofrecemos con tutor de 1 metro instalado — lista para colocar, lista para crecer.",
     "benefit": {
@@ -669,7 +832,7 @@
     },
     "seasonalWarningLima": "Muy adaptable. En invierno Lima crece más lento y las hojas nuevas pueden tardar. Reducir riego en invierno. La fenestración mejora con más luz.",
     "regenerative": {
-      "priceRange": "S/ 250–475",
+      "priceRange": "S/ 106",
       "pot": "Piedra",
       "includes": [
         "Planta Monstera Deliciosa",
@@ -699,12 +862,22 @@
     ],
     "imageAlt": "ZZ Plant con hojas verde brillante casi perfectas en maceta de cemento pulido",
     "tags": {
-      "type": ["indoor"],
-      "size": ["medium"],
-      "care": ["none"]
+      "type": [
+        "indoor"
+      ],
+      "size": [
+        "medium"
+      ],
+      "care": [
+        "none"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Sin luz, sin agua, sin problemas. La planta más estoica del mundo — sus hojas verde brillante son casi artificialmente perfectas.",
     "longDescription": "La ZZ Plant es el zen hecho planta. Hojas lacadas, simétricas, que no necesitan atención para estar perfectas. Crece lenta y con dignidad, ignorando olvidadas, cambios de temperatura y períodos de sequía. La planta para los que quieren verde sin culpa.",
     "benefit": {
@@ -718,7 +891,7 @@
     },
     "seasonalWarningLima": null,
     "regenerative": {
-      "priceRange": "S/ 190–230",
+      "priceRange": "S/ 106",
       "pot": "Piedra",
       "includes": [
         "Planta ZZ Plant",
@@ -748,12 +921,23 @@
     ],
     "imageAlt": "Sansevieria Golden con hojas doradas y erguidas en maceta de cerámica artesanal",
     "tags": {
-      "type": ["indoor"],
-      "size": ["medium", "large"],
-      "care": ["none"]
+      "type": [
+        "indoor"
+      ],
+      "size": [
+        "medium",
+        "large"
+      ],
+      "care": [
+        "none"
+      ]
     },
     "petSafe": true,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "La indestructible. Sus hojas doradas y erguidas purifican el aire dormida — requiere casi nada y da mucho a cambio.",
     "longDescription": "La Sansevieria Golden es el guardián silencioso del espacio. Hojas doradas y firmes que purifica el aire mientras todos duermen — según la NASA, una de las mejores plantas para interiores. Requiere tan poco que parece injusto lo mucho que aporta.",
     "benefit": {
@@ -767,7 +951,7 @@
     },
     "seasonalWarningLima": null,
     "regenerative": {
-      "priceRange": "S/ 245–335",
+      "priceRange": "S/ 106",
       "pot": "Tierra",
       "includes": [
         "Planta Sansevieria Golden",
@@ -797,12 +981,22 @@
     ],
     "imageAlt": "Anturio Rojo con espatas rojas lacadas en maceta de cerámica artesanal",
     "tags": {
-      "type": ["indoor"],
-      "size": ["medium"],
-      "care": ["amateur"]
+      "type": [
+        "indoor"
+      ],
+      "size": [
+        "medium"
+      ],
+      "care": [
+        "amateur"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": true, "space": false, "me": false },
+    "suitableFor": {
+      "gift": true,
+      "space": false,
+      "me": false
+    },
     "description": "Sus espatas rojas lacadas florecen casi sin parar. El anturio rojo es el regalo vivo más reconocido de Lima — hermoso, duradero y emotivo.",
     "longDescription": "El Anturio Rojo es el clásico que nunca defrauda. Sus espatas rojo lacado se renuevan de manera casi continua, convirtiéndolo en un regalo que sigue diciendo algo semanas después de entregado. La planta que representa el corazón abierto.",
     "benefit": {
@@ -816,7 +1010,7 @@
     },
     "seasonalWarningLima": "Sensible a corrientes de aire frío en invierno limeño (jun–sep). Mantener cerca de fuente de luz y evitar ventanas con frío.",
     "regenerative": {
-      "priceRange": "S/ 145–190",
+      "priceRange": "S/ 106",
       "pot": "Tierra",
       "includes": [
         "Planta Anturio Rojo",
@@ -846,12 +1040,23 @@
     ],
     "imageAlt": "Anturio Papillilaminum con hojas negras aterciopeladas de gran formato en maceta de cerámica",
     "tags": {
-      "type": ["exotic", "indoor"],
-      "size": ["medium"],
-      "care": ["collector"]
+      "type": [
+        "exotic",
+        "indoor"
+      ],
+      "size": [
+        "medium"
+      ],
+      "care": [
+        "collector"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": false, "space": true, "me": true },
+    "suitableFor": {
+      "gift": false,
+      "space": true,
+      "me": true
+    },
     "description": "Hojas negras aterciopeladas de gran formato — el lujo botánico oscuro.",
     "longDescription": "El Anthurium papillilaminum tiene hojas casi negras de terciopelo — una rareza extrema del género. Su tamaño imponente y color oscuro profundo lo convierten en la declaración más sofisticada que puede hacer una planta en un interior.",
     "benefit": {
@@ -865,7 +1070,7 @@
     },
     "seasonalWarningLima": "Muy sensible al frío y a la garúa. En invierno Lima es el mes más difícil para esta especie. Requiere humidificador. Hojas pueden adquirir manchas con agua fría.",
     "regenerative": {
-      "priceRange": "S/ 310–660",
+      "priceRange": "S/ 106",
       "pot": "Tierra",
       "includes": [
         "Planta Anturio Papillilaminum",
@@ -895,12 +1100,23 @@
     ],
     "imageAlt": "Ficus Caucho Variegado con hojas en verde, crema y rosa en maceta de cemento",
     "tags": {
-      "type": ["indoor"],
-      "size": ["medium", "large"],
-      "care": ["amateur"]
+      "type": [
+        "indoor"
+      ],
+      "size": [
+        "medium",
+        "large"
+      ],
+      "care": [
+        "amateur"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Verde, crema y rosa en una sola hoja — el Ficus más raro del mercado.",
     "longDescription": "El Ficus Elastica Variegado es una rareza dentro de una especie ya popular. Sus hojas mezclan verde, crema y toques rosados en cada hoja — sin dos iguales. Una pieza arquitectónica y artística a la vez.",
     "benefit": {
@@ -914,7 +1130,7 @@
     },
     "seasonalWarningLima": "El Ficus puede perder algunas hojas con el cambio de temperatura en invierno — es normal. Evitar mover la planta de lugar en invierno. No regar de más en épocas frías.",
     "regenerative": {
-      "priceRange": "S/ 225–475",
+      "priceRange": "S/ 124",
       "pot": "Piedra",
       "includes": [
         "Planta Ficus Caucho Variegado",
@@ -944,12 +1160,24 @@
     ],
     "imageAlt": "Cuerno de Alce montado en tabla de madera en pared con frondes en forma de cuerno",
     "tags": {
-      "type": ["indoor", "outdoor"],
-      "size": ["medium"],
-      "care": ["amateur", "collector"]
+      "type": [
+        "indoor",
+        "outdoor"
+      ],
+      "size": [
+        "medium"
+      ],
+      "care": [
+        "amateur",
+        "collector"
+      ]
     },
     "petSafe": true,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Vive montado en pared — no necesita maceta. Sus frondes en forma de cuerno son una declaración de interiores. Es un cuadro vivo.",
     "longDescription": "El Cuerno de Alce es la planta para quien entiende que los interiores son una extensión de uno mismo. Epífita y orgullosa, se monta en tabla y cuelga de cualquier pared convirtiéndola en selva viva. Sus frondes en forma de asta son inconfundibles — arte natural que ningún cuadro puede replicar.",
     "benefit": {
@@ -963,7 +1191,7 @@
     },
     "seasonalWarningLima": null,
     "regenerative": {
-      "priceRange": "S/ 145–215",
+      "priceRange": "S/ 89",
       "pot": "Selva",
       "includes": [
         "Planta Cuerno de Alce",
@@ -993,12 +1221,23 @@
     ],
     "imageAlt": "Jazmín Limón con flores blancas perfumadas en maceta de fibra natural",
     "tags": {
-      "type": ["outdoor", "indoor"],
-      "size": ["medium"],
-      "care": ["amateur"]
+      "type": [
+        "outdoor",
+        "indoor"
+      ],
+      "size": [
+        "medium"
+      ],
+      "care": [
+        "amateur"
+      ]
     },
     "petSafe": true,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Sus flores blancas desprenden un perfume dulce y cítrico que impregna toda la habitación. El Jazmín es una experiencia sensorial completa.",
     "longDescription": "El Jazmín Limón no solo se ve — se siente y se huele. Sus pequeñas flores blancas liberan un aroma dulce-cítrico que transforma cualquier balcón o sala en un rincón de bienestar. Una planta para quienes entienden que los jardines también se viven con todos los sentidos.",
     "benefit": {
@@ -1012,7 +1251,7 @@
     },
     "seasonalWarningLima": null,
     "regenerative": {
-      "priceRange": "S/ 145–200",
+      "priceRange": "S/ 133",
       "pot": "Selva",
       "includes": [
         "Planta Jazmín Limón",
@@ -1042,12 +1281,24 @@
     ],
     "imageAlt": "Pothos Golden colgante con hojas doradas y verdes en maceta de fibra natural",
     "tags": {
-      "type": ["indoor"],
-      "size": ["small", "medium"],
-      "care": ["none", "amateur"]
+      "type": [
+        "indoor"
+      ],
+      "size": [
+        "small",
+        "medium"
+      ],
+      "care": [
+        "none",
+        "amateur"
+      ]
     },
     "petSafe": true,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "La planta que perdona todo. Crece rápido, regala esquejes y llena cada rincón con hojas doradas que traen calidez.",
     "longDescription": "El Pothos Golden es la compañera perfecta para quien empieza — y también para quien ya sabe lo que quiere. Crece rápido, cae elegante desde repisas, y cada nueva hoja dorada es una pequeña victoria verde. La planta que enseña que cuidar no tiene que ser difícil.",
     "benefit": {
@@ -1061,7 +1312,7 @@
     },
     "seasonalWarningLima": null,
     "regenerative": {
-      "priceRange": "S/ 130–185",
+      "priceRange": "S/ 78",
       "pot": "Selva",
       "includes": [
         "Planta Pothos Golden (colgante)",
@@ -1091,12 +1342,24 @@
     ],
     "imageAlt": "Filodendro Corazón Neon con hojas en corazón verde lima fluorescente en maceta de fibra natural",
     "tags": {
-      "type": ["indoor"],
-      "size": ["small", "medium"],
-      "care": ["none", "amateur"]
+      "type": [
+        "indoor"
+      ],
+      "size": [
+        "small",
+        "medium"
+      ],
+      "care": [
+        "none",
+        "amateur"
+      ]
     },
     "petSafe": true,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Verde lima eléctrico en hojas de corazón — conecta emocionalmente e ilumina hasta los rincones más oscuros.",
     "longDescription": "El Neon es la inyección de color más inmediata del portafolio. Sus hojas en corazón en verde lima casi fluorescente transforman visualmente cualquier espacio. Crece rápido, genera esquejes constantemente y es perfecto para regalar con intención.",
     "benefit": {
@@ -1110,7 +1373,7 @@
     },
     "seasonalWarningLima": "En invierno Lima con poca luz, el verde lima vibrante puede tornarse más apagado. Buscar la ubicación más luminosa de la casa.",
     "regenerative": {
-      "priceRange": "S/ 130–220",
+      "priceRange": "S/ 78",
       "pot": "Selva",
       "includes": [
         "Planta Filodendro Corazón Neon",
@@ -1140,12 +1403,24 @@
     ],
     "imageAlt": "Aglaonema Rosada con hojas pintadas de blanco cremoso a rosa profundo en maceta de cerámica",
     "tags": {
-      "type": ["indoor"],
-      "size": ["small", "medium"],
-      "care": ["none", "amateur"]
+      "type": [
+        "indoor"
+      ],
+      "size": [
+        "small",
+        "medium"
+      ],
+      "care": [
+        "none",
+        "amateur"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Sus hojas parecen pintadas a mano — una paleta que va del blanco cremoso al rosa profundo. Arte vivo que no necesita cuidados extremos.",
     "longDescription": "La Aglaonema Rosada es la prueba de que lo bello no tiene que ser complicado. Cada hoja lleva una paleta única de crema, verde y rosa que ningún pincel podría replicar. Perfecta para espacios que necesitan color sin sacrificar practicidad.",
     "benefit": {
@@ -1159,7 +1434,7 @@
     },
     "seasonalWarningLima": null,
     "regenerative": {
-      "priceRange": "S/ 175–250",
+      "priceRange": "S/ 78",
       "pot": "Tierra",
       "includes": [
         "Planta Aglaonema Rosada",
@@ -1189,12 +1464,23 @@
     ],
     "imageAlt": "Fittonia con venas blancas sobre verde oscuro formando arte amazónico en miniatura en maceta pequeña",
     "tags": {
-      "type": ["indoor"],
-      "size": ["small"],
-      "care": ["none", "amateur"]
+      "type": [
+        "indoor"
+      ],
+      "size": [
+        "small"
+      ],
+      "care": [
+        "none",
+        "amateur"
+      ]
     },
     "petSafe": true,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Originaria del Perú — sus venas son arte amazónico en miniatura.",
     "longDescription": "La Fittonia es originaria de la Amazonía peruana — lleva en sus hojas el mismo patrón que los artesanos shipibo-conibo expresan en tela y cerámica. Sus venas blancas o rojas sobre verde oscuro son arte vivo en miniatura.",
     "benefit": {
@@ -1208,7 +1494,7 @@
     },
     "seasonalWarningLima": "La garúa y humedad del invierno limeño le viene bien. En verano nebulizar más.",
     "regenerative": {
-      "priceRange": "S/ 85–110",
+      "priceRange": "S/ 108",
       "pot": "Selva",
       "includes": [
         "Planta Fittonia",
@@ -1238,12 +1524,24 @@
     ],
     "imageAlt": "Helecho Nido con hojas brillantes emergiendo del centro en espiral en maceta de fibra natural",
     "tags": {
-      "type": ["indoor"],
-      "size": ["small", "medium"],
-      "care": ["none", "amateur"]
+      "type": [
+        "indoor"
+      ],
+      "size": [
+        "small",
+        "medium"
+      ],
+      "care": [
+        "none",
+        "amateur"
+      ]
     },
     "petSafe": true,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Sus hojas brillantes emergen del centro en espiral — naturaleza pura.",
     "longDescription": "El Helecho Nido es una de las plantas más antiguas de la tierra — lleva millones de años con la misma forma perfecta. Sus hojas largas y brillantes emergen del centro en espiral, como una obra de orfebrería vegetal.",
     "benefit": {
@@ -1257,7 +1555,7 @@
     },
     "seasonalWarningLima": "Paradójicamente, el invierno limeño con garúa y humedad es ideal para este helecho. En verano, ubicar lejos del sol directo y nebulizar con frecuencia.",
     "regenerative": {
-      "priceRange": "S/ 90–175",
+      "priceRange": "S/ 78",
       "pot": "Selva",
       "includes": [
         "Planta Helecho Nido",
@@ -1287,12 +1585,23 @@
     ],
     "imageAlt": "Maranta Prayer Plant con hojas plegadas en patrones elaborados en maceta de fibra natural",
     "tags": {
-      "type": ["indoor"],
-      "size": ["small", "medium"],
-      "care": ["amateur"]
+      "type": [
+        "indoor"
+      ],
+      "size": [
+        "small",
+        "medium"
+      ],
+      "care": [
+        "amateur"
+      ]
     },
     "petSafe": true,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Sus hojas se pliegan cada noche como manos en oración — y vuelven a abrirse con la luz del día. Tiene uno de los patrones más elaborados de la naturaleza.",
     "longDescription": "La Maranta Prayer Plant tiene un ritual diario que la hace única: cada noche sus hojas se elevan y se pliegan como manos en oración, y con el amanecer vuelven a abrirse. Su patrón de colores — verde, borgoña y blanco — es uno de los más complejos que existe en plantas de interior.",
     "benefit": {
@@ -1306,7 +1615,7 @@
     },
     "seasonalWarningLima": "Sensible a corrientes de aire frío en invierno limeño (jun–sep). Mantener cerca de fuente de luz y evitar ventanas con frío.",
     "regenerative": {
-      "priceRange": "S/ 165–210",
+      "priceRange": "S/ 93",
       "pot": "Selva",
       "includes": [
         "Planta Maranta Prayer Plant",
@@ -1336,12 +1645,23 @@
     ],
     "imageAlt": "Caladium White con hojas casi translúcidas en blanco puro captando la luz en maceta de cerámica",
     "tags": {
-      "type": ["indoor"],
-      "size": ["small", "medium"],
-      "care": ["amateur"]
+      "type": [
+        "indoor"
+      ],
+      "size": [
+        "small",
+        "medium"
+      ],
+      "care": [
+        "amateur"
+      ]
     },
     "petSafe": false,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Hojas casi translúcidas en blanco puro — luz sólida en forma de planta.",
     "longDescription": "El Caladium White es magia vegetal en temporada de sol. Sus hojas casi translúcidas en blanco puro parecen capturar y amplificar la luz del espacio. En invierno descansa y vuelve en primavera con la misma intensidad.",
     "benefit": {
@@ -1355,7 +1675,7 @@
     },
     "seasonalWarningLima": "ATENCIÓN: el Caladium entra en latencia en invierno Lima — pierde todas sus hojas y queda solo el tubérculo. Es normal. No regar durante la latencia. Retomará en primavera.",
     "regenerative": {
-      "priceRange": "S/ 130–250",
+      "priceRange": "S/ 100",
       "pot": "Tierra",
       "includes": [
         "Planta Caladium White",
@@ -1385,12 +1705,23 @@
     ],
     "imageAlt": "Scindapsus Pictus con manchas plateadas como estrellas sobre hojas verde oscuro en maceta de fibra",
     "tags": {
-      "type": ["indoor"],
-      "size": ["small", "medium"],
-      "care": ["amateur"]
+      "type": [
+        "indoor"
+      ],
+      "size": [
+        "small",
+        "medium"
+      ],
+      "care": [
+        "amateur"
+      ]
     },
     "petSafe": true,
-    "suitableFor": { "gift": true, "space": true, "me": true },
+    "suitableFor": {
+      "gift": true,
+      "space": true,
+      "me": true
+    },
     "description": "Manchas plateadas como estrellas sobre hojas verde oscuro — la prima sofisticada del Pothos.",
     "longDescription": "El Scindapsus es la versión premium del Pothos sin el precio de una planta de colección. Sus manchas plateadas sobre verde oscuro brillan como fragmentos de luz. Prima del Pothos, con mucho más carácter.",
     "benefit": {
@@ -1404,7 +1735,7 @@
     },
     "seasonalWarningLima": "En invierno puede crecer más lento. Las manchas plateadas pueden ser menos brillantes con menos luz — buscar ubicación luminosa.",
     "regenerative": {
-      "priceRange": "S/ 150–190",
+      "priceRange": "S/ 93",
       "pot": "Selva",
       "includes": [
         "Planta Scindapsus Pictus",

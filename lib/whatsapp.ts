@@ -7,7 +7,7 @@ export function buildPlantWhatsAppUrl(plant: Plant, waNumber: string): string {
   const message = [
     "Hola 🌿 Vengo de la web de Jardín Amazónico.",
     "",
-    "Me interesa la opción REGENERATIVA de:",
+    "Me interesa la COMPRA QUE REGENERA LA AMAZONÍA de:",
     `*${name}* (_${scientificName}_)`,
     "",
     "Incluye:",

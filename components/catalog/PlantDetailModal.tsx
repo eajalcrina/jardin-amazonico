@@ -137,7 +137,7 @@ function PlantDetailModalBody({ plant, onPurchase }: { plant: Plant; onPurchase:
         )}
 
         <div className="border-t border-ja-dark/10 pt-6">
-          <p className="uppercase tracking-wider text-xs text-ja-mid font-medium">Opción Regenerativa</p>
+          <p className="uppercase tracking-wider text-xs text-ja-mid font-medium">Compra que regenera la Amazonía</p>
           <ul className="mt-3 space-y-1 text-sm text-ja-ink/85">
             <li className="flex items-start gap-2">
               <span className="mt-2 block h-1 w-1 rounded-full bg-ja-mid shrink-0" />
@@ -171,6 +171,26 @@ function PlantDetailModalBody({ plant, onPurchase }: { plant: Plant; onPurchase:
           >
             <MessageCircle size={18} /> ¡La quiero! →
           </Button>
+        </div>
+
+        <div className="border-t border-ja-dark/10 pt-6">
+          <p className="font-medium text-sm text-ja-dark">Consideraciones especiales</p>
+          <div className="mt-3 space-y-3 text-xs text-ja-ink/70 leading-relaxed">
+            <p>
+              Las imágenes de las plantas en nuestro sitio son referenciales ya que cada planta
+              es única y puede variar en apariencia debido a factores externos.
+            </p>
+            <p>
+              A pesar de posibles imperfecciones menores propias de la naturaleza de cada planta,
+              nos aseguramos de que estén en óptimas condiciones antes de llegar a tu hogar.
+            </p>
+            <p>
+              Todas nuestras plantas van en macetas transparentes y con nuestros sustratos especializados.
+            </p>
+            <p className="font-medium text-ja-ink/80">
+              Una vez realizada la compra no tendrá cambios ni devoluciones.
+            </p>
+          </div>
         </div>
       </div>
     </>
