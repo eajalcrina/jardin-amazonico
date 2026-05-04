@@ -3,11 +3,8 @@
 import Link from "next/link";
 import { Building2, Trees } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import { buildCorporateWhatsAppUrl } from "@/lib/whatsapp";
 
 export function B2BTeaser() {
-  const wa = process.env.NEXT_PUBLIC_WA_NUMBER ?? "51999999999";
-
   return (
     <section className="bg-ja-paper py-16 md:py-24">
       <div className="container mx-auto px-6 max-w-5xl">
@@ -46,14 +43,9 @@ export function B2BTeaser() {
               Plantas trofeo y merchandising de impacto con labubus amazónicos
               para tu marca.
             </p>
-            <a
-              href={buildCorporateWhatsAppUrl(wa)}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-6 inline-block"
-            >
-              <Button variant="secondary">Hablar por WhatsApp →</Button>
-            </a>
+            <Link href="/corporativo" className="mt-6 inline-block">
+              <Button variant="secondary">Ver portafolio y conversar →</Button>
+            </Link>
           </article>
         </div>
 
