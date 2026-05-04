@@ -28,7 +28,7 @@ const PLAN_DATA: Record<Plan, {
   Suelo: {
     headline: "Quiero cuidarlas y replicarlas",
     includes: [
-      "1 Kg de sustrato especializado (interior, suculentas o tropical)",
+      "Sustrato especializado para tus plantas",
       "Kit mensual de cuidado: nutrientes, control de plagas preventivo y correctivo",
       "3 macetas pequeñas para propagar esquejes",
       "Aplica para garantía del esqueje",
@@ -54,10 +54,10 @@ export function Membership() {
       <div className="container mx-auto px-6 max-w-5xl">
         <p className="text-xs uppercase tracking-[0.2em] text-ja-mid">Membresía</p>
         <h2 className="mt-3 font-display text-3xl md:text-5xl text-ja-dark max-w-3xl">
-          Una membresía que respira contigo.
+          Planes de membresía diseñada para coleccionistas de plantas únicas.
         </h2>
         <p className="mt-3 text-ja-ink/75 max-w-2xl">
-          Planes de membresía diseñada para coleccionistas de plantas únicas.
+          Una membresía que respira contigo.
         </p>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">

@@ -25,7 +25,7 @@ export function Testimonials() {
       <div className="container mx-auto px-6 max-w-5xl">
         <p className="text-xs uppercase tracking-[0.2em] text-ja-mid">Comunidad</p>
         <h2 className="mt-3 font-display text-3xl md:text-5xl text-ja-dark max-w-3xl">
-          Los que ya tienen su selva adentro.
+          Los que ya tienen su selva en casa.
         </h2>
       </div>
 

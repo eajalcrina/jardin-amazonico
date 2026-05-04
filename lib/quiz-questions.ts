@@ -21,7 +21,6 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
       { value: "exotic", iconLucide: "sparkles", title: "Exótica / Colección", description: "Plantas raras, de alto impacto, para coleccionistas" },
       { value: "indoor", iconLucide: "flower-2", title: "Interior", description: "Verde para adentro, resistente y decorativa" },
       { value: "outdoor", iconLucide: "sun", title: "Exterior", description: "Plantas para balcón, jardín o mucha luz" },
-      { value: "air", iconLucide: "wind", title: "Planta de aire", description: "Sin tierra ni maceta, flotan libres" },
     ],
   },
   {
