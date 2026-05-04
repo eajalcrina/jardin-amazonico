@@ -43,46 +43,36 @@ export function PlantCard({ plant, onSelect }: PlantCardProps) {
           loading="lazy"
         />
 
-        {/* Top row — name pill + tier + pet */}
-        <div className="absolute top-4 left-4 right-4 flex items-start justify-between gap-3 z-10">
-          <h3 className="font-display text-base md:text-lg leading-tight text-ja-dark px-3 py-1.5 rounded-full bg-ja-paper/90 backdrop-blur-sm shadow-[0_2px_8px_-2px_rgba(15,42,28,0.18)] max-w-[70%] truncate">
-            {plant.name}
-          </h3>
-          <div className="flex flex-col items-end gap-1.5 shrink-0">
+        {/* Top row — tier + pet (right only) */}
+        <div className="absolute top-4 right-4 flex flex-col items-end gap-1.5 z-10">
+          <span
+            className={[
+              "inline-flex items-center px-2.5 py-1 rounded-full text-[10px] uppercase tracking-[0.1em] font-medium backdrop-blur-sm",
+              TIER_PILL[plant.tier],
+            ].join(" ")}
+          >
+            {TIER_LABEL[plant.tier]}
+          </span>
+          {plant.petSafe && (
             <span
-              className={[
-                "inline-flex items-center px-2.5 py-1 rounded-full text-[10px] uppercase tracking-[0.1em] font-medium backdrop-blur-sm",
-                TIER_PILL[plant.tier],
-              ].join(" ")}
+              aria-label="Pet friendly"
+              className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-ja-paper/90 text-ja-dark backdrop-blur-sm"
             >
-              {TIER_LABEL[plant.tier]}
+              <PawPrint size={11} />
             </span>
-            {plant.petSafe && (
-              <span
-                aria-label="Pet friendly"
-                className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-ja-paper/90 text-ja-dark backdrop-blur-sm"
-              >
-                <PawPrint size={11} />
-              </span>
-            )}
-          </div>
+          )}
         </div>
 
-        {/* Bottom — gradient + price + arrow (always visible, refined) */}
-        <div className="absolute inset-x-0 bottom-0 z-10 pt-14 pb-4 px-5 bg-gradient-to-t from-ja-paper via-ja-paper/85 to-ja-paper/0">
-          <div className="flex items-end justify-between gap-3">
-            <div className="min-w-0">
-              <p className="text-[10px] uppercase tracking-[0.18em] text-ja-ink/55">
-                Desde
-              </p>
-              <p className="font-display text-lg md:text-xl text-ja-terra leading-none mt-1">
-                {priceFrom}
-              </p>
-            </div>
-            <span className="inline-flex items-center gap-1 text-sm font-medium text-ja-dark pb-0.5 transition-colors group-hover:text-ja-mid">
+        {/* Bottom — gradient + full plant name + arrow */}
+        <div className="absolute inset-x-0 bottom-0 z-10 pt-12 pb-4 px-5 bg-gradient-to-t from-ja-paper via-ja-paper/85 to-ja-paper/0">
+          <div className="flex items-center justify-between gap-3">
+            <h3 className="font-display text-sm md:text-base text-ja-dark leading-tight min-w-0 flex-1">
+              {plant.name}
+            </h3>
+            <span className="inline-flex items-center gap-1 text-xs md:text-sm font-medium text-ja-dark shrink-0 transition-colors group-hover:text-ja-mid">
               Ver
               <ArrowRight
-                size={14}
+                size={13}
                 className="transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-1.5"
               />
             </span>
