@@ -20,7 +20,7 @@ export function PlantCheckoutModal({ plant, onClose }: Props) {
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
 
-  const waNumber = process.env.NEXT_PUBLIC_WA_NUMBER ?? "51999999999";
+  const waNumber = process.env.NEXT_PUBLIC_WA_NUMBER ?? "51914401895";
   const waCommunity = process.env.NEXT_PUBLIC_WA_COMMUNITY_LINK ?? "";
 
   // Reset state when plant changes (next purchase)

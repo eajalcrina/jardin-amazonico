@@ -1,9 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
-import { ArrowRight, ChevronLeft, Trees, Building2, Sparkles } from "lucide-react";
+import { ArrowRight, Trees, Building2, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { KeneDivider } from "@/components/ui/KeneDivider";
 import { Footer } from "@/components/sections/Footer";
@@ -77,18 +76,8 @@ export default function PaisajismoPage() {
 
   return (
     <main>
-      {/* Top bar with back link */}
-      <div className="bg-ja-paper border-b border-ja-dark/10">
-        <div className="container mx-auto px-6 max-w-6xl h-14 flex items-center">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-1.5 text-sm text-ja-ink/70 hover:text-ja-dark transition-colors"
-          >
-            <ChevronLeft size={16} />
-            Jardín Amazónico
-          </Link>
-        </div>
-      </div>
+      {/* Spacer for fixed header */}
+      <div className="h-14" />
 
       {/* Hero */}
       <section className="relative isolate overflow-hidden bg-ja-darker text-ja-paper">

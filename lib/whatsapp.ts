@@ -34,20 +34,11 @@ export function buildGenericWhatsAppUrl(
 }
 
 export function buildLandscapingWhatsAppUrl(waNumber: string): string {
-  const message = [
-    "Hola, vengo de la web de Jardín Amazónico.",
-    "Me interesa una propuesta de paisajismo / vegetación para [tipo de espacio].",
-    "¿Pueden ayudarme con una cotización?",
-  ].join("\n");
+  const message = "Estoy interesado en el servicio de paisajismo";
   return `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
 }
 
 export function buildCorporateWhatsAppUrl(waNumber: string): string {
-  const message = [
-    "Hola, vengo de la web de Jardín Amazónico.",
-    "Me interesa una propuesta corporativa: [plantas trofeo / merchandising / ambos].",
-    "Contexto: [breve].",
-    "¿Pueden ayudarme?",
-  ].join("\n");
+  const message = "Estoy interesado en las plantas como merch";
   return `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
 }

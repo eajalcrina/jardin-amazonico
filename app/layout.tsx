@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
+import { Header } from "@/components/ui/Header";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -42,6 +43,7 @@ export default function RootLayout({
         >
           Saltar al cuestionario
         </a>
+        <Header />
         {children}
       </body>
     </html>

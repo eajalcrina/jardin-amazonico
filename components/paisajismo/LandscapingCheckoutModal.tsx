@@ -19,7 +19,7 @@ export function LandscapingCheckoutModal({ open, onClose }: Props) {
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
 
-  const waNumber = process.env.NEXT_PUBLIC_WA_NUMBER ?? "51999999999";
+  const waNumber = process.env.NEXT_PUBLIC_WA_NUMBER ?? "51914401895";
   const waCommunity = process.env.NEXT_PUBLIC_WA_COMMUNITY_LINK ?? "";
 
   useEffect(() => {
@@ -58,7 +58,7 @@ export function LandscapingCheckoutModal({ open, onClose }: Props) {
 
   if (success) {
     const waMessage =
-      "Hola 🌿 Vengo de la web de Jardín Amazónico.\n\nMe interesa su servicio de paisajismo y diseño de interiores.";
+      "Estoy interesado en el servicio de paisajismo";
     const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(waMessage)}`;
     return (
       <Modal open={open} onClose={onClose} maxWidth="max-w-lg" title="Datos recibidos">
